@@ -5,7 +5,7 @@ slug: "project-02-why"
 animation: true
 ---
 
-In recent times we have witnessed the explosion of cryptocurrencies, or tokens.
-As an increasing share of the world’s value becomes tokenized, it needs to be stored, transferred, organized, and managed.
-
-At Rigoblock, we focus on organizing value.
+With the emerging cryptocurrency / block-chain-based economy developing it's pivotal to create, organize and maximize new forms of value, through efficient, effective and transparent asset management protocols. 
+&nbsp;  
+&nbsp;  
+Rigoblock reinvent the way of capturing, developing and manage the new crypto assets making it accessible to everyone

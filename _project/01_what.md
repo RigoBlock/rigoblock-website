@@ -6,6 +6,10 @@ slug: "project-01-what"
 animation: true
 ---
 
-Rigoblock is a community of traders and developers that aims to change the traditional asset management industry.
+Rigoblock exists to reinvent the asset management industry 
+making it accessible to everyone (everyone's access)
+enabling full transparency (real time tracking)
+and empowering rigorous meritocracy (proof of performance)
 
-We have developed a protocol that enables individuals and institutions to more easily enter into trading and rewards good managers.
+We aim to create a new generation of traders and a new level of asset management system. 
+Simple, transparent, meritocratic, democratic.
