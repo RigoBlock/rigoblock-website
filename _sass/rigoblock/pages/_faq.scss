@@ -1,0 +1,49 @@
+.faq-list {
+  @include column(1 of 1);
+  @include rmargin-top(60);
+  @include rmargin-bottom(300);
+  list-style-type: decimal-leading-zero;
+  list-style-position: inside;
+  @include tablet {
+    margin-top: 0;
+    margin-bottom: 200px;
+  }
+  li {
+    @include parent-column(12 of 12);
+    @include rfont-size(20, 500);
+    @include rmargin-bottom(20);
+    @include tablet {
+      @include the-font-size(20);
+      margin-bottom: 20px;
+    }
+    @include mobile {
+      @include the-font-size(14);
+      margin-bottom: 25px;
+    }
+    span {
+      cursor: pointer;
+    }
+    blockquote {
+      @include parent-column(7 of 12);
+      float: none;
+      @include column-margin(1 of 12);
+      @include rfont-size(16, 300);
+      line-height: 2vw;
+      @include rmargin-top(25);
+      @include rmargin-bottom(50);
+      display: none;
+      @include tablet {
+        @include parent-column(10 of 12);
+        @include the-font-size(16);
+        margin-top: 25px;
+        margin-bottom: 50px;
+      }
+      @include mobile {
+        @include parent-column(11 of 12);
+        @include the-font-size(14);
+        margin-top: 10px;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}

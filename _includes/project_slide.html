@@ -1,0 +1,32 @@
+<div class="single-project-slide c-{{slide.slug}}" id="{{slide.slug}}">
+  <div class="slide-wrapper">
+    <h3 class="subtitle" data-show-on-scroll>{{ slide.subtitle }}</h3>
+    <h2 class="title" data-show-on-scroll>{{ slide.title }}</h2>
+    <div class="content-wrapper" data-show-on-scroll>
+      <div class="animation">
+        {% if slide.animation %}
+          <div class="scrolled" data-animation="assets/animations/{{slide.slug}}" data-show-on-scroll></div>
+        {% endif %}
+      </div>
+      <div class="content">
+        {{ slide.content }}
+        {% if slide.video_link %}
+          <a class="icon-video-link button" href="{{ slide.video_link }}" data-video-link>
+            <div class="icon-wrapper">
+              {% svg "_icons/video.svg" class="icon-video icon" %}
+            </div>
+            <div class="label">Learn more</div>
+          </a>
+        {% endif %}
+        {% if slide.external_link %}
+          <a class="icon-external-link button" href="{{ slide.external_link }}" target="_blank">
+            <div class="icon-wrapper">
+              {% svg "_icons/read.svg" class="icon-read icon" %}
+            </div>
+            <div class="label">Learn more</div>
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

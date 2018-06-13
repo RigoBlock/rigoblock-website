@@ -1,0 +1,36 @@
+$em-base: 10;
+$desktop-width: 100%;
+$max-desktop-width: 1600px;
+$max-big-desktop-width: 1600px;
+$max-medium-desktop-width: 1120px;
+
+$nav-width: 220px;
+
+$minimum-margin: 50px;
+
+$std-box-shadow: 5px 5px 21px 0px rgba(0,0,0,0.22);
+
+$default-gutter: 40px;
+$mobile-gutter: 10px;
+
+$std-transition-time: .3s;
+
+$medium-desktop: "(max-width: 1440px)";
+$big-desktop: "(min-width: 1920px)";
+$mobile: "(max-width: 766px)";
+$desktop: "(min-width: 1024px) and (max-width: 1439px)";
+$tablet: "(max-width: 1024px) and (min-width: 767px)";
+
+$size-320: "(min-width: 320px)";
+$size-341: "(min-width: 341px)";
+$size-743: "(min-width: 743px)";
+$size-960: "(min-width: 960px)";
+$size-1090: "(min-width: 1090px)";
+
+
+$i-size-768: "(max-width: 768px)";
+
+
+$size-1500: "(min-width: 1500px)";
+$size-1800: "(min-width: 1800px)";
+$size-1090: "(min-width: 1090px)";

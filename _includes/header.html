@@ -1,0 +1,28 @@
+<header class="site-header" role="banner">
+  <div class="header-wrapper">
+    <a href="/">
+      {% svg "_icons/small-logo.svg" class="icon-small-logo" %}
+    </a>
+
+    {% include nav.html %}
+
+    <div class="nav-footer">
+      {% include nav-buttons.html %}
+    </div>
+  </div>
+  {% include community.html %}
+  <div class="mobile-fake-bkg">&nbsp;</div>
+</header>
+<div class="mobile-header">
+  <div class="icon-nav">
+    <span>&nbsp;</span>
+    Menu
+  </div>
+  <div class="community-icon-nav">
+    {% svg "_icons/back.svg" class="icon-back" %}
+    Back to menu
+  </div>
+  <div class="buttons">
+    {% include nav-buttons.html %}
+  </div>
+</div>

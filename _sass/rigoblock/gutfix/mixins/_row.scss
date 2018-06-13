@@ -1,0 +1,9 @@
+// Declare a row
+@mixin row($width: 100%) {
+  // Ensure `float` is cleared after a row.
+  @extend %clearfix;
+
+  // Set width (to give consistency to children).
+  // Defaults to 100%.
+  width: $width;
+}

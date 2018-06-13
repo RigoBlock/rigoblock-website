@@ -1,0 +1,59 @@
+members:
+  - name: "Gabriele Rigo"
+    title: "Smart Contract R&D "
+    bio: "Previously treasurer @1bn+ usd global macro hedge fund and head of investment @25bn+ usd asset management company. Msc finance from bocconi & hsg."
+    image: "rigo.png"
+    linkedin: 'https://linkedin.com'
+    github: 'https://github.com'
+    twitter: 'https://twitter.com'
+  - name: "Hanna Keskin"
+    title: "Operations & PR"
+    bio: "Business administration at university of applied sciences lugano. Previously apprentice at palo alto sa, auction bidder at spink switzerland. Fluent in 5 languages."
+    image: "keskin.png"
+    linkedin: 'https://linkedin.com'
+    github: 'https://github.com'
+    twitter: 'https://twitter.com'
+  - name: "David Fava"
+    title: "UX & UI Lead, Unix Systems administrator "
+    bio: "Previously founder @ cloud hosting company. Partner blc network. Msc international economics from university of trieste."
+    image: "fava.png"
+    linkedin: 'https://linkedin.com'
+    github: 'https://github.com'
+    twitter: 'https://twitter.com'
+  - name: "Paolo Longato"
+    title: "Alpha tester"
+    bio: "Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system."
+    linkedin: 'https://linkedin.com'
+    github: 'https://github.com'
+    twitter: 'https://twitter.com'
+  - name: "Matteo Petrani"
+    title: "Experience designer"
+    bio: "Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system."
+    linkedin: 'https://linkedin.com'
+    github: 'https://github.com'
+    twitter: 'https://twitter.com'
+  - name: "Luca del Bianco"
+    title: "Full-stack wizard"
+    bio: "Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system."
+    linkedin: 'https://linkedin.com'
+    github: 'https://github.com'
+    twitter: 'https://twitter.com'
+  - name: "Federico Obialero"
+    title: "Full-stack developer"
+    bio: "Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system."
+    linkedin: 'https://linkedin.com'
+    github: 'https://github.com'
+    twitter: 'https://twitter.com'
+advisors:
+  - name: "Mikael Olofsson"
+    title: "Investor and advisor"
+    bio: "Co-founder ixledger technologies. Managing partner polymbios investment management."
+  - name: "Alberto Robbiani"
+    title: "advisor corporate clients"
+    bio: "Senior client advisor at crossinvest. Previously executive director at ubs."
+  - name: "Santosh Pandey"
+    title: "legal advisor"
+    bio: "Managing partner at p&y law offices. Managing director at western legal corporation limited."
+  - name: "Primoz Kordez"
+    title: "blockchain economics advisor"
+    bio: "Fintech advisor at cofound.It & iconomi."

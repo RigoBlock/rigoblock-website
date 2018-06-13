@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<h1 class="title">{{page.title}}</h1>
+<h2 class="subtitle">{{page.subtitle}}</h2>
+<div class="positions">
+  <ul>
+    {% for single_position in site.positions %}
+      {% include single_position.html %}
+    {% endfor %}
+  </ul>
+</div>

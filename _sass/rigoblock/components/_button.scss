@@ -1,0 +1,143 @@
+.button {
+  @extend %font-light-17;
+  position: relative;
+  border-top: 1px solid $blue-border;
+  color: $blue;
+  display: flex;
+  float: left;
+  transition: all $std-transition-time ease-in-out;
+  &.nav {
+    width: 100%;
+    .icon-wrapper {
+      z-index: initial;
+    }
+    @include mobile {
+      width: calc(50% - 15px);
+      // margin-left: 20px;
+      border: 1px solid $blue-border;
+      @include the-font-size(12);
+      .icon-wrapper {
+        width: 40px;
+        height: 40px;
+      }
+      .label {
+        padding: 0 5px;
+      }
+      &:nth-child(2) {
+        margin-left: 10px;
+      }
+    }
+    &:hover {
+      color: $yellow;
+    }
+  }
+  &:not(.nav) {
+    @include rfont-size(17, 300);
+    border: 1px solid $blue-border;
+    @include tablet {
+      @include the-font-size(18);
+      &:not(:first-child) {
+        margin-top: 20px;
+      }
+    }
+    @include mobile {
+      @include the-font-size(12);
+      margin-top: 40px;
+      .icon-wrapper {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    &:hover {
+      box-shadow: #ffae00 7px 7px 0px;
+    }
+  }
+  .icon-wrapper {
+    width: 54px;
+    height: 54px;
+    border-right: 1px solid $blue-border;
+    background: $bkg;
+    transition: all $std-transition-time ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+  }
+  .icon {
+    width: 30px;
+    height: 100%;
+    &.icon-download {
+      width: 22px;
+    }
+  }
+  .label {
+    flex-grow: 1;
+    padding: 0 20px;
+    align-self: center;
+    width: calc(100% - 54px);
+  }
+}
+
+.position-button, .press-button {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  @include parent-column(1 of 1);
+  border-top: 1px solid $blue;
+  background: transparent;
+  transition: background $std-transition-time ease-in-out;
+  a, a:visited {
+    display: flex;
+    @extend %clearfix;
+    @include parent-column(1 of 1);
+  }
+  .icon {
+    width: 17%;
+    border-right: 1px solid $blue;
+    align-self: center;
+    display: flex;
+    padding: 3% 0;
+    justify-content: center;
+    transition: border $std-transition-time ease-in-out;
+    svg {
+      align-self: center;
+      width: 70%;
+    }
+    path {
+      transition: stroke $std-transition-time ease-in-out;
+    }
+    @include tablet {
+      width: 50px;
+      height: 50px;
+    }
+    @include mobile {
+      width: 50px;
+      height: 40px;
+    }
+  }
+  .label {
+    width: 83%;
+    @include rfont-size(14, 300);
+    text-transform: uppercase;
+    align-self: center;
+    padding: 0 10px;
+    @include tablet {
+      @include the-font-size(14);
+    }
+    @include mobile {
+      @include the-font-size(12);
+    }
+  }
+  &.position-button {
+    .icon {
+      width: 12%;
+      @include tablet {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    .label {
+      width: 88%;
+    }
+  }
+}

@@ -1,0 +1,251 @@
+@mixin center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin padding-vertical($p) {
+  padding-top: $p;
+  padding-bottom: $p;
+}
+
+@mixin padding-horizontal($p) {
+  padding-left: $p;
+  padding-right: $p;
+}
+
+@mixin margin-vertical($m) {
+  margin-top: $m;
+  margin-bottom: $m;
+}
+
+@mixin margin-horizontal($m) {
+  margin-left: $m;
+  margin-right: $m;
+}
+
+@mixin border-horizontal($b) {
+  border-left: $b;
+  border-right: $b;
+}
+
+@mixin border-vertical($b) {
+  border-top: $b;
+  border-bottom: $b;
+}
+
+@mixin ellipsis($w) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: $w;
+}
+
+@mixin pagewidth() {
+  width: $desktop-width;
+  max-width: $max-desktop-width;
+  padding: 0 80px;
+  margin: 0px auto;
+  @include tablet {
+    padding: 0 50px;
+  }
+  @include mobile {
+    padding: 0 10px;
+  }
+}
+
+@mixin internal-pagewidth() {
+  width: $desktop-width;
+  max-width: $max-medium-desktop-width;
+  margin: 0px auto;
+  padding: 0 80px;
+  @include tablet {
+    padding: 0 50px;
+  }
+  @include mobile {
+    padding: 0 10px;
+  }
+}
+
+// (translation: accellerami quissu)
+@mixin accelerate-me-this-bitch {
+  transform: translate3d(0, 0, 0);
+}
+
+
+@mixin font-smoothing($value: antialiased) {
+  @if $value == antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+@mixin bkg-opacity($scope-color, $scope-opacity) {
+  $scope-red: red($scope-color);
+  $scope-green: green($scope-color);
+  $scope-blue: blue($scope-color);
+  $scope-rgba: rgba($scope-red, $scope-green, $scope-blue, $scope-opacity);
+  $ie-rgba: ie-hex-str($scope-rgba);
+  background: -moz-linear-gradient(top, $scope-rgba 0%, $scope-rgba 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$scope-rgba), color-stop(100%,$scope-rgba)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, $scope-rgba 0%,$scope-rgba 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, $scope-rgba 0%,$scope-rgba 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, $scope-rgba 0%,$scope-rgba 100%); /* IE10+ */
+  background: linear-gradient(to bottom, $scope-rgba 0%,$scope-rgba 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$ie-rgba}', endColorstr='#{$ie-rgba}',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin attach-animation($anim) {
+  animation-name: $anim;
+  animation-duration: $coming-in-duration;
+  animation-iteration-count: infinite;
+  animation-direction: forwards;
+  animation-timing-function: $coming-in-easing;
+  animation-fill-mode: forwards;
+  animation-delay: $coming-in-delay;
+}
+
+@mixin the-font-size($size) {
+  font-size: $size * 1px;
+  font-size: rem($size);
+  line-height: ($size * 1px) * 1.45;
+}
+
+@mixin rfont-size($size, $weight) {
+  $font-size: ($size * 100) / 1440;
+  font-size: $font-size * 1vw;
+  font-weight: $weight;
+  line-height: ($font-size * 1vw) * 1.3;
+}
+
+@mixin rmargin-bottom($size) {
+  $margin-size: ($size * 100) / 1440;
+  margin-bottom: $margin-size * 1vw;
+}
+
+@mixin rmargin-top($size) {
+  $margin-size: ($size * 100) / 1440;
+  margin-top: $margin-size * 1vw;
+}
+
+@mixin rpadding-bottom($size) {
+  $margin-size: ($size * 100) / 1440;
+  padding-bottom: $margin-size * 1vw;
+}
+
+@mixin rpadding-top($size) {
+  $margin-size: ($size * 100) / 1440;
+  padding-top: $margin-size * 1vw;
+}
+
+@function rem($size) {
+  $rem-size: $size / $em-base;
+  @return $rem-size * 1rem;
+}
+
+@mixin mobile {
+  @media #{$mobile} {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media #{$desktop} {
+    @content;
+  }
+}
+
+@mixin medium-desktop {
+  @media #{$medium-desktop} {
+    @content;
+  }
+}
+
+@mixin big-desktop {
+  @media #{$big-desktop} {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media #{$tablet} {
+    @content;
+  }
+}
+
+@mixin media-320 {
+  @media #{$size-320} {
+    @content;
+  }
+}
+
+@mixin media-341 {
+  @media #{$size-341} {
+    @content;
+  }
+}
+
+@mixin media-743 {
+  @media #{$size-743} {
+    @content;
+  }
+}
+
+@mixin media-960 {
+  @media #{$size-960} {
+    @content;
+  }
+}
+
+@mixin media-1090 {
+  @media #{$size-1090} {
+    @content;
+  }
+}
+
+@mixin media-1500 {
+  @media #{$size-1500} {
+    @content;
+  }
+}
+
+@mixin media-1800 {
+  @media #{$size-1800} {
+    @content;
+  }
+}
+
+@mixin i-media-768 {
+  @media #{$i-size-768} {
+    @content;
+  }
+}
+
+
+@mixin flex-column($percentage) {
+  $single: nth($percentage, 1);
+  $full: nth($percentage, 3);
+
+  // Set width as percentage.
+  width: percentage($single / $full);
+  $actual-space: $default-gutter / 2;
+  padding-left: $actual-space;
+  padding-right: $actual-space;
+}
+
+@mixin column-margin($percentage) {
+  $single: nth($percentage, 1);
+  $full: nth($percentage, 3);
+
+  margin-left: percentage($single / $full);
+}
+
+@mixin column-after($percentage) {
+  $single: nth($percentage, 1);
+  $full: nth($percentage, 3);
+
+  margin-right: percentage($single / $full);
+}

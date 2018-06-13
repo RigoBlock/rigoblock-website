@@ -1,0 +1,50 @@
+<div class="community-tab">
+  <div class="content">
+    <div class="social-block">
+      Join the conversation on our community channels.
+      <div class="social-links">
+        <a href="{{ site.telegram_link }}" target="_blank">
+          {% svg "_icons/telegram.svg" class="icon-telegram icon" %}
+        </a>
+        <a href="https://github.com/{{ site.github_username }}" target="_blank">
+          {% svg "_icons/github.svg" class="icon-github icon" %}
+        </a>
+        <a href="https://facebook.com/{{ site.facebook_username }}" target="_blank">
+          {% svg "_icons/facebook.svg" class="icon-github icon" %}
+        </a>
+        <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
+          {% svg "_icons/twitter.svg" class="icon-github icon" %}
+        </a>
+        <a href="https://linkedin.com/{{ site.linkedin_username }}" target="_blank">
+          {% svg "_icons/linkedin.svg" class="icon-github icon" %}
+        </a>
+        <a href="https://discord.com/{{ site.discord_username }}" target="_blank">
+          {% svg "_icons/discord.svg" class="icon-github icon" %}
+        </a>
+      </div>
+    </div>
+    <div class="mailing-block">
+      <span class="q">Interested in Rigoblock?</span>
+      <span class="a">Sign up to receive our monthly updates.</span>
+      <form>
+        <input type="email" placeholder="Your email" name="email" />
+        <button type="submit">
+          {% svg "_icons/submit.svg" class="icon-submit icon" %}
+        </button>
+      </form>
+    </div>
+    <div class="positions-block">
+      <span class="q">Want to join the team? </span>
+      <span class="a">We are always looking for talented and passionate people.</span>
+      <a href="{{ site.url }}/positions">
+        <div class="positions-button">
+          <div class="label">Open positions</div>
+          <div class="icon">
+            {% svg "_icons/submit.svg" class="icon-submit" %}
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="fake-bkg">&nbsp;</div>
+</div>

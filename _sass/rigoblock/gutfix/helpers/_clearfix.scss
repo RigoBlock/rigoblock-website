@@ -1,0 +1,13 @@
+// This placeholder class provides the classic clearfix functionality.
+// It's a placeholder class (as opposed to a mixin) since mixins tend to produce
+// quite big amouts of CSS output; placeholder class are optimized since all the
+// elements that @extend the placeholder class are listed together, along with
+// the content of the placeholder class.
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

@@ -1,0 +1,28 @@
+// Define a gutter context.
+//
+// @param $context-gutter: This parameter set the value of gutter beetween
+//   columns in the context.
+//   Can't be unitless. Defaults to pixels
+
+// Usage:
+//  @include with-gutter(15) {
+//    // Every columns declaration in this context use `15` instead of
+//    // global gutter
+//    @content
+//  }
+
+@mixin with-gutter($context-gutter) {
+  @if unitless($context-gutter) {
+    @warn "Assuming #{$context-gutter} to be in pixels";
+    $context-gutter: 1px * $context-gutter;
+  }
+  // This assignment to $gutter variable is meant to be local.
+  // Unfortunately, in current SASS version (3.3.4 (Maptastic Maple))
+  // it isn't possible.
+  // So I set the global $gutter value to local value and reset it
+  // to previous value at the end of context
+  $old-gutter: $default-gutter;
+  $default-gutter: $context-gutter;
+  @content;
+  $default-gutter: $old-gutter;
+}

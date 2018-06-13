@@ -1,0 +1,14 @@
+- link: ""
+  title: "Project"
+  subnav: true
+- link: "team"
+  title: "Team"
+- link: "faq"
+  title: "FAQ"
+- link: "press"
+  title: "Press"
+- link: "community"
+  title: "Community"
+  data: 'community'
+- link: "blog"
+  title: "Blog"

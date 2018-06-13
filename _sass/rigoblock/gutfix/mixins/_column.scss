@@ -1,0 +1,67 @@
+// Define a column.
+
+@mixin column(
+  $percentage,
+  $gutter: $default-gutter,
+  $gutter-type: $default-gutter-type
+) {
+  @include _column(
+    $percentage,
+    $parent: false,
+    $gutter: $gutter,
+    $gutter-type: $gutter-type
+  );
+}
+
+@mixin parent-column(
+  $percentage,
+  $gutter: $default-gutter,
+  $gutter-type: $default-gutter-type
+) {
+  @include _column(
+    $percentage,
+    $parent: true,
+    $gutter: $gutter,
+    $gutter-type: $gutter-type
+  );
+}
+
+// Private helper mixin.
+@mixin _column(
+  $percentage,
+  $parent: false,
+  $gutter: $default-gutter,
+  $gutter-type: $default-gutter-type
+) {
+  // Extract two values from a single string (which is actually an array of 3
+  // values).
+  // 1 of 5 -> $single: 1, $full: 5
+  $single: nth($percentage, 1);
+  $full: nth($percentage, 3);
+
+  // Set float to left.
+  float: left;
+
+  // Set width as percentage.
+  width: percentage($single / $full);
+
+  // Apply the padding to non-parent elements or reset padding.
+  // $gutter defaults to the gutter value, but if this is a parent column it is
+  // set to 0.
+  $actual-space: $gutter / 2;
+  @if $parent {
+    $actual-space: 0;
+  }
+
+  // Set the appropriate property (border or padding) based on the $gutter-type
+  // argument.
+  @if $gutter-type == padding {
+    padding-left: $actual-space;
+    padding-right: $actual-space;
+  } @else if $gutter-type == border {
+    border-right: $actual-space solid transparent;
+    border-left: $actual-space solid transparent;
+  } @else {
+    @warn "Gutter type can be 'padding' or 'border', was #{$gutter-type}"
+  }
+}

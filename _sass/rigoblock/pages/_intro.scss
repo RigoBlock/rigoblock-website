@@ -1,0 +1,238 @@
+.intro {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: $nav-width;
+  width: calc(100% - #{$nav-width});
+  @extend %clearfix;
+  padding-left: 60px;
+  padding-right: 60px;
+  @include tablet {
+    top: 35px;
+    width: 100%;
+    left: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @include mobile {
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .icon-logo {
+    @include rmargin-bottom(180);
+    width: 255px;
+    float: left;
+    margin-top: 25px;
+    margin-left: 25px;
+    transform: translateX(-($nav-width + 60));
+    @include tablet {
+      transform: initial;
+      margin-left: 20px;
+      margin-top: 25px;
+      margin-bottom: 60px;
+    }
+    @include mobile {
+      transform: initial;
+      @include parent-column(7 of 12);
+      margin-left: 20px;
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+  }
+  .intro-content-wrapper {
+    @include tablet {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: calc(100% - 60px);
+      left: 30px;
+    }
+  }
+  .content {
+    @include column(6 of 12);
+    clear: left;
+    @include tablet {
+      @include column(7 of 12);
+    }
+    @include mobile {
+      @include column(12 of 12);
+      margin-top: 40px;
+    }
+    h1 {
+      @include rfont-size(44, 400);
+      @include rmargin-bottom(40);
+      margin-top: -0.6vw;
+      @include tablet {
+        @include the-font-size(44);
+        width: 130%;
+      }
+      @include mobile {
+        @include the-font-size(27);
+        margin-bottom: 30px;
+      }
+    }
+    p {
+      @include rfont-size(20, 300);
+      line-height: 2.3vw;
+      // @include big-desktop {
+      //   @include the-font-size(27);
+      //   line-height: 44px;
+      // }
+      @include tablet {
+        @include the-font-size(20);
+        line-height: 34px;
+      }
+      @include mobile {
+        @include the-font-size(14);
+        margin-bottom: 70px;
+      }
+    }
+    .discover-more {
+      // @include parent-column(12 of 12);
+      @include rfont-size(20, 300);
+      @include rmargin-top(70);
+      display: flex;
+      cursor: pointer;
+      @include tablet {
+        @include the-font-size(20);
+        margin-top: 92px;
+      }
+      @include mobile {
+        display: none;
+      }
+      .icon {
+        width: 20px;
+        height: 30px;
+        align-self: center;
+        margin-right: 20px;
+      }
+      .label {
+        align-self: center;
+        position: relative;
+        &:after, &:before {
+          content: ' ';
+          position: absolute;
+          height: 4px;
+          width: 100%;
+          background: $yellow;
+          bottom: -4px;
+          left: 0;
+          transition: width $std-transition-time ease-in-out;
+        }
+        &:before {
+          background: $blue;
+          width: 0;
+          z-index: 1;
+        }
+      }
+      &:hover {
+        .label {
+          &:before {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .buttons {
+    @include column(3 of 12);
+    @include tablet {
+      @include parent-column(5 of 12);
+      margin-top: 153px;
+    }
+    @include mobile {
+      @include column(1 of 1);
+    }
+    .button {
+      width: 100%;
+      min-width: 230px;
+      @include rmargin-bottom(35);
+      @include tablet {
+        min-width: initial;
+      }
+      @include mobile {
+        @include parent-column(6 of 12);
+        width: calc(50% - 10px);
+        margin-bottom: 24px;
+        margin-top: 0;
+        min-width: initial;
+        &:nth-child(2n + 1) {
+          margin-right: 20px;
+        }
+        .icon-wrapper {
+          width: 40px;
+          height: 40px;
+        }
+        .label {
+          width: calc(100% - 40px);
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+  .social-activator {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    display: none;
+    @include mobile {
+      display: block;
+    }
+    &.open {
+      border: 2px solid $blue;
+      path {
+        fill: $blue;
+        stroke: $blue;
+      }
+      circle {
+        fill: $white;
+      }
+    }
+  }
+  .social-links-wrapper {
+    position: absolute;
+    right: 20px;
+    top: 23px;
+    @include tablet {
+      top: 30px;
+    }
+    @include mobile {
+      position: relative;
+      @include column(1 of 1);
+      right: initial;
+      left: initial;
+      top: initial;
+      display: none;
+      background: $blue;
+      padding: 20px;
+      margin-top: 10px;
+    }
+    @include rmargin-top(13);
+    .social-links {
+      display: flex;
+      a, a:visited {
+        display: block;
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+        @include tablet {
+          width: 30px;
+          height: 30px;
+        }
+        @include mobile {
+          color: $white;
+          path {
+            fill: $white;
+          }
+        }
+      }
+    }
+  }
+}
