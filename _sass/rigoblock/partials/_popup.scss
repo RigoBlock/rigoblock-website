@@ -1,0 +1,103 @@
+.popup-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(255,255,255,0) 0%, #054186 100%);
+  z-index: 10;
+  display: none;
+  &.open {
+    display: block;
+  }
+  .popup {
+    background: $blue;
+    padding: 55px;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    color: $white;
+    width: 35%;
+    @include tablet {
+      width: 50%;
+      left: 25%;
+    }
+    @include mobile {
+      width: 80%;
+      left: 10%;
+      padding: 15px;
+    }
+    .q {
+      @include rfont-size(20, 500);
+      display: block;
+      @include tablet {
+        @include the-font-size(18);
+      }
+      @include mobile {
+        @include the-font-size(14);
+      }
+    }
+    .a {
+      display: block;
+      @include rfont-size(20, 300);
+      @include tablet {
+        @include the-font-size(18);
+      }
+      @include mobile {
+        @include the-font-size(14);
+      }
+    }
+    form {
+      @include rmargin-top(20);
+      display: flex;
+      @include mobile {
+        margin-top: 10px;
+      }
+      input, button {
+        @extend %euclid;
+        @include rfont-size(14, 300);
+        -webkit-appearance: none;
+        outline: 0;
+        border: 1px solid $white;
+        background: transparent;
+        padding: 10px;
+        text-transform: uppercase;
+        float: left;
+        color: $white;
+        border-radius: 0;
+        margin: 0;
+        @include mobile {
+          @include the-font-size(14);
+        }
+        @include tablet {
+          @include the-font-size(14);
+        }
+        path, polyline {
+          stroke: $white !important;
+        }
+      }
+      button {
+        border-left: none;
+        font-size: 0;
+        width: 46px;
+        line-height: initial;
+      }
+      input {
+        width: 100%;
+      }
+    }
+    .close {
+      position: absolute;
+      right: -30px;
+      top: 0;
+      background-image: url('images/close.svg');
+      width: 14px;
+      height: 90px;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      @include mobile {
+        right: -20px;
+      }
+    }
+  }
+}

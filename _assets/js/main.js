@@ -16,3 +16,4 @@
 //= require _mobile
 //= require _animations
 //= require _social-activator
+//= require _popup

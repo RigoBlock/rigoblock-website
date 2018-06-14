@@ -30,6 +30,8 @@ discord_username: channels/rigoblock
 telegram_link: https://t.me/rigoblockprotocol
 beta_portal_link: https://beta.rigoblock.com
 
+token_sale_popup: true
+
 # Build settings
 markdown: kramdown
 theme: minima

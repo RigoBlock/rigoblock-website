@@ -36,7 +36,7 @@ layout: default
         </div>
       </div>
       <div class="buttons" data-show-on-scroll>
-        <a href="token-sale" class="icon-token-sale button">
+        <a href="token-sale" class="icon-token-sale button" data-token-popup>
           <div class="icon-wrapper">
             {% svg "_icons/token-sale.svg" class="icon-token-sale icon" %}
           </div>
@@ -63,5 +63,5 @@ layout: default
   {% endfor %}
 </div>
 <div class="token-sale-block">
-  <a href="token-sale">Join the token sale</a>
+  <a href="token-sale" data-token-popup>Join the token sale</a>
 </div>
