@@ -2,7 +2,7 @@
 title:  "A decentralized fund<br />infrastructure"
 subtitle: "03. Protocol"
 slug: "project-03-protocol"
-external_link: https://www.youtube.com/watch?v=4IMYWDzoDnQ
+external_link: /faq
 animation: true
 ---
 
