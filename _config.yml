@@ -53,6 +53,7 @@ assets:
     - assets/js
     - assets/downloads
     - assets/pdf
+    - assets/favicons
     - _assets/css
     - _assets/fonts
     - _assets/images
@@ -64,6 +65,7 @@ assets:
     - _assets/js
     - _assets/downloads
     - _assets/pdf
+    - _assets/favicons
 svg:
   optimize: true
 
