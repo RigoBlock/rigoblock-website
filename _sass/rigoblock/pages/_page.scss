@@ -1,23 +1,40 @@
 .wrapper.page {
-   p {
-     @include column(1 of 1);
-     @include rfont-size(16, 300);
-     line-height: 2vw;
-     margin-bottom: 10px;
-   }
-   h3 {
-     @include column(1 of 1);
-      @include rfont-size(16, 400);
-      margin-top: 30px;
-      margin-bottom: 5px;
-      text-transform: uppercase;
-
-   }
-   ul {
-     @include column(1 of 1);
-     list-style: initial;
-     @include rfont-size(16, 300);
-     line-height: 2vw;
-     list-style-position: inside;
-   }
+  p {
+    @include column(1 of 1);
+    @include rfont-size(16, 300);
+    line-height: 2vw;
+    margin-bottom: 10px;
+    @include tablet {
+      @include the-font-size(16);
+    }
+    @include mobile {
+      @include the-font-size(14);
+    }
+  }
+  h3 {
+    @include column(1 of 1);
+    @include rfont-size(16, 400);
+    margin-top: 30px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    @include tablet {
+      @include the-font-size(16);
+    }
+    @include mobile {
+      @include the-font-size(12);
+    }
+  }
+  ul {
+    @include column(1 of 1);
+    list-style: initial;
+    @include rfont-size(16, 300);
+    line-height: 2vw;
+    list-style-position: inside;
+    @include tablet {
+      @include the-font-size(16);
+    }
+    @include mobile {
+      @include the-font-size(14);
+    }
+  }
 }
