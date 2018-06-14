@@ -5,7 +5,7 @@
   //   @include column-margin(1 of 12);
   // }
   .roadmap-el {
-    @include parent-column(2.5 of 12);
+    @include parent-column(2.3 of 12);
     position: relative;
     border-radius: 100%;
     border: 2px solid $yellow;
@@ -29,7 +29,7 @@
       }
     }
     &:not(:first-child) {
-      margin-left: -6%;
+      margin-left: -3.5%;
     }
     .roadmap-content-wrapper {
       height: 0;
@@ -46,7 +46,7 @@
           width: 70%;
           left: 15%;
           text-align: center;
-          @include rfont-size(10, 400);
+          @include rfont-size(14, 400);
           @include tablet {
             @include the-font-size(14);
           }
