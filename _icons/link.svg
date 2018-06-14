@@ -4,19 +4,19 @@
     <title>490BF991-85B9-4107-BE57-B00318719D44</title>
     <desc>Created with sketchtool.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="RigoBlock-Home-HD-New" transform="translate(-851.000000, -3015.000000)">
-            <g id="03-protocol" transform="translate(218.000000, 2402.000000)">
-                <g id="Group-5-Copy" transform="translate(624.000000, 596.000000)">
-                    <g id="Browser" transform="translate(9.000000, 17.000000)">
-                        <g id="Group-17">
-                            <rect id="Read-Icone-Copy-2" fill="#054186" x="0" y="0" width="28" height="20"></rect>
-                            <rect id="Rectangle-2" fill="#FFFFFF" x="3" y="7" width="22" height="2"></rect>
-                            <rect id="Rectangle-2" fill="#FFAE00" x="3" y="2" width="2" height="2"></rect>
-                            <rect id="Rectangle-2" fill="#FFAE00" x="7" y="2" width="2" height="2"></rect>
-                            <rect id="Rectangle-2" fill="#FFAE00" x="11" y="2" width="2" height="2"></rect>
-                            <rect id="Rectangle-2" fill="#FFFFFF" x="3" y="11" width="22" height="2"></rect>
-                            <rect id="Rectangle-2" fill="#FFFFFF" x="3" y="15" width="22" height="2"></rect>
+    <g  stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g  transform="translate(-851.000000, -3015.000000)">
+            <g  transform="translate(218.000000, 2402.000000)">
+                <g  transform="translate(624.000000, 596.000000)">
+                    <g  transform="translate(9.000000, 17.000000)">
+                        <g >
+                            <rect  fill="#054186" x="0" y="0" width="28" height="20"></rect>
+                            <rect  fill="#FFFFFF" x="3" y="7" width="22" height="2"></rect>
+                            <rect  fill="#FFAE00" x="3" y="2" width="2" height="2"></rect>
+                            <rect  fill="#FFAE00" x="7" y="2" width="2" height="2"></rect>
+                            <rect  fill="#FFAE00" x="11" y="2" width="2" height="2"></rect>
+                            <rect  fill="#FFFFFF" x="3" y="11" width="22" height="2"></rect>
+                            <rect  fill="#FFFFFF" x="3" y="15" width="22" height="2"></rect>
                         </g>
                     </g>
                 </g>
