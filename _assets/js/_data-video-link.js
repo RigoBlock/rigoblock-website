@@ -8,7 +8,7 @@ $(function() {
     var videoId = getVideoId($target.attr('href'));
     var $div = $('<div/>').addClass('video-wrapper');
     var iframeMarkup = '<div class="iframe-wrapper"><div class="grid"><div class="responsive-wrapper"><iframe width="560" height="315" src="//www.youtube.com/embed/'
-    + videoId + '?autoplay=1" frameborder="0" allowfullscreen></iframe><div data-close-video class="close"></div></div></div></div>';
+    + videoId + '?autoplay=1&rel=0&showinfo=0&modestbranding=1&controls=0" frameborder="0" allowfullscreen></iframe><div data-close-video class="close"></div></div></div></div>';
     $div.html(iframeMarkup);
     $body.append($div);
     var scrollTop = $('#project-01-what').offset().top;
