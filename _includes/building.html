@@ -3,7 +3,7 @@
     {% if tool.image contains 'svg' %}
       {% svg "_icons/{{tool.image}}" %}
     {% else %}
-      {% asset {{tool.image}} !integrity %}
+      {% asset {{tool.image}} alt='{{tool.name}}' !integrity %}
     {% endif %}
   </a>
 </li>
