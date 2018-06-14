@@ -239,6 +239,7 @@
             margin-bottom: 30px;
             margin-top: 30px;
             align-items: center;
+            justify-content: space-between;
             // justify-content: space-evenly;
           }
           @include mobile {
@@ -255,7 +256,25 @@
               }
             }
             @include mobile {
-              width: 20%;
+              width: 50%;
+              height: 51px;
+              a, a:visited {
+                display: block;
+                width: 100%;
+                height: 51px;
+              }
+              img {
+                object-fit: contain;
+                object-position: left;
+                width: 100%;
+                height: 100%;
+              }
+              &:nth-child(2n + 1) {
+                padding-right: 10px;
+              }
+              &:nth-child(2n) {
+                padding-left: 10px;
+              }
             }
           }
           &.b {
