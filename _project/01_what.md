@@ -1,7 +1,7 @@
 ---
 title:  "What is Rigoblock?"
 subtitle: "01. What"
-video_link: https://www.youtube.com/watch?v=ZW6Mus9XBU8
+video_link: https://youtu.be/Nua3gVNOaeM
 slug: "project-01-what"
 animation: true
 ---
