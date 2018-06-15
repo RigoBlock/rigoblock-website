@@ -1,22 +1,30 @@
 <nav class="main-nav">
   <ul>
-    {% for el in site.data.nav %}
+    {% for el in site.data.nav %} 
+      {% if el.title == "Blog" %}
+      <li {%if el.data %}data-{{ el.data }}{% endif %}>
+        <a href="https://blog.rigoblock.com/" target="_blank" title="{{ el.title }}">
+          {{ el.title }}
+        </a>
+      </li>
+      {% else %}
       <li {%if el.subnav %} class="parent" {% endif %} {%if el.data %}data-{{ el.data }}{% endif %}>
         <a href="{{ site.url }}/{{ el.link }}{%if el.subnav %}#project-01-what{% endif %}" title="{{ el.title }}">
           {{ el.title }}
         </a>
         {% if el.subnav %}
-          <ul data-gumshoe>
-            {% for sub in site.project %}
-              <li>
-                <a href="{{ site.url }}/{{ el.link }}#{{sub.slug}}" title="{{ sub.subtitle }}" data-scroll>
-                  {{ sub.subtitle }}
-                </a>
-              </li>
-            {% endfor %}
-          </ul>
+        <ul data-gumshoe>
+          {% for sub in site.project %}
+          <li>
+            <a href="{{ site.url }}/{{ el.link }}#{{sub.slug}}" title="{{ sub.subtitle }}" data-scroll>
+              {{ sub.subtitle }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
         {% endif %}
       </li>
+      {% endif %} 
     {% endfor %}
   </ul>
 </nav>
