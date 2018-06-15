@@ -17,14 +17,22 @@
             </div>
             <div class="label">Learn more</div>
           </a>
-        {% endif %}
-        {% if slide.external_link %}
+        {% else %}
+          {% if slide.external_link != "/faq" %}
+            <a class="icon-external-link button" href="{{ slide.external_link }}">
+              <div class="icon-wrapper">
+                {% svg "_icons/read.svg" class="icon-read icon" %}
+              </div>
+              <div class="label">Learn more</div>
+            </a>
+          {% else %}
           <a class="icon-external-link button" href="{{ slide.external_link }}">
-            <div class="icon-wrapper">
-              {% svg "_icons/read.svg" class="icon-read icon" %}
-            </div>
-            <div class="label">Learn more</div>
-          </a>
+              <div class="icon-wrapper">
+                {% svg "_icons/read.svg" class="icon-read icon" %}
+              </div>
+              <div class="label">Read the FAQs</div>
+            </a>
+          {% endif %}
         {% endif %}
       </div>
     </div>
