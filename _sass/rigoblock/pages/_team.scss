@@ -66,7 +66,6 @@
           }
         }
         .bio {
-          min-height: 90px;
           @include rfont-size(16, 300);
           @include tablet {
             @include the-font-size(14);
