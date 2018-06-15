@@ -43,6 +43,7 @@ $(function() {
   $window.on('assets-loaded', function() {
     setSizes();
     $window.on('scroll', scrollCB);
+    $window.on('resize', setSizes);
     $discover.on('click', discoverMore);
     scrollCB();
   });
