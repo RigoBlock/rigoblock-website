@@ -32,7 +32,7 @@ subtitle: "Frequently Asked Question"
     >
     The project presents itself to the market with a fully functional Minimum Viable Product, an utility token with built-in incentives for contributors to the network, and strong corporate partnerships. The model chosen guarantees that, over time, ownership of the network will belong to who contributes the most to its success: token holders and wizards.
 
-08. <span>Was there any GRG Token pre-sale or ways to obtain GRG Tokens prior to the commencement of the EOS Token distribution?</span>
+08. <span>Was there any GRG Token pre-sale or ways to obtain GRG Tokens prior to the commencement of the GRG Token distribution?</span>
     >
     Yes. The pre-sale was necessary to bring the project to the market at a more mature stage. Early contributors are partners who wanted to accelerate the development of the RigoBlock protocol.
 

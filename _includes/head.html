@@ -17,7 +17,5 @@
 	<link rel="icon" sizes="228x228" href="{% asset 'coast-icon-228x228.png' @path %}">
 	<link rel="shortcut icon" href="{% asset 'favicon.ico' @path %}">
 	<link rel="icon" type="image/png" sizes="64x64" href="{% asset 'favicon.png' @path %}">
-  {%- if jekyll.environment == 'production' and site.google_analytics -%}
-    {%- include google-analytics.html -%}
-  {%- endif -%}
+	{% include analytics.html %}
 </head>
