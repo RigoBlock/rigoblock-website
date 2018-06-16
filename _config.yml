@@ -16,13 +16,10 @@
 title: Rigoblock
 email: gab@rigoblock.com
 description: >- # this means to ignore newlines until "baseurl:"
-  RigoBlock is a blockchain protocol for decentralized asset management. 
-  A Turing-complete solution to develop applications for asset management (i.e. for the fund management industry). 
-  The RigoBlock protocol offers new types of incentives for managers and investors by aligning their interests through the Proof-of-Performance algorithm, 
-  by eliminating management fees and performance fees from the funds.
+  Decentralized Asset Management
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
-# url: "http://localhost:4000"
+#url: "https://static.rigoblock.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://localhost:4000"
 twitter_username: rigoblock
 github_username: rigoblock
 facebook_username: RigoBlocks
@@ -32,6 +29,8 @@ telegram_link: https://t.me/rigoblockprotocol
 beta_portal_link: https://beta.rigoblock.com
 
 token_sale_popup: true
+
+mailchimp_list: //rigoblock.us15.list-manage.com/subscribe/post?u=61d62dbd39a3052da7ec9fdfa&amp;id=37290603c2
 
 # Build settings
 markdown: kramdown

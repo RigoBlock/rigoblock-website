@@ -3,6 +3,5 @@ layout: home
 ---
 
 # Decentralized asset <br/>management network
-A secure and efficient way<br />
-of organizing value, a meritocratic<br />
-system for rewarding managers.
+Helping the token economy<br />
+scale to the next level.

@@ -22,7 +22,7 @@ subtitle: "Frequently Asked Question"
 
 05. <span>What features, uses or attributes do GRG Tokens have?</span>
     >
-    New tokens are generated according to the Proof-of-Performance algorithm and distributed to managers of the funds as a rewards mechanism. Wizards looking to collect GRG tokens as the Proof-of-Performance rewards must hold a minimum amoung to GRGs set by the token holders. Users must hold a minimum amount of GRGs in order to access premium features like performances, analytics. Any platform built on top of the RigoBlock protocol can use GRGs to reward their users.
+    New tokens are generated according to the Proof-of-Performance algorithm and distributed to managers of the token pools as a rewards mechanism. Wizards looking to collect GRG tokens as the Proof-of-Performance rewards must hold a minimum amoung to GRGs set by the token holders. Users must hold a minimum amount of GRGs in order to access premium features like performances, analytics. Any platform built on top of the RigoBlock protocol can use GRGs to reward their users.
 
 06. <span>How does the GRG Token distribution work?</span>
     >
@@ -66,7 +66,7 @@ subtitle: "Frequently Asked Question"
     Poloniex  
     Bittrex  
     Jaxx  
-    Coinomi 
+    Coinomi
     Cex.io   
     Any other cryptocurrency exchange
 
@@ -114,5 +114,3 @@ subtitle: "Frequently Asked Question"
     >
     Platforms that adopt the RIGOBLOCK.COM Software do not require a foundation or a non-profit organization to help grow or maintain the network because such platform will be self-funding. Based on the RIGOBLOCK.COM Software, it is intended that any platform that adopts the RIGOBLOCK.COM Software will contribute to an increase the RigoBlock network value and will generate an inflation of GRGs at a rate of 1 to 2 percent per year to be distributed to the platform's pool wizards in connection to the size of the pool and its value relative to its value at the previous timestamp.RIGOBLOCK.COM will receive 5% of such inflation, guaranteeing the long-term sustainability of the project. In this case, such a platform will not be reliant on any one foundation, organization, or individual for its growth, development or maintenance.
 {:.faq-list}
-
-

@@ -26,9 +26,9 @@
     <div class="mailing-block">
       <span class="q">Interested in Rigoblock?</span>
       <span class="a">Sign up to receive our monthly updates.</span>
-      <form>
+      <form action="{{site.mailchimp_list}}" method="post" novalidate>
         <input type="email" placeholder="Your email" name="email" />
-        <button type="submit">
+        <button type="submit" value="Subscribe" name="subscribe">
           {% svg "_icons/submit.svg" class="icon-submit icon" %}
         </button>
       </form>
