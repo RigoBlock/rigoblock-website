@@ -18,8 +18,8 @@ email: gab@rigoblock.com
 description: >- # this means to ignore newlines until "baseurl:"
   Decentralized Asset Management
 baseurl: "" # the subpath of your site, e.g. /blog
-#url: "https://static.rigoblock.com" # the base hostname & protocol for your site, e.g. http://example.com
-url: "http://localhost:4000"
+url: "https://static.rigoblock.com" # the base hostname & protocol for your site, e.g. http://example.com
+# url: "http://localhost:4000"
 twitter_username: rigoblock
 github_username: rigoblock
 facebook_username: RigoBlockProtocol
