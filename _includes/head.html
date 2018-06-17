@@ -6,6 +6,13 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {%- feed_meta -%}
 
+  {% if page.summary %}
+    <meta name="description" content="{{ page.summary | escape }}">
+  {% endif %}
+  {%if page.tags %}
+    <meta name="keywords" content="{{ page.tags | join: ', ' | escape }}"/>
+  {%endif %}
+
 	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{% asset 'apple-touch-icon-152x152-precomposed.png' @path %}">
 	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="{% asset 'apple-touch-icon-120x120-precomposed.png' @path %}">
 	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="{% asset 'apple-touch-icon-76x76-precomposed.png' @path %}">
@@ -18,4 +25,5 @@
 	<link rel="shortcut icon" href="{% asset 'favicon.ico' @path %}">
 	<link rel="icon" type="image/png" sizes="64x64" href="{% asset 'favicon.png' @path %}">
 	{% include analytics.html %}
+
 </head>
