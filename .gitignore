@@ -1,6 +1,8 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
-.sass-cache/*
-/_site
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 website.code-workspace
 .vscode/*

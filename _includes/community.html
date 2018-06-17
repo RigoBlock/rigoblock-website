@@ -23,16 +23,53 @@
         </a>
       </div>
     </div>
-    <div class="mailing-block">
+    <!-- <div class="mailing-block">
       <span class="q">Interested in Rigoblock?</span>
       <span class="a">Sign up to receive our monthly updates.</span>
-      <form action="{{site.mailchimp_list}}" method="post" novalidate>
+      <form action="{{site.mailchimp_list}}" method="post" target="_blank" novalidate>
         <input type="email" placeholder="Your email" name="email" />
         <button type="submit" value="Subscribe" name="subscribe">
           {% svg "_icons/submit.svg" class="icon-submit icon" %}
         </button>
       </form>
-    </div>
+    </div> -->
+
+    <!-- <div class="mailing-block">
+      <div id="form-newsletter-input" class="clear">
+        <span class="q">Interested in Rigoblock?</span>
+        <span class="a">Sign up to receive our monthly updates.</span>
+        <form action="{{site.mailchimp_list}}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+          target="_blank" novalidate>
+          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+          <button type="submit" value="Subscribe" name="subscribe">
+            {% svg "_icons/submit.svg" class="icon-submit icon" %}
+          </button>
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_210acce5db69d3d4a04b0e25d_a268d63442" tabindex="-1" value="">
+          </div>
+        </form>
+      </div>
+      <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+      </div>
+      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+      <script type='text/javascript'>
+        (function ($) {
+          window.fnames = new Array();
+          window.ftypes = new Array();
+          fnames[0] = 'EMAIL';
+          ftypes[0] = 'email';
+          fnames[1] = 'FNAME';
+          ftypes[1] = 'text';
+          fnames[2] = 'LNAME';
+          ftypes[2] = 'text';
+        }(jQuery));
+        var $mcj = jQuery.noConflict(true);
+      </script>
+
+    </div> -->
+
     <div class="positions-block">
       <span class="q">Want to join the team? </span>
       <span class="a">We are always looking for talented and passionate people.</span>
