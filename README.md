@@ -55,7 +55,7 @@ This is an example object for `members` list (image, linkedin, github and twitte
 
   - name: "Gabriele Rigo"
     title: "Smart Contract R&D "
-    bio: "Previously treasurer @1bn+ usd global macro hedge fund and head of investment @25bn+ usd asset management company. Msc finance from bocconi & hsg."
+    bio: "Previously Treasurer @1BN+ USD Global Macro Hedge Fund and Head of Investment @25BN+ USD Asset Management Company. Msc Finance from Bocconi & HSG."
     image: "rigo.png"
     linkedin: 'https://linkedin.com'
     github: 'https://github.com'
@@ -64,8 +64,8 @@ This is an example object for `members` list (image, linkedin, github and twitte
 This is an example object for `advisors` list:
 
   - name: "Mikael Olofsson"
-    title: "Investor and advisor"
-    bio: "Co-founder ixledger technologies. Managing partner polymbios investment management."
+    title: "Investor and Advisor"
+    bio: "Co-founder iXledger Technologies. Managing Partner Polymbios Capital."
 
 
 ## `_project` folder

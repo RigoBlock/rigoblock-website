@@ -1,53 +1,53 @@
 members:
   - name: "Gabriele Rigo"
     title: "Smart Contract R&D "
-    bio: "Previously treasurer @1bn+ usd global macro hedge fund and head of investment @25bn+ usd asset management company. Msc finance from bocconi & hsg."
+    bio: "Previously Treasurer @1BN+ USD global macro hedge fund and Head of Investment @25BN+ USD asset management company. Msc finance from Bocconi & HSG."
     image: "rigo.png"
     linkedin: 'https://www.linkedin.com/in/gabrielerigo/'
     github: 'https://github.com'
     twitter: 'https://twitter.com'
   - name: "Hanna Keskin"
     title: "Operations & PR"
-    bio: "Business administration at university of applied sciences lugano. Previously apprentice at palo alto sa, auction bidder at spink switzerland. Fluent in 5 languages."
+    bio: "Business Administration at University of Applied Sciences Lugano. Previously Apprentice at Palo Alto SA, Auction Bidder at Spink Switzerland."
     image: "keskin.png"
     linkedin: 'https://www.linkedin.com/in/hanna-keskin-992263bb/'
     github: 'https://github.com'
     twitter: 'https://twitter.com'
   - name: "David Fava"
-    title: "UX & UI Lead, Unix System administrator "
-    bio: "Previously founder @ cloud hosting company. Partner blc network. Msc international economics from university of trieste."
+    title: "UX & UI Lead "
+    bio: "Previously Founder of a cloud hosting service provider. MSc International Business Economics and Foreign Exchange Markets from University of Trieste."
     image: "fava.png"
     linkedin: 'https://www.linkedin.com/in/favadavid/'
     github: 'https://github.com'
     twitter: 'https://twitter.com'
   - name: "Paolo Longato"
-    title: "Alpha tester"
-    bio: "Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system."
+    title: "Alpha Tester"
+    # bio: "IOs Developer with a strong background in Finance."
   - name: "Matteo Petrani"
-    title: "Experience designer"
-    bio: "Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system."
-    linkedin: 'https://www.linkedin.com/in/matteopetrani/'
+    title: "Experience Designer"
+    # bio: "UX Engineer."
+    # linkedin: 'https://www.linkedin.com/in/matteopetrani/'
   - name: "Luca del Bianco"
-    title: "Full-stack wizard"
-    bio: "Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system."
-    linkedin: 'https://www.linkedin.com/in/lucadelbianco/'
+    title: "Full-stack Wizard"
+    #bio: "Senior React Developer."
+    # linkedin: 'https://www.linkedin.com/in/lucadelbianco/'
   - name: "Federico Obialero"
     title: "Full-stack developer"
-    bio: "Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system."
+    #bio: "React Developer."
 advisors:
   - name: "Mikael Olofsson"
-    title: "Investor and advisor"
-    bio: "Co-founder ixledger technologies. Managing partner polymbios investment management."
+    title: "Investor and Business Advisor"
+    bio: "Co-founder iXledger Technologies. Managing partner Polymbios Capital."
     linkedin: 'https://www.linkedin.com/in/mikael-olofsson-9a865135/'
   - name: "Alberto Robbiani"
-    title: "advisor corporate clients"
-    bio: "Senior client advisor at crossinvest. Previously executive director at ubs."
+    title: "Advisor Corporate Clients"
+    bio: "Senior Client Advisor at Crossinvest. Previously Executive Director at UBS."
     linkedin: 'https://www.linkedin.com/in/alberto-robbiani-86a55ab5/'
-  - name: "Santosh Pandey"
-    title: "legal advisor"
-    bio: "Managing partner at p&y law offices. Managing director at western legal corporation limited."
-    linkedin: 'https://www.linkedin.com/in/thesantoshpandey/'
   - name: "Primoz Kordez"
-    title: "blockchain economics advisor"
-    bio: "Fintech advisor at cofound.It & iconomi."
+    title: "Blockchain Economics Advisor"
+    bio: "Fintech Advisor at Cofound.It & Iconomi. Certified FRM, GARP."
     linkedin: 'https://www.linkedin.com/in/primoz-kordez-frm-9878b463/'
+  - name: "Santosh Pandey"
+    title: "Legal Advisor"
+    bio: "Managing Partner at P&Y Law Offices. Managing Director at Western Legal Corporation Limited."
+    linkedin: 'https://www.linkedin.com/in/thesantoshpandey/'

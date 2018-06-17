@@ -1,16 +1,16 @@
 ---
 title:  "Being a community<br />means sharing ideals."
-subtitle: "06. Values"
-slug: "project-06-values"
+subtitle: "06. Principles"
+slug: "project-06-principles"
 ---
 
 - **Reliability**
 
-  We have created a trustworthy and secure fund.
+  We have created a bullet-proof pooled tokens management system.
 
 - **Accessibility**
 
-  We lower the barriers to entry into fund management.
+  We lower the barriers to entry into asset management.
 
 - **Transparency**
 
