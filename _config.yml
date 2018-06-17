@@ -22,7 +22,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://localhost:4000"
 twitter_username: rigoblock
 github_username: rigoblock
-facebook_username: RigoBlocks
+facebook_username: RigoBlockProtocol
 linkedin_username: company/rigoblock
 discord_username: channels/rigoblock
 telegram_link: https://t.me/rigoblockprotocol
@@ -32,12 +32,17 @@ token_sale_popup: true
 
 mailchimp_list: //rigoblock.us15.list-manage.com/subscribe/post?u=61d62dbd39a3052da7ec9fdfa&amp;id=37290603c2
 
+summary: RigoBlock is a blockchain protocol for decentralized asset management. A Turing-complete solution to develop applications for asset management (i.e. for the fund management industry). The RigoBlock protocol offers new types of incentives for managers and investors by aligning their interests through the Proof-of-Performance algorithm, by eliminating management fees and performance fees from the funds.
+
+tags: [asset management,decentralized asset management,decentralized hedge fund,investment management,blockchain investment management,blockchain asset management,decentralized fund infrastructure,token pool,token pools,ethereum mining,proof of stake mining,proof of stake,decentralized exchange,proof of performance,mutual funds,online share trading,managed funds,alternative investments,day trading strategies,top hedge funds,asset manager,ethereum asset manager,blockchain fund,hedge fund company,hedge fund manager]
+
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-inline-svg
+  - jekyll-sitemap
 collections:
   - project
   - press
