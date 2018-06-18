@@ -37,9 +37,9 @@
     padding-right: 60px;
     height: 100%;
     background: $bkg;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-evenly;
     @include mobile {
       @include column(12 of 12, 40px);
       justify-content: space-between;
@@ -55,13 +55,16 @@
     }
     .social-block {
       @include rfont-size(20, 500);
+      margin-top: 138px;
       @include mobile {
         @include the-font-size(14);
         margin-bottom: 50px;
+        margin-top: 40px;
       }
       @include tablet {
         @include the-font-size(18);
         margin-bottom: 70px;
+        margin-top: 63px;
       }
       .social-links {
         display: flex;
@@ -78,108 +81,6 @@
         }
       }
     }
-    .mailing-block, .positions-block {
-      .q, .a {
-        display: block;
-      }
-      .q {
-        @include rfont-size(20, 500);
-        @include tablet {
-          @include the-font-size(18);
-        }
-        @include mobile {
-          @include the-font-size(14);
-        }
-      }
-      .a {
-        @include rfont-size(20, 300);
-        @include tablet {
-          @include the-font-size(18);
-        }
-        @include mobile {
-          @include the-font-size(14);
-        }
-      }
-    }
-    .mailing-block {
-      @include mobile {
-        margin-bottom: 50px;
-      }
-      @include tablet {
-        margin-bottom: 70px;
-      }
-      form {
-        @include rmargin-top(20);
-        display: flex;
-        @include mobile {
-          margin-top: 10px;
-        }
-        input, button {
-          @extend %euclid;
-          @include rfont-size(14, 300);
-          -webkit-appearance: none;
-          outline: 0;
-          border: 1px solid $blue;
-          background: transparent;
-          padding: 10px;
-          text-transform: uppercase;
-          float: left;
-          color: $blue;
-          border-radius: 0;
-          margin: 0;
-          @include mobile {
-            @include the-font-size(14);
-          }
-          @include tablet {
-            @include the-font-size(14);
-          }
-        }
-        button {
-          border-left: none;
-          font-size: 0;
-          width: 46px;
-          line-height: initial;
-          cursor: pointer;
-        }
-        input {
-          width: 100%;
-        }
-      }
-    }
-    .positions-block {
-      .positions-button {
-        @include rmargin-top(20);
-        border: 1px solid $blue;
-        display: flex;
-        align-items: center;
-        @include mobile {
-          height: 42px;
-          margin-top: 10px;
-        }
-        @include tablet {
-          height: 42px;
-        }
-        .label {
-          @include rfont-size(14, 300);
-          text-transform: uppercase;
-          padding: 10px;
-          width: 100%;
-          @include mobile {
-            @include the-font-size(14);
-          }
-          @include tablet {
-            @include the-font-size(14);
-          }
-        }
-        .icon {
-          border-left: 1px solid $blue;
-          width: 46px;
-          padding: 10px;
-          font-size: 0;
-        }
-      }
-    }
-
   }
   .fake-bkg {
     @include parent-column(8 of 12);
