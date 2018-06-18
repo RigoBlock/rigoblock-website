@@ -235,58 +235,77 @@
           @include parent-column(1 of 1);
           display: flex;
           justify-content: flex-start;
+          align-items: center;
+          flex-wrap: wrap;
           @include tablet {
             margin-bottom: 30px;
             margin-top: 30px;
             align-items: center;
-            justify-content: space-between;
+            // justify-content: space-between;
             // justify-content: space-evenly;
           }
           @include mobile {
-            justify-content: space-between;
+            // justify-content: space-between;
             margin-bottom: 50px;
             align-items: center;
           }
           li {
-            @include tablet {
-              width: auto;
-              padding-right: 0;
-              &:not(:first-child) {
-                padding-left: 30px;
-              }
-            }
+            width: auto;
+            margin-right: 120px;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
             @include mobile {
-              width: 50%;
-              height: 51px;
-              a, a:visited {
-                display: block;
-                width: 100%;
-                height: 51px;
-              }
-              img {
-                object-fit: contain;
-                object-position: left;
-                width: 100%;
-                height: 100%;
-              }
-              &:nth-child(2n + 1) {
-                padding-right: 10px;
-              }
-              &:nth-child(2n) {
-                padding-left: 10px;
-              }
+              margin-right: 40px;
+              margin-bottom: 50px;
+            }
+            img {
+              float: left;
             }
           }
-          &.b {
-            li {
-              @include mobile {
-                width: 40%;
-                padding-left: 0;
-              }
-              @include tablet {
-                width: 50%;
-                padding-left: 0;
-              }
+            // @include tablet {
+            //   width: auto;
+            //   padding-right: 0;
+            //   &:not(:first-child) {
+            //     padding-left: 30px;
+            //   }
+            // }
+            // @include mobile {
+            //   width: 50%;
+            //   height: 51px;
+            //   a, a:visited {
+            //     display: block;
+            //     width: 100%;
+            //     height: 51px;
+            //   }
+            //   img {
+            //     object-fit: contain;
+            //     object-position: left;
+            //     width: 100%;
+            //     height: 100%;
+            //   }
+            //   &:nth-child(2n + 1) {
+            //     padding-right: 10px;
+            //   }
+            //   &:nth-child(2n) {
+            //     padding-left: 10px;
+            //   }
+            // }
+          // }
+          // &.b {
+          //   li {
+          //     @include mobile {
+          //       width: 40%;
+          //       padding-left: 0;
+          //     }
+          //     @include tablet {
+          //       width: 50%;
+          //       padding-left: 0;
+          //     }
+          //   }
+          // }
+          &:not(.b) {
+            img {
+              max-width: 80%;
             }
           }
         }
