@@ -99,5 +99,18 @@
         right: -20px;
       }
     }
+    .response {
+      @include rmargin-top(20);
+      @include mobile {
+        margin-top: 10px;
+      }
+      @include rfont-size(14, 300);
+      @include mobile {
+        @include the-font-size(14);
+      }
+      @include tablet {
+        @include the-font-size(14);
+      }
+    }
   }
 }
