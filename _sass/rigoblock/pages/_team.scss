@@ -11,7 +11,10 @@
     }
     ul {
       @include parent-column(1 of 1);
+      display: flex;
+      flex-wrap: wrap;
       li {
+        position: relative;
         @include column(3 of 12);
         @include rmargin-bottom(100);
         @include tablet {
@@ -67,6 +70,7 @@
         }
         .bio {
           @include rfont-size(16, 300);
+          padding-bottom: 40px;
           @include tablet {
             @include the-font-size(14);
           }
@@ -77,6 +81,10 @@
         }
         .social {
           display: flex;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          @include column(1 of 1);
           @include mobile {
             width: 100%;
           }
@@ -93,8 +101,16 @@
   }
   .team {
     ul li {
+      &:nth-child(3) {
+        margin-right: 25%;
+        @include mobile {
+          margin-right: 0;
+        }
+      }
       &:nth-child(4) {
         clear: left;
+        page-break-after: always;
+        break-after: always;
         @include mobile {
           margin-top: 40px;
         }
