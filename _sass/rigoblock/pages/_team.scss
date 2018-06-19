@@ -169,6 +169,7 @@
         @include rmargin-top(40);
         border: 1px solid $blue;
         display: flex;
+        height: 52px;
         align-items: center;
         float: left;
         transition: all $std-transition-time ease-in-out;
@@ -207,5 +208,11 @@
         }
       }
     }
+  }
+}
+
+body.IE {
+  .team.wrapper .open-positions.open-positions .positions-button .icon {
+    height: 52px;
   }
 }

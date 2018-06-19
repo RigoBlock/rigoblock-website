@@ -2,10 +2,10 @@ $(function() {
   var $window = $(window);
   var scroll = new SmoothScroll('[data-scroll]', {
     offset: function() {
-      return -$window.height();
+      return 1;
     }
   });
   gumshoe.init({
-    offset: -$window.height()
+    offset: 1
   });
 });

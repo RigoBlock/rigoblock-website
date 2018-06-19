@@ -152,3 +152,11 @@
     }
   }
 }
+body.IE {
+  .button .icon-wrapper {
+    z-index: 0;
+  }
+  .position-button .icon, .press-button .icon {
+    height: 52px;
+  }
+}

@@ -7,7 +7,7 @@
 
     $.fn.extend({
       scrollspy: function ( options ) {
-        
+
           var defaults = {
             min: 0,
             max: 0,
@@ -19,7 +19,7 @@
             onLeave: options.onLeave ? options.onLeave : [],
             onTick: options.onTick ? options.onTick : []
           }
-          
+
           var options = $.extend( {}, defaults, options );
 
           return this.each(function (i) {
@@ -31,14 +31,14 @@
               var buffer = o.buffer;
               var enters = leaves = 0;
               var inside = false;
-                            
+
               /* add listener to container */
               $container.bind('scroll.' + o.namespace, function(e){
                   var position = {top: $(this).scrollTop(), left: $(this).scrollLeft()};
                   var xy = (mode == 'vertical') ? position.top + buffer : position.left + buffer;
                   var max = o.max;
                   var min = o.min;
-                  
+
                   /* fix max */
                   if($.isFunction(o.max)){
                     max = o.max();
@@ -52,29 +52,29 @@
                   if(max == 0){
                       max = (mode == 'vertical') ? $container.height() : $container.outerWidth() + $(element).outerWidth();
                   }
-                  
+
                   /* if we have reached the minimum bound but are below the max ... */
                   if(xy >= min && xy <= max){
                     /* trigger enter event */
                     if(!inside){
                        inside = true;
                        enters++;
-                       
+
                        /* fire enter event */
                        $(element).trigger('scrollEnter', {position: position})
                        if($.isFunction(o.onEnter)){
                          o.onEnter(element, position);
                        }
-                      
+
                      }
-                     
+
                      /* trigger tick event */
                      $(element).trigger('scrollTick', {position: position, inside: inside, enters: enters, leaves: leaves})
                      if($.isFunction(o.onTick)){
                        o.onTick(element, position, inside, enters, leaves);
                      }
                   }else{
-                    
+
                     if(inside){
                       inside = false;
                       leaves++;
@@ -86,12 +86,12 @@
                       }
                     }
                   }
-              }); 
+              });
 
           });
       }
 
     })
 
-    
+
 })( jQuery, window, document, undefined );

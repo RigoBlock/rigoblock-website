@@ -1,4 +1,6 @@
 .wrapper {
+  width: 100%;
+  float: left;
   &.page, &.press, &.team, &.positions {
     padding-left: 60px;
     padding-right: 60px;

@@ -1,6 +1,6 @@
+//= require vendor/jquery.min
 //= require vendor/imagesloaded.pkgd.min
 //= require vendor/jquery-scrollspy
-//= require vendor/jquery.easing.1.3
 //= require vendor/smooth-scroll.polyfills.min
 //= require vendor/gumshoe.min
 //= require vendor/lottie
@@ -17,3 +17,4 @@
 //= require _animations
 //= require _social-activator
 //= require _popup
+//= require _ie

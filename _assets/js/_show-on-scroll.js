@@ -7,11 +7,9 @@ $(function() {
   var setSpy = function() {
     $showOnScroll.each(function() {
       var $this = $(this);
-      if (!window.isMobile) {
-        var initialPosition = $this.offset();
-        if ($(window).scrollTop() > (initialPosition.top - $(window).height())) {
-          $this.addClass('scrolled');
-        }
+      var initialPosition = $this.offset();
+      if ($(window).scrollTop() > (initialPosition.top - $(window).height())) {
+        $this.addClass('scrolled');
       }
       $this.scrollspy({
         min: function() {
@@ -25,7 +23,7 @@ $(function() {
           var animData = $this.data('customAnimation');
           if (animData) {
             animData.goToAndPlay(0);
-          } else if (!window.isMobile) {
+          } else {
             $this.addClass('scrolled');
           }
         }
