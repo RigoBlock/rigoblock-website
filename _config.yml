@@ -42,6 +42,7 @@ plugins:
   - jekyll-feed
   - jekyll-inline-svg
   - jekyll-sitemap
+  - jekyll-autoprefixer
 collections:
   - project
   - press
@@ -74,6 +75,9 @@ assets:
     - _assets/favicons
 svg:
   optimize: true
+autoprefixer:
+  browsers:
+    - last 15 versions
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

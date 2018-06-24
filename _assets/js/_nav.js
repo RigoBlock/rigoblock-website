@@ -1,6 +1,6 @@
 $(function() {
   var $mainNav = $('.main-nav');
-  var $genericA = $mainNav.find('li:not(.parent):not([data-community]) > a');
+  var $genericA = $mainNav.find('li:not([data-community]) > a');
   var $navElements = $mainNav.find('li.parent > a');
   var $subNavElements = $mainNav.find('[data-scroll-to]');
   var $window = $(window);
@@ -19,8 +19,10 @@ $(function() {
       $subnav.slideToggle(500);
     }
   };
-  $navElements.on('click', mainClickCallback);
   $genericA.on('click', function() {
-    $window.trigger('close-nav');
+    if (window.isMobile) {
+      $window.trigger('close-nav');
+    }
   });
+  $navElements.on('click', mainClickCallback);
 });

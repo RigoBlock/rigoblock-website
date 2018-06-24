@@ -2,7 +2,7 @@ body.home {
   header {
     position: absolute;
     height: 100vh;
-    top: 0;
+    top: 100vh;
     &.sticky {
       position: fixed;
       top: -1px;

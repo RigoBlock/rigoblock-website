@@ -11,7 +11,10 @@
     }
     ul {
       @include parent-column(1 of 1);
+      display: flex;
+      flex-wrap: wrap;
       li {
+        position: relative;
         @include column(3 of 12);
         @include rmargin-bottom(100);
         @include tablet {
@@ -67,6 +70,7 @@
         }
         .bio {
           @include rfont-size(16, 300);
+          padding-bottom: 40px;
           @include tablet {
             @include the-font-size(14);
           }
@@ -77,6 +81,10 @@
         }
         .social {
           display: flex;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          @include column(1 of 1);
           @include mobile {
             width: 100%;
           }
@@ -93,15 +101,23 @@
   }
   .team {
     ul li {
+      &:nth-child(3) {
+        margin-right: 25%;
+        @include mobile {
+          margin-right: 0;
+        }
+      }
       &:nth-child(4) {
         clear: left;
+        page-break-after: always;
+        break-after: always;
         @include mobile {
           margin-top: 40px;
         }
       }
     }
   }
-  .advisors {
+  .advisors, .open-positions {
     @include rmargin-bottom(290);
     h3 {
       @include rfont-size(38, 400);
@@ -123,5 +139,80 @@
         background: $blue;
       }
     }
+    &.open-positions {
+      @include parent-column(1 of 1);
+      .pos-wrapper {
+        @include column(1 of 1);
+      }
+      .q, .a {
+        display: block;
+      }
+      .q {
+        @include rfont-size(20, 500);
+        @include tablet {
+          @include the-font-size(18);
+        }
+        @include mobile {
+          @include the-font-size(14);
+        }
+      }
+      .a {
+        @include rfont-size(20, 300);
+        @include tablet {
+          @include the-font-size(18);
+        }
+        @include mobile {
+          @include the-font-size(14);
+        }
+      }
+      .positions-button {
+        @include rmargin-top(40);
+        border: 1px solid $blue;
+        display: flex;
+        height: 52px;
+        align-items: center;
+        float: left;
+        transition: all $std-transition-time ease-in-out;
+        @include mobile {
+          height: 42px;
+          margin-top: 10px;
+        }
+        @include tablet {
+          height: 42px;
+        }
+        .label {
+          @include rfont-size(14, 300);
+          padding: 10px;
+          width: 100%;
+          @include mobile {
+            @include the-font-size(14);
+          }
+          @include tablet {
+            @include the-font-size(14);
+          }
+        }
+        .icon {
+          border-right: 1px solid $blue;
+          width: 57px;
+          padding: 16px 8px;
+          font-size: 0;
+          @include tablet {
+            padding: 13px 8px;
+          }
+          @include mobile {
+            padding: 13px 8px;
+          }
+        }
+        &:hover {
+          box-shadow: #ffae00 7px 7px 0px;
+        }
+      }
+    }
+  }
+}
+
+body.IE {
+  .team.wrapper .open-positions.open-positions .positions-button .icon {
+    height: 52px;
   }
 }

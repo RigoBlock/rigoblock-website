@@ -61,6 +61,7 @@
         border: 1px solid $white;
         background: transparent;
         padding: 10px;
+        height: 52px;
         text-transform: uppercase;
         float: left;
         color: $white;
@@ -99,5 +100,23 @@
         right: -20px;
       }
     }
+    .response {
+      @include rmargin-top(20);
+      @include mobile {
+        margin-top: 10px;
+      }
+      @include rfont-size(14, 300);
+      @include mobile {
+        @include the-font-size(14);
+      }
+      @include tablet {
+        @include the-font-size(14);
+      }
+    }
+  }
+}
+body.IE {
+  .popup-wrapper .popup form input {
+    width: calc(100% - 52px);
   }
 }

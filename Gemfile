@@ -23,6 +23,7 @@ group :jekyll_plugins do
   gem "jekyll-inline-svg", "~>0.0.1"
   gem "jekyll-assets"
   gem 'jekyll-sitemap'
+  gem 'jekyll-autoprefixer'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

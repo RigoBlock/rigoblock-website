@@ -8,6 +8,8 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    autoprefixer-rails (6.3.7)
+      execjs
     colorator (1.1.0)
     concurrent-ruby (1.0.5)
     em-websocket (0.5.1)
@@ -47,6 +49,8 @@ GEM
       nokogiri (~> 1.8)
       pathutil (~> 0.16)
       sprockets (>= 3.3, < 4.1.beta)
+    jekyll-autoprefixer (1.0.1)
+      autoprefixer-rails (~> 6.3.6)
     jekyll-feed (0.9.3)
       jekyll (~> 3.3)
     jekyll-inline-svg (0.0.2)
@@ -110,6 +114,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.8.2)
   jekyll-assets
+  jekyll-autoprefixer
   jekyll-feed (~> 0.6)
   jekyll-inline-svg (~> 0.0.1)
   jekyll-sitemap

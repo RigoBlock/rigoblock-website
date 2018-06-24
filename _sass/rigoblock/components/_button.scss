@@ -76,6 +76,9 @@
     align-self: center;
     width: calc(100% - 54px);
   }
+  .icon-newsletter {
+    width: 35px;
+  }
 }
 
 .position-button, .press-button {
@@ -147,5 +150,13 @@
     .label {
       width: 88%;
     }
+  }
+}
+body.IE {
+  .button .icon-wrapper {
+    z-index: 0;
+  }
+  .position-button .icon, .press-button .icon {
+    height: 52px;
   }
 }
