@@ -110,6 +110,10 @@ that configures the position object. Here is an example:
 ## Static assets
 Static assets can be copied in `assets\downloads` and called with `asset`: template tag whthout specifying the complete path.
 
-  {% asset 'white-paper.pdf' %}
+  {% asset 'filename.ext' %}
+
+PDF files are copied in `assets\pdfs`
+
+  {% asset 'RigoBlockPaper.pdf' @path %}
 
   will produce the complete path.
