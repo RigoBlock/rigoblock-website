@@ -112,8 +112,13 @@ Static assets can be copied in `assets\downloads` and called with `asset`: templ
 
   {% asset 'filename.ext' %}
 
+  For the whitepaper a different method is used, as to prevent hased links to the file
+  
+  {{site.url}}/assets/downloads/white-paper.pdf
+
 PDF files are copied in `assets\pdfs`
 
   {% asset 'RigoBlockPaper.pdf' @path %}
 
   will produce the complete path.
+  This produces a hashed link which is not good in case of backlinks to the paper
