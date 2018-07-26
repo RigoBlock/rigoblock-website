@@ -18,3 +18,4 @@
 //= require _social-activator
 //= require _popup
 //= require _ie
+//= require _lang

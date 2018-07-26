@@ -1,0 +1,14 @@
+<nav class="languages">
+  {% include current_lang.html %}
+  <ul>
+    {% for el in site.languages %}
+      {% if (el != current_lang) %}
+        <li>
+          <a lang="{{ el.code }}" hreflang="{{ el.code }}" href="/{{ el.lang }}">
+            {{ el.name }}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>

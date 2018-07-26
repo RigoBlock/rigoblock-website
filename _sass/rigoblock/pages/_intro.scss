@@ -216,6 +216,7 @@
     }
     @include rmargin-top(13);
     .social-links {
+      float: left;
       display: flex;
       a, a:visited {
         display: block;

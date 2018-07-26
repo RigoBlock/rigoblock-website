@@ -9,8 +9,11 @@
     <div class="nav-footer">
       {% include nav-buttons.html %}
     </div>
+
+    {% include current_lang.html %}
   </div>
   {% include community.html %}
+  {% include lang_switcher.html %}
   <div class="mobile-fake-bkg">&nbsp;</div>
 </header>
 <div class="mobile-header">
@@ -21,6 +24,10 @@
   <div class="community-icon-nav">
     {% svg "_icons/back.svg" class="icon-back" %}
     Back to menu
+  </div>
+  <div class="languages-icon-nav">
+    {% svg "_icons/back.svg" class="icon-back" %}
+    Stay {{ current_lang.name }}
   </div>
   <div class="buttons">
     {% include nav-buttons.html %}

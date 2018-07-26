@@ -101,6 +101,30 @@ header.site-header {
       }
     }
   }
+  .current-lang {
+    display: none;
+    @extend %font-light-18;
+    float: left;
+    border-bottom: 1px solid $blue;
+    margin-top: 76px;
+    @include tablet {
+      display: block;
+    }
+    @include mobile {
+      display: block;
+      margin-top: 18px;
+    }
+    a, a:visited {
+      padding: 0 2px 2px 2px;
+    }
+    .arrow-down {
+      display: inline-block;
+      width: 10px;
+      transform: rotate(-90deg);
+      vertical-align: middle;
+    }
+
+  }
   .nav-footer {
     position: absolute;
     left: 0;
@@ -191,7 +215,7 @@ body.community-open {
       }
     }
   }
-  .community-icon-nav {
+  .community-icon-nav, .languages-icon-nav {
     @include the-font-size(13);
     font-weight: 500;
     position: absolute;
@@ -299,6 +323,14 @@ body.mobile-nav-open {
 body.community-open {
   .mobile-header {
     .community-icon-nav {
+      transform: translateX(0);
+    }
+  }
+}
+
+body.languages-open {
+  .mobile-header {
+    .languages-icon-nav {
       transform: translateX(0);
     }
   }

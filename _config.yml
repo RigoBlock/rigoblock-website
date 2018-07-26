@@ -35,6 +35,43 @@ mailchimp_list: //landing.mailerlite.com/webforms/landing/w2r6k9
 
 keywords: [asset management,decentralized asset management,decentralized hedge fund,investment management,blockchain investment management,blockchain asset management,decentralized fund infrastructure,token pool,token pools,ethereum mining,proof of stake mining,proof of stake,decentralized exchange,proof of performance,mutual funds,online share trading,managed funds,alternative investments,day trading strategies,top hedge funds,asset manager,ethereum asset manager,blockchain fund,hedge fund company,hedge fund manager]
 
+lang: 'en'
+
+languages:
+  - lang: 'en'
+    code: 'en-us'
+    name: 'English'
+  - lang: 'ko'
+    code: 'ko-kr'
+    name: '한국어'
+  - lang: 'es'
+    code: 'es-es'
+    name: 'Español'
+  - lang: 'zh'
+    code: 'zh-cn'
+    name: '中文'
+  - lang: 'ja'
+    code: 'ja'
+    name: '日本語'
+  - lang: 'hi'
+    code: 'hi'
+    name: 'हिन्दी, हिंदी'
+  - lang: 'it'
+    code: 'it-it'
+    name: 'Italiano'
+  - lang: 'ar'
+    code: 'ar-sa'
+    name: 'العربيةी'
+  - lang: 'ru'
+    code: 'ru-ru'
+    name: 'русский'
+  - lang: 'pt'
+    code: 'pt-pt'
+    name: 'Português'
+  - lang: 'fr'
+    code: 'fr-fr'
+    name: 'Français'
+
 # Build settings
 markdown: kramdown
 theme: minima

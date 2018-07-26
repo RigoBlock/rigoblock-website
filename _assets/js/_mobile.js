@@ -2,6 +2,7 @@ $(function() {
   'use strict';
   var $mobileNav = $('.mobile-header .icon-nav, .mobile-fake-bkg');
   var $communityTab = $('.community-tab');
+  var $langTab = $('header.site-header > .languages');
   var $body = $('body');
   var $window = $(window);
 
@@ -10,6 +11,8 @@ $(function() {
     if (!$body.hasClass('mobile-nav-open')) {
       $communityTab.removeClass('open');
       $body.removeClass('community-open');
+      $langTab.removeClass('open');
+      $body.removeClass('languages-open');
     }
   };
 
