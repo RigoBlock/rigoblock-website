@@ -1,5 +1,5 @@
 ---
-title:  "A good project starts<br />with good relationships"
+title:  "A growing ecosystem"
 subtitle: "07. Partners"
 slug: "project-07-partners"
 ---
