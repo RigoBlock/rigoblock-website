@@ -1,5 +1,5 @@
 ---
-title:  "Being a community<br />means sharing ideals."
+title:  "Our community's<br />core values"
 subtitle: "06. Principles"
 slug: "project-06-principles"
 ---
