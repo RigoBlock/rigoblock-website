@@ -2,7 +2,7 @@
 title:  "Read more in the Bluepaper"
 subtitle: "04. Bluepaper"
 slug: "grgtoken-04-bluepaper"
-external_link: /assets/downloads/bluepaper.pdf
+external_link: /assets/downloads/BluePaper.pdf
 animation: true
 ---
 
