@@ -9,7 +9,7 @@
         </a>
       </li>
       {% elsif el.title == "GRG Token" %}
-      <!-- <li {%if el.subnav %} class="parent" {% endif %} {%if el.data %}data-{{ el.data }}{% endif %}>
+      <li {%if el.subnav %} class="parent" {% endif %} {%if el.data %}data-{{ el.data }}{% endif %}>
         <a href="{{ site.url }}/{{ el.link }}{%if el.subnav %}#grgtoken-01-scope{% endif %}" title="{{ el.title }}">
           {{ el.title }}
         </a>
@@ -24,7 +24,7 @@
           {% endfor %}
         </ul>
         {% endif %}
-      </li> -->
+      </li>
       {% else %}
       <li {%if el.subnav %} class="parent" {% endif %} {%if el.data %}data-{{ el.data }}{% endif %}>
         <a href="{{ site.url }}/{{ el.link }}{%if el.subnav %}#project-01-what{% endif %}" title="{{ el.title }}">

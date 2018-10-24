@@ -30,6 +30,16 @@ layout: default
         <!-- {% include lang_switcher.html %} -->
       </div>
     </div>
+    <div id="whitelist-button" class="fade-in">
+      <div class="shake">
+        <a href="https://tokenmarket.net/preregistration/rigoblock/enter" class="icon-ico-sale button shadow" target="_blank">
+          <div class="icon-wrapper">
+            {% svg "_icons/link.svg" class="icon-link icon" %}
+          </div>
+          <div class="label whitelist"><div class="dotted">Enter <span class="icotext">ICO</span> Whitelist</div></div>
+        </a>
+      </div>
+    </div>
     <div class="intro-content-wrapper">
       <div class="content" data-show-on-scroll>
         {{ content }}
@@ -39,12 +49,6 @@ layout: default
         </div>
       </div>
       <div class="buttons" data-show-on-scroll>
-        <a href="https://tokenmarket.net/preregistration/rigoblock/enter" class="icon-token-sale button" target="_blank">
-          <div class="icon-wrapper">
-            {% svg "_icons/link.svg" class="icon-link icon" %}
-          </div>
-          <div class="label">Get Whitelisted</div>
-        </a>
         <a href="token-sale" class="icon-token-sale button" data-token-popup>
           <div class="icon-wrapper">
             {% svg "_icons/busta.svg" class="icon-newsletter icon" %}
