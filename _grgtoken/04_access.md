@@ -1,7 +1,7 @@
 ---
 title:  "GRG as an access token"
 subtitle: "05. Access"
-slug: "project-05-access"
+slug: "grgtoken-05-access"
 ---
 
 Users looking to access the portal https://beta.rigoblock.com are required to hold 1 GRG token.

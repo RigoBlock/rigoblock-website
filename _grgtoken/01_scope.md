@@ -1,7 +1,7 @@
 ---
 title:  "helping to organize tokens"
 subtitle: "01. Scope"
-slug: "grg-01-scope"
+slug: "grgtoken-01-scope"
 animation: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 title:  "The use of the GRG token"
 subtitle: "03. GRG utility"
-slug: "project-03-utility"
+slug: "grgtoken-03-utility"
 animation: true
 ---
 

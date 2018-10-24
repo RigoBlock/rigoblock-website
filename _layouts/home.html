@@ -65,6 +65,11 @@ layout: default
     {% include project_slide.html %}
   {% endfor %}
 </div>
+<div class="grgtoken-slides">
+  {% for slide in site.grgtoken %}
+    {% include grgtoken_slide.html %}
+  {% endfor %}
+</div>
 <div class="token-sale-block">
   <a href="token-sale" data-token-popup>Join the Newsletter</a>
 </div>

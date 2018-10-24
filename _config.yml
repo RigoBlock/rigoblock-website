@@ -81,6 +81,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-autoprefixer
 collections:
+  - grgtoken
   - project
   - press
   - positions

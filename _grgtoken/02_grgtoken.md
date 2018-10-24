@@ -1,7 +1,7 @@
 ---
 title:  "the role of the GRG token"
 subtitle: "02. GRG token"
-slug: "project-02-grgtoken"
+slug: "grgtoken-02-grgtoken"
 animation: true
 ---
 
