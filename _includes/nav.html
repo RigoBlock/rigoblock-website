@@ -1,9 +1,10 @@
 <nav class="main-nav">
   <ul>
-    {% for el in site.data.nav %} 
+    {% for el in site.data.nav %}
       {% if el.title == "Blog" %}
       <li {%if el.data %}data-{{ el.data }}{% endif %}>
-        <a href="https://blog.rigoblock.com/" target="_blank" title="{{ el.title }}">
+        <!--a href="https://blog.rigoblock.com/" target="_blank" title="{{ el.title }}"-->
+        <a href="https://medium.com/rigoblock" target="_blank" title="{{ el.title }}">
           {{ el.title }}
         </a>
       </li>
@@ -24,7 +25,7 @@
         </ul>
         {% endif %}
       </li>
-      {% endif %} 
+      {% endif %}
     {% endfor %}
   </ul>
 </nav>

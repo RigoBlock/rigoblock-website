@@ -104,7 +104,7 @@ subtitle: "Frequently Asked Question"
 
 19. <span>Where do the proceeds from the GRG Token distribution go?</span>
     >
-    Proceeds from the GRG Token distribution will be the revenue of rigoblock.com.
+    Proceeds from the GRG Token distribution will be used for the further development and scaling of the RigoBlock platform to ensure the long-term success of the project.
 
 20. <span>What does rigoblock.com plan to use proceeds from the GRG Token distribution for?</span>
     >
