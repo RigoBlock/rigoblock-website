@@ -1,5 +1,5 @@
 ---
-title:  "the role of the GRG token"
+title:  "The role of the GRG token"
 subtitle: "02. GRG token"
 slug: "grgtoken-02-grgtoken"
 animation: true
