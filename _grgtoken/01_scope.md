@@ -1,5 +1,5 @@
 ---
-title:  "helping to organize tokens"
+title:  "Helping to organize tokens"
 subtitle: "01. Scope"
 slug: "grgtoken-01-scope"
 animation: true

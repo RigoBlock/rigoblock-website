@@ -1,13 +1,9 @@
 - link: ""
   title: "Project"
   subnav: true
-- link: ""
-  title: "GRG Token"
-  subnav: true
-# - link: "grg"
-#   title: "GRG token"
-# - link: "grg2"  
-#   title: "GRG token 2"
+#- link: ""
+#  title: "GRG Token"
+#  subnav: true
 - link: "team"
   title: "Team"
 - link: "faq"
