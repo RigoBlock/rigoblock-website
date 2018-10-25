@@ -1,7 +1,8 @@
 ---
-title:  "GRG as the basis<br />of the incentives mechanism"
-subtitle: "06. Incentives"
-slug: "grgtoken-06-incentives"
+title: "GRG as the basis<br />of the incentives mechanism"
+subtitle: "05. Incentives"
+slug: "grgtoken-05-incentives"
+animation: true
 ---
 
 The Proof-of-Performance algorithm automatically rewards the pools operators.
