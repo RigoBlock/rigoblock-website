@@ -1,8 +1,7 @@
 ---
-title: "GRG as a basis<br />for optimal governance"
+title: "GRG as the basis<br />for optimal governance"
 subtitle: "06. Governance"
 slug: "grgtoken-06-governance"
-animation: true
 ---
 
 The parameters of the Proof-of-Performance algorithm, which determine the resulting overall inflation, are set by the token holders.
