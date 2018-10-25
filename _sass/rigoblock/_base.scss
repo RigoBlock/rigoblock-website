@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   display: block;
   color: $black;
   font-size: 10px;
@@ -15,7 +16,8 @@ body {
   width: 100%;
 }
 
-a, a:visited {
+a,
+a:visited {
   color: $blue;
   transition: all .3s ease-in-out;
   outline: 0 !important;
@@ -25,77 +27,13 @@ main.page-content {
   width: 100%;
   float: left;
   padding-left: 220px;
+
   @include tablet {
     padding-left: 0;
   }
+
   @include mobile {
     padding-left: 0;
     padding-top: 40px;
-  }
-}
-
-#whitelist-button {
-  top: 120px;
-  position: relative;
-}
-
-.whitelist {
-  font-weight: 700;
-}
-.shadow {
-  -moz-box-shadow: 0 0 5px #054186;
-  -webkit-box-shadow: 0 0 5px#054186;
-  box-shadow: 0 0 5px #054186;
-}
-
-.dotted{
-  border-bottom-style: dotted;
-  border-bottom-width: 1px;
-}
-.fade-in {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 0.5s;
-}
-.shake {
-  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-  animation-delay: 0.5s;
-	animation-duration: 1.5s;
-}
-
-.icotext {
-  color: #ffae00;
-}
-
-@keyframes fadeInOpacity {
-	0% {
-    opacity: 0;
-    top: 0px;
-  }
-	100% {
-    opacity: 1;
-    top: 120px;
-	}
-}
-
-@keyframes shake {
-  10%, 30%, 50%{
-    transform: translate3d(-14px, 0, 0);
-  }
-  
-  20%, 40% {
-    transform: translate3d(14px, 0, 0);
-  }
-
-  30%, 50%{
-    transform: translate3d(-1px, 0, 0);
-  }
-
-  40%, 60% {
-    transform: translate3d(2px, 0, 0);
   }
 }
