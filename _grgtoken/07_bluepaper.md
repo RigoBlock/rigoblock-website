@@ -1,8 +1,8 @@
 ---
-title:  "Read more in the Bluepaper"
-subtitle: "04. Bluepaper"
-slug: "grgtoken-04-bluepaper"
-external_link: /assets/downloads/BluePaper.pdf
+title: "Read more in the Bluepaper"
+subtitle: "07. Bluepaper"
+slug: "grgtoken-07-bluepaper"
+external_link: /assets/downloads/blue-paper.pdf
 animation: true
 ---
 

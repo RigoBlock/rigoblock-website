@@ -5,79 +5,89 @@ layout: default
 
 
 <div class="intro">
-    {% svg "_icons/logo.svg" class="icon-logo" %}
-    {% svg "_icons/social.svg" class="social-activator" %}
-    <div class="social-links-wrapper">
-      <div class="social-links">
-        <a href="https://discord.gg/{{ site.discord_username }}" target="_blank">
-          {% svg "_icons/discord.svg" class="icon-github icon" %}
-        </a>
-        <a href="{{ site.telegram_link }}" target="_blank">
-          {% svg "_icons/telegram.svg" class="icon-telegram icon" %}
-        </a>
-        <a href="https://facebook.com/{{ site.facebook_username }}" target="_blank">
-          {% svg "_icons/facebook.svg" class="icon-github icon" %}
-        </a>
-        <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
-          {% svg "_icons/twitter.svg" class="icon-github icon" %}
-        </a>
-        <a href="https://linkedin.com/{{ site.linkedin_username }}" target="_blank">
-          {% svg "_icons/linkedin.svg" class="icon-github icon" %}
-        </a>
-        <a href="https://github.com/{{ site.github_username }}" target="_blank">
-          {% svg "_icons/github.svg" class="icon-github icon" %}
-        </a>
-        <!-- {% include lang_switcher.html %} -->
-      </div>
+  {% svg "_icons/logo.svg" class="icon-logo" %}
+  {% svg "_icons/social.svg" class="social-activator" %}
+  <div class="social-links-wrapper">
+    <div class="social-links">
+      <a href="https://discord.gg/{{ site.discord_username }}" target="_blank">
+        {% svg "_icons/discord.svg" class="icon-github icon" %}
+      </a>
+      <a href="{{ site.telegram_link }}" target="_blank">
+        {% svg "_icons/telegram.svg" class="icon-telegram icon" %}
+      </a>
+      <a href="https://facebook.com/{{ site.facebook_username }}" target="_blank">
+        {% svg "_icons/facebook.svg" class="icon-github icon" %}
+      </a>
+      <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
+        {% svg "_icons/twitter.svg" class="icon-github icon" %}
+      </a>
+      <a href="https://linkedin.com/{{ site.linkedin_username }}" target="_blank">
+        {% svg "_icons/linkedin.svg" class="icon-github icon" %}
+      </a>
+      <a href="https://github.com/{{ site.github_username }}" target="_blank">
+        {% svg "_icons/github.svg" class="icon-github icon" %}
+      </a>
+      <!-- {% include lang_switcher.html %} -->
     </div>
-    <div id="whitelist-button" class="fade-in">
-      <div class="shake">
+  </div>
+  <div id="whitelist-button" class="fade-in">
+    <div class="shake">
+      <div class="ico-button-container">
         <a href="https://tokenmarket.net/preregistration/rigoblock/enter" class="icon-ico-sale button shadow" target="_blank">
           <div class="icon-wrapper">
             {% svg "_icons/link.svg" class="icon-link icon" %}
           </div>
-          <div class="label whitelist"><div class="dotted">Enter <span class="icotext">ICO</span> Whitelist</div></div>
+          <div class="label whitelist">
+            <div class="dotted">Enter <span class="icotext">ICO</span> Whitelist</div>
+          </div>
         </a>
       </div>
     </div>
-    <div class="intro-content-wrapper">
-      <div class="content" data-show-on-scroll>
-        {{ content }}
-        <div class="discover-more">
-          {% svg "_icons/next.svg" class="icon-next icon" %}
-          <div class="label">Discover more</div>
+  </div>
+  <div class="intro-content-wrapper">
+    <div class="content" data-show-on-scroll>
+      {{ content }}
+      <div class="discover-more">
+        {% svg "_icons/next.svg" class="icon-next icon" %}
+        <div class="label">Discover more</div>
+      </div>
+    </div>
+    <div class="buttons" data-show-on-scroll>
+      <!-- <a href="https://tokenmarket.net/preregistration/rigoblock/enter" class="icon-token-sale button" target="_blank">
+          <div class="icon-wrapper">
+            {% svg "_icons/link.svg" class="icon-link icon" %}
+          </div>
+          <div class="label">Get Whitelisted</div>
+        </a> -->
+      <a href="token-sale" class="icon-token-sale button" data-token-popup>
+        <div class="icon-wrapper">
+          {% svg "_icons/busta.svg" class="icon-newsletter icon" %}
         </div>
-      </div>
-      <div class="buttons" data-show-on-scroll>
-        <a href="token-sale" class="icon-token-sale button" data-token-popup>
-          <div class="icon-wrapper">
-            {% svg "_icons/busta.svg" class="icon-newsletter icon" %}
-          </div>
-          <div class="label">Join the Newsletter</div>
-        </a>
-        <a href="{{site.url}}/assets/downloads/white-paper.pdf" class="icon-download button" target="_blank">
-          <div class="icon-wrapper">
-            {% svg "_icons/download.svg" class="icon-download icon" %}
-          </div>
-          <div class="label">Read the Whitepaper</div>
-        </a>
-        <a href="{{site.beta_portal_link}}" class="icon-telegram button" target="_blank">
-          <div class="icon-wrapper">
-            {% svg "_icons/beta.svg" class="icon-beta icon" %}
-          </div>
-          <div class="label">Try the beta portal</div>
-        </a>
-      </div>
+        <div class="label">Join the Newsletter</div>
+      </a>
+      <a href="{{site.url}}/assets/downloads/white-paper.pdf" class="icon-download button" target="_blank">
+        <div class="icon-wrapper">
+          {% svg "_icons/download.svg" class="icon-download icon" %}
+        </div>
+        <div class="label">Read the Whitepaper</div>
+      </a>
+      <a href="{{site.beta_portal_link}}" class="icon-telegram button" target="_blank">
+        <div class="icon-wrapper">
+          {% svg "_icons/beta.svg" class="icon-beta icon" %}
+        </div>
+        <div class="label">Try the beta portal</div>
+      </a>
     </div>
+  </div>
 </div>
 <div class="project-slides">
   {% for slide in site.project %}
-    {% include project_slide.html %}
+  {% include project_slide.html %}
   {% endfor %}
 </div>
 <div class="grgtoken-slides">
   {% for slide in site.grgtoken %}
-    {% include grgtoken_slide.html %}
+  {% include grgtoken_slide.html %}
   {% endfor %}
 </div>
 <div class="token-sale-block">
