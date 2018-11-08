@@ -52,7 +52,7 @@
   .intro-content-wrapper {
     @include tablet {
       position: absolute;
-      top: 45%;
+      top: 450px;
       transform: translateY(-50%);
       width: calc(100% - 60px);
       left: 30px;
