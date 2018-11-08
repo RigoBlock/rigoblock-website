@@ -1,6 +1,7 @@
 #whitelist-button {
   top: 120px;
   position: relative;
+  z-index: 999;
 }
 
 .whitelist {
@@ -78,6 +79,7 @@
   #whitelist-button {
     top: 120px;
     position: relative;
+    z-index: 999;
   }
 }
 
@@ -85,17 +87,20 @@
   #whitelist-button {
     top: 120px;
     position: relative;
+    z-index: 999;
   }
 }
 
 @media all and (min-width:769px) and (max-width: 800px) {
 
   .icon-ico-sale {
+    z-index: 999;
     margin-right: auto;
     margin-left: auto;
   }
 
   .ico-button-container {
+    z-index: 999;
     display: inline-block;
   }
 
@@ -112,11 +117,13 @@
 @media all and (min-width:569px) and (max-width: 768px) {
 
   .icon-ico-sale {
+    z-index: 999;
     margin-right: auto;
     margin-left: auto;
   }
 
   .ico-button-container {
+    z-index: 999;
     display: inline-block;
   }
 
@@ -158,6 +165,7 @@
   #whitelist-button {
     top: 5px;
     position: relative;
+    z-index: 999;
   }
 
   .shake {
@@ -170,11 +178,13 @@
   }
 
   .icon-ico-sale {
+    z-index: 999;
     margin-right: auto;
     margin-left: auto;
   }
 
   .ico-button-container {
+    z-index: 999;
     display: inline-block;
   }
 
@@ -195,6 +205,7 @@
   #whitelist-button {
     top: 5px;
     position: relative;
+    z-index: 999;
   }
 
   .shake {
@@ -207,11 +218,13 @@
   }
 
   .icon-ico-sale {
+    z-index: 999;
     margin-right: auto;
     margin-left: auto;
   }
 
   .ico-button-container {
+    z-index: 999;
     display: inline-block;
   }
 
@@ -233,6 +246,7 @@
   #whitelist-button {
     top: 5px;
     position: relative;
+    z-index: 999;
   }
 
   .shake {
@@ -245,11 +259,13 @@
   }
 
   .icon-ico-sale {
+    z-index: 999;
     margin-right: auto;
     margin-left: auto;
   }
 
   .ico-button-container {
+    z-index: 999;
     display: inline-block;
   }
 

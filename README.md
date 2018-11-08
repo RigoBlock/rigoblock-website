@@ -2,26 +2,28 @@
 
 ## Install, Development and Production Building
 
-  `bundle install` to install gems from Gemfile
-  `bundle exec jekyll serve` to start a development server with live reload on http:\\localhost:4000
-  `bundle exec jekyll build` to build the website for production use. The website will be built in `_site` folder.
+`bundle install` to install gems from Gemfile  
+ `bundle exec jekyll serve` to start a development server with live reload on http:\\localhost:4000  
+ `bundle exec jekyll build` to build the website for production use.
+
+The website will be built in `_site` folder.
 
 ## `_config.yml`
 
 This is the base config file for jekyll.
 In this file you have to change the value of:
 
-  - `title`
-  - `email`
-  - `description`
-  - `baseurl`
-  - `url`
-  - `twitter_username`
-  - `github_username`
-  - `facebook_username`
-  - `linkedin_username`
-  - `discord_username`
-  - `telegram_link`
+- `title`
+- `email`
+- `description`
+- `baseurl`
+- `url`
+- `twitter_username`
+- `github_username`
+- `facebook_username`
+- `linkedin_username`
+- `discord_username`
+- `telegram_link`
 
 ## `_data\roadmap`
 
@@ -70,6 +72,7 @@ This is an example object for `members` list (image, linkedin, github and twitte
 ```
 
 This is an example object for `advisors` list:
+
 ```
   - name: "Mikael Olofsson"
     title: "Investor and Advisor"
@@ -77,26 +80,32 @@ This is an example object for `advisors` list:
 ```
 
 ## `_project` folder
+
 This folder contains the slide for the `Project` section of the website.
 Each file produce a subsection. On the top of file it is present an object
 that configures the slide according to layout.
 
+```
   ---
-  title:  "What is Rigoblock?"
+
+  title: "What is Rigoblock?"
   subtitle: "01. What"
   video_link: https://www.youtube.com/watch?v=ZW6Mus9XBU8
   slug: "project-01-what"
   animation: true
+
   ---
+```
 
 The rest of file composes the text part of the subsection. Markdown or HTML
 are allowed.
 
 ## `_press` folder
+
 This folder contains the slide for the `Press` section of the website.
 Each file produce a press element. On the top of file it is present an object
 that configures the press object. Here is an example (`pubdate` will be parsed
-  automatically):
+automatically):
 
 ```
   ---
@@ -107,17 +116,22 @@ that configures the press object. Here is an example (`pubdate` will be parsed
 ```
 
 ## `_positions` folder
+
 This folder contains the slide for the `Open Positions` section of the website.
 Each file produce a position element. On the top of file it is present an object
 that configures the position object. Here is an example:
 
-  ---
-  title: Front end<br />Developer
-  ---
-  The rest of file composes the text part of the position element. Markdown or HTML
-  are allowed.
+---
+
+title: Front end<br />Developer
+
+---
+
+The rest of file composes the text part of the position element. Markdown or HTML
+are allowed.
 
 ## Static assets
+
 Static assets can be copied in `assets\downloads` and called with `asset`: template tag whthout specifying the complete path.
 
 ```
@@ -126,13 +140,15 @@ Static assets can be copied in `assets\downloads` and called with `asset`: templ
 
 Links can also be created without the asset plugin:
 
-```  
+```
   {{site.url}}/assets/downloads/white-paper.pdf
 ```
 
 PDF files are copied in `assets\pdfs`
+
 ```
   {% asset 'RigoBlockPaper.pdf' @path %}
 ```
+
 will produce the complete path.
 This produces a hashed link which is not good in case of backlinks to the paper
