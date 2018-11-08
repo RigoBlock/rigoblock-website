@@ -28,24 +28,30 @@ In this file you have to change the value of:
 This file manages the element of the section `Roadmap`
 It is a YAML list. This is an example object:
 
+```
   - date: 'February 2016'
     content: 'Concept<br />Originated'
+```
 
 ## `_data\partners`
 
 This file manages the element of the section `Partners - Partners`
 It is a YAML list. This is an example object:
 
+```
   - image: 'ethfinex.png'
     link: 'http://www.google.com'
+```
 
 ## `_data\building`
 
 This file manages the element of the section `Partners - Building with`
 It is a YAML list. This is an example object:
 
+```
   - image: '0xprotocol.png'
     link: 'http://www.google.com'
+```
 
 ## `_data\team`
 
@@ -53,6 +59,7 @@ This file manages the element of the section `Team`
 This file contains two YAML lists: `members` and `advisors`.
 This is an example object for `members` list (image, linkedin, github and twitter key are not mandatory):
 
+```
   - name: "Gabriele Rigo"
     title: "Smart Contract R&D "
     bio: "Previously Treasurer @1BN+ USD Global Macro Hedge Fund and Head of Investment @25BN+ USD Asset Management Company. Msc Finance from Bocconi & HSG."
@@ -60,13 +67,14 @@ This is an example object for `members` list (image, linkedin, github and twitte
     linkedin: 'https://linkedin.com'
     github: 'https://github.com'
     twitter: 'https://twitter.com'
+```
 
 This is an example object for `advisors` list:
-
+```
   - name: "Mikael Olofsson"
     title: "Investor and Advisor"
     bio: "Co-founder iXledger Technologies. Managing Partner Polymbios Capital."
-
+```
 
 ## `_project` folder
 This folder contains the slide for the `Project` section of the website.
@@ -90,11 +98,13 @@ Each file produce a press element. On the top of file it is present an object
 that configures the press object. Here is an example (`pubdate` will be parsed
   automatically):
 
+```
   ---
   title: Fintastico
   pubdate: 2017/11/18
   link: http://www.google.com
   ---
+```
 
 ## `_positions` folder
 This folder contains the slide for the `Open Positions` section of the website.
@@ -110,15 +120,19 @@ that configures the position object. Here is an example:
 ## Static assets
 Static assets can be copied in `assets\downloads` and called with `asset`: template tag whthout specifying the complete path.
 
+```
   {% asset 'filename.ext' %}
+```
 
-  For the whitepaper a different method is used, as to prevent hased links to the file
-  
+Links can also be created without the asset plugin:
+
+```  
   {{site.url}}/assets/downloads/white-paper.pdf
+```
 
 PDF files are copied in `assets\pdfs`
-
+```
   {% asset 'RigoBlockPaper.pdf' @path %}
-
-  will produce the complete path.
-  This produces a hashed link which is not good in case of backlinks to the paper
+```
+will produce the complete path.
+This produces a hashed link which is not good in case of backlinks to the paper
