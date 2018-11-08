@@ -1,8 +1,10 @@
 ---
-title:  "the asset management token"
+title:  "The asset management token"
 subtitle: "02. GRG token"
 slug: "grgtoken-02-grgtoken"
 animation: true
 ---
 
-GRG is a preminted token. 10,000,000 GRGs are initially created. An allocation will be distributed during a public contribution period.
+The GRG token is at the basis of the incentives of the RigoBlock network.
+10,000,000 GRGs are initially created. 3,000,000 GRGs are distributed during a public contribution period.
+Participants to the token sale are subject to KYC/AML checks.

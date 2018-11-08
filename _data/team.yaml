@@ -1,7 +1,7 @@
 members:
   - name: "Gabriele Rigo"
     title: "Smart Contract R&D "
-    bio: "Previously Treasurer @1BN+ USD global macro hedge fund and Head of Investment @25BN+ USD asset management company. Msc finance from Bocconi & HSG."
+    bio: "Previously Treasurer @1BN+ USD global macro hedge fund and Head of Investment @25BN+ USD asset management company. Msc Finance from Bocconi & HSG."
     image: "rigo.png"
     linkedin: 'https://www.linkedin.com/in/gabrielerigo/'
     github: 'https://github.com'
@@ -32,7 +32,10 @@ members:
     #bio: "Senior React Developer."
     # linkedin: 'https://www.linkedin.com/in/lucadelbianco/'
   - name: "Federico Obialero"
-    title: "Full-stack developer"
+    title: "Full-stack Developer"
+    #bio: "React Developer."
+  - name: "Nathalie Cadlini"
+    title: "Social Media Manager"
     #bio: "React Developer."
 advisors:
   - name: "Mikael Olofsson"
@@ -51,3 +54,7 @@ advisors:
     title: "Legal Advisor"
     bio: "Managing Partner at P&Y Law Offices. Managing Director at Western Legal Corporation Limited."
     linkedin: 'https://www.linkedin.com/in/thesantoshpandey/'
+  - name: "Riccardo Pittis"
+    title: "Business Advisor"
+    bio: "Business and Performance Coach. Former Professional Basketball Champion."
+    linkedin: 'https://www.linkedin.com/in/riccardopittis/'
