@@ -9,11 +9,8 @@ $(function() {
     var $target = $(e.target);
     var linkTarget = $target.attr("href").split("#");
     var currentUrl = window.location.href.split("#")[0];
-    console.log(linkTarget);
-    console.log(currentUrl);
     if (linkTarget[0] === currentUrl) {
       e.preventDefault();
-      console.log("#" + linkTarget[1]);
       if (linkTarget[1] === "project-01-what") {
         var $subnav = $target.next("ul");
         var scrollTop = $("#project-01-what").offset().top;

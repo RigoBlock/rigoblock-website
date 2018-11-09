@@ -16,7 +16,6 @@ $(function() {
 
   var $subnav = $nav.find("ul li ul");
 
-  console.log($subnav);
   var $discover = $(".discover-more");
 
   function isScrolledIntoView(elem) {
@@ -24,9 +23,6 @@ $(function() {
     var docViewBottom = docViewTop + $(window).height();
     var elemTop = $(elem).offset().top;
     var elemBottom = elemTop + $(elem).height();
-    console.log(`element position ${elemTop}`);
-    console.log(`current scroll position ${docViewTop}`);
-    console.log(elemTop <= docViewTop);
     return (
       // elemBottom >= docViewTop &&
       // elemTop <= docViewBottom &&
