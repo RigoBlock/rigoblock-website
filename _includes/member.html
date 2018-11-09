@@ -1,6 +1,6 @@
 <li data-show-on-scroll>
   {% if member.image %}
-    {% asset {{member.image}} !integrity %}
+  {% asset {{member.image}} !integrity %}
   {% endif %}
   <h4>{{member.name}}</h4>
   <h5>{{member.title}}</h5>
@@ -9,9 +9,9 @@
   </div>
   <div class="social">
     {% if member.linkedin %}
-      <a href="{{ member.linkedin }}" target="blank">
-        {% svg "_icons/linkedin.svg" %}
-      </a>
+    <a href="{{ member.linkedin }}" target="blank">
+      {% svg "_icons/linkedin.svg" %}
+    </a>
     {% endif %}
     <!-- {% if member.github %}
       <a href="{{ member.github }}" target="blank">

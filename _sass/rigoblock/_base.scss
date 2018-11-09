@@ -37,3 +37,14 @@ main.page-content {
     padding-top: 40px;
   }
 }
+
+#grgtoken-switch {
+  position: absolute;
+  margin-right: 10px;
+  right: 0px;
+  margin-top: -5px;
+
+  &>img {
+    width: 32px;
+  }
+}

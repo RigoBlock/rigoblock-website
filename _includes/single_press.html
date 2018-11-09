@@ -1,42 +1,42 @@
 <li data-show-on-scroll>
-    <div class="press-wrapper">
-      {% if single_press.pdf %}
-        <a href="{{ single_press.pdf }}" target="blank">
+  <div class="press-wrapper">
+    {% if single_press.pdf %}
+    <a href="{{ single_press.pdf }}" target="blank">
       {% elsif single_press.link %}
-        <a href="{{ single_press.link }}" target="blank">
-      {% elsif single_press.video %}
+      <a href="{{ single_press.link }}" target="blank">
+        {% elsif single_press.video %}
         <a href="{{ single_press.video }}" target="blank">
-      {% endif %}
-        <div class="main">
-          <div class="date">{{ single_press.pubdate | date: "%d %B %Y"}}</div>
-          <h3>{{ single_press.title }}</h3>
-        </div>
-      </a>
-      <div class="press-button">
-        {% if single_press.pdf %}
+          {% endif %}
+          <div class="main">
+            <div class="date">{{ single_press.pubdate | date: "%d %B %Y"}}</div>
+            <h3>{{ single_press.title }}</h3>
+          </div>
+        </a>
+        <div class="press-button">
+          {% if single_press.pdf %}
           <a href="{{ single_press.pdf }}" target="blank">
             <div class="icon">
               {% svg "_icons/read.svg" %}
             </div>
             <div class="label">Read the article</div>
           </a>
-        {% endif %}
-        {% if single_press.link %}
+          {% endif %}
+          {% if single_press.link %}
           <a href="{{ single_press.link }}" target="blank">
             <div class="icon">
               {% svg "_icons/link.svg" %}
             </div>
             <div class="label">Read the article</div>
           </a>
-        {% endif %}
-        {% if single_press.video %}
+          {% endif %}
+          {% if single_press.video %}
           <a href="{{ single_press.video }}" target="blank">
             <div class="icon icon-video">
               {% svg "_icons/video.svg" %}
             </div>
             <div class="label">Watch the video</div>
           </a>
-        {% endif %}
-      </div>
-    </div>
+          {% endif %}
+        </div>
+  </div>
 </li>

@@ -2,14 +2,14 @@ $(function() {
   var $window = $(window);
   var throttleTime = 1000;
 
-  var currentRoute = '';
-  var gaRoute = '';
+  var currentRoute = "";
+  var gaRoute = "";
   var gaThrottle;
 
-  var throttledGaSend = function () {
+  var throttledGaSend = function() {
     /* Skip execution if we already waiting and execution */
     if (!gaThrottle) {
-      gaThrottle = setTimeout(function () {
+      gaThrottle = setTimeout(function() {
         sendGa();
         gaThrottle = null;
       }, throttleTime);
@@ -25,9 +25,11 @@ $(function() {
       */
       if (gaRoute != currentRoute) {
         if (ga) {
-          var cleanRoute = $(currentRoute.nav).attr('href').split('#');
+          var cleanRoute = $(currentRoute.nav)
+            .attr("href")
+            .split("#");
           if (cleanRoute.length > 1) {
-            ga('send', 'pageview', cleanRoute[1]);
+            ga("send", "pageview", cleanRoute[1]);
           }
         }
         gaRoute = currentRoute;
@@ -35,11 +37,11 @@ $(function() {
     }
   };
 
-  var scroll = new SmoothScroll('[data-scroll]', {
-    offset: function() {
-      return 1;
-    }
-  });
+  // var scroll = new SmoothScroll('[data-scroll]', {
+  //   offset: function() {
+  //     return 1;
+  //   }
+  // });
 
   gumshoe.init({
     offset: 1,
@@ -47,7 +49,7 @@ $(function() {
       /* Trigger throttled ga only if currentRoute has changed */
       if (currentRoute != route) {
         currentRoute = route;
-        throttledGaSend()
+        throttledGaSend();
       }
     }
   });
