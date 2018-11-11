@@ -120,13 +120,13 @@ automatically):
 This folder contains the slide for the `Open Positions` section of the website.
 Each file produce a position element. On the top of file it is present an object
 that configures the position object. Here is an example:
-
+```
 ---
 
 title: Front end<br />Developer
 
 ---
-
+```
 The rest of file composes the text part of the position element. Markdown or HTML
 are allowed.
 
