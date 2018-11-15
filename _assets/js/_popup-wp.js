@@ -1,14 +1,14 @@
 $(function() {
-  var $dataPopupLink = $('[data-wp-popup], [data-close-popup]');
-  var $popupWrapper = $('.popup-wp-wrapper');
-  if ($popupWrapper.length === 0) {
+  var $dataPopupWpLink = $('[data-wp-popup], [data-close-wp-popup]');
+  var $popupWpWrapper = $('.popup-wp-wrapper');
+  if ($popupWpWrapper.length === 0) {
     return;
   }
   var $body = $('body');
-  var showPopup = function(e) {
+  var showWpPopup = function(e) {
     e.preventDefault();
-    $popupWrapper.toggleClass('open');
+    $popupWpWrapper.toggleClass('open');
   };
 
-  $dataPopupLink.on('click', showPopup);
+  $dataPopupWpLink.on('click', showWpPopup);
 });
