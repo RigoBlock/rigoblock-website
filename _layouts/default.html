@@ -20,6 +20,11 @@
       {%- include popup.html -%}
     {% endif %}
 
+    <!-- test whitepaper multilingual -->
+    {% if site.wp_lang_popup %}
+      {%- include popup-wp.html -%}
+    {% endif %}
+
     {% asset main.js %}
 
     <!-- <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
