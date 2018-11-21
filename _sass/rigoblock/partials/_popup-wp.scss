@@ -1,0 +1,134 @@
+.popup-wp-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(255,255,255,0) 0%, #054186 100%);
+  z-index: 10;
+  display: none;
+  &.open {
+    display: block;
+  }
+  .popup-wp {
+    float: left;
+    position: relative;
+    @extend %font-light-12;
+    width: 90px;
+    margin-left: 10px;
+    ul {
+      @include parent-column(1 of 1);
+      display: none;
+      li {
+        border-bottom: 1px solid $blue;
+        transition: all $std-transition-time ease-in-out;
+        &:not(.current) {
+          opacity: .5;
+        }
+        a, a:visited {
+          display: block;
+          padding-bottom: 3px;
+          padding-top: 8px;
+          padding-right: 20px;
+          padding-left: 2px;
+        }
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    .arrow-down {
+      position: absolute;
+      width: 10px;
+      right: 4px;
+      top: 11px;
+      transition: all $std-transition-time ease-in-out;
+    }
+    .current-lang {
+      border-bottom: 1px solid $blue;
+      a, a:visited {
+        display: block;
+        padding-bottom: 3px;
+        padding-top: 6px;
+        padding-right: 20px;
+        padding-left: 2px;
+      }
+    }
+    &.open {
+      .arrow-down {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .social-links-wrapper {
+    .popup-wp {
+      @include tablet {
+        display: none;
+      }
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+
+  header.site-header {
+    .popup-wp {
+      @extend %font-light-12;
+      display: none;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 300px;
+      transition: all $std-transition-time ease-in-out;
+      transform: translateX(-100%);
+      z-index: -1;
+      margin-left: 0;
+      width: auto;
+      .current-lang {
+        display: none;
+      }
+      &.open {
+        transform: translateX(0);
+      }
+      @include tablet {
+        @include the-font-size(18);
+      }
+      @include mobile {
+        @include the-font-size(18);
+        transition: all $std-transition-time * 3 ease-in-out;
+      }
+      ul {
+        display: block;
+        background: $bkg;
+        height: 100%;
+        padding: 125px 32px 0 32px;
+        @include mobile {
+          padding: 40px 20px;
+        }
+        li {
+          margin-bottom: 0;
+          opacity: 1;
+        }
+      }
+      .arrow-down {
+        display: none;
+      }
+      @include tablet {
+        display: block;
+      }
+      @include mobile {
+        display: block;
+        left: 0;
+        z-index: 10;
+        width: 100%;
+
+      }
+    }
+  }
+}
+body.IE {
+  .popup-wp-wrapper .popup-wp form input {
+    width: calc(100% - 52px);
+  }
+}
