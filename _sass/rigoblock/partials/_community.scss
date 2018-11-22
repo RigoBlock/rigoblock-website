@@ -31,6 +31,29 @@
       pointer-events: initial;
     }
   }
+  .icon-logo {
+    @include rmargin-bottom(180);
+    width: 255px;
+    float: left;
+    margin-top: 25px;
+    margin-left: 25px;
+    transform: translateX(-($nav-width + 60));
+
+    @include tablet {
+      transform: initial;
+      margin-left: 20px;
+      margin-top: 25px;
+      margin-bottom: 60px;
+    }
+
+    @include mobile {
+      transform: initial;
+      @include parent-column(7 of 12);
+      margin-left: 20px;
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+  }
   .content {
     @include column(4 of 12);
     padding-left: 60px;
@@ -81,6 +104,79 @@
         }
       }
     }
+    .papers-block {
+      @include rfont-size(20, 500);
+      margin-top: 138px;
+      @include mobile {
+        @include the-font-size(14);
+        margin-bottom: 50px;
+        margin-top: 40px;
+      }
+      @include tablet {
+        @include the-font-size(18);
+        margin-bottom: 70px;
+        margin-top: 63px;
+      }
+      .papers-links {
+        float: left;
+        display: flex;
+        @include rmargin-top(13);
+        @include mobile {
+          margin-top: 15px;
+        }
+        a, a:visited {
+          display: block;
+          width: 32px;
+          height: 32px;
+          // background: $blue;
+          margin-right: 10px;
+        }
+        .buttons {
+          @include column(3 of 12);
+
+          @include tablet {
+            @include parent-column(5 of 12);
+            margin-top: 153px;
+          }
+
+          @include mobile {
+            @include column(1 of 1);
+          }
+
+          .button {
+            width: 100%;
+            min-width: 230px;
+            @include rmargin-bottom(35);
+
+            @include tablet {
+              min-width: initial;
+            }
+
+            @include mobile {
+              @include parent-column(6 of 12);
+              width: calc(50% - 10px);
+              margin-bottom: 24px;
+              margin-top: 0;
+              min-width: initial;
+
+              &:nth-child(2n + 1) {
+                margin-right: 20px;
+              }
+
+              .icon-wrapper {
+                width: 40px;
+                height: 40px;
+              }
+
+              .label {
+                width: calc(100% - 40px);
+                padding: 0 5px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
   .fake-bkg {
     @include parent-column(8 of 12);
@@ -103,5 +199,162 @@
       display: block;
     }
   }
+}
 
+.papers {
+  float: left;
+  padding-top: 60px;
+  position: static;
+  height: 100vh;
+  top: 0;
+  left: $nav-width;
+  width: calc(100% - #{$nav-width});
+  @extend %clearfix;
+  padding-left: 60px;
+  padding-right: 60px;
+
+  @include tablet {
+    top: 35px;
+    width: 100%;
+    left: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @include mobile {
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .icon-logo {
+    @include rmargin-bottom(180);
+    width: 255px;
+    float: left;
+    margin-top: 25px;
+    margin-left: 25px;
+    transform: translateX(-($nav-width + 60));
+
+    @include tablet {
+      transform: initial;
+      margin-left: 20px;
+      margin-top: 25px;
+      margin-bottom: 60px;
+    }
+
+    @include mobile {
+      transform: initial;
+      @include parent-column(7 of 12);
+      margin-left: 20px;
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+  }
+
+  .papers-content-wrapper {
+    @include tablet {
+      position: absolute;
+      top: 450px;
+      transform: translateY(-50%);
+      width: calc(100% - 60px);
+      left: 30px;
+    }
+  }
+
+  .content {
+    @include column(6 of 12);
+    clear: left;
+
+    @include tablet {
+      @include column(7 of 12);
+    }
+
+    @include mobile {
+      @include column(12 of 12);
+      margin-top: 40px;
+    }
+
+    h1 {
+      @include rfont-size(44, 400);
+      @include rmargin-bottom(40);
+      margin-top: -0.6vw;
+
+      @include tablet {
+        @include the-font-size(44);
+        width: 130%;
+      }
+
+      @include mobile {
+        @include the-font-size(27);
+        margin-bottom: 30px;
+      }
+    }
+
+    p {
+      @include rfont-size(20, 300);
+      line-height: 2.3vw;
+
+      // @include big-desktop {
+      //   @include the-font-size(27);
+      //   line-height: 44px;
+      // }
+      @include tablet {
+        @include the-font-size(20);
+        line-height: 34px;
+      }
+
+      @include mobile {
+        @include the-font-size(14);
+        margin-bottom: 70px;
+      }
+    }
+  }
+
+  .buttons {
+    @include column(3 of 12);
+
+    @include tablet {
+      @include parent-column(5 of 12);
+      margin-top: 153px;
+    }
+
+    @include mobile {
+      @include column(1 of 1);
+    }
+
+    .button {
+      width: 100%;
+      min-width: 230px;
+      @include rmargin-bottom(35);
+
+      @include tablet {
+        min-width: initial;
+      }
+
+      @include mobile {
+        @include parent-column(6 of 12);
+        width: calc(50% - 10px);
+        margin-bottom: 24px;
+        margin-top: 0;
+        min-width: initial;
+
+        &:nth-child(2n + 1) {
+          margin-right: 20px;
+        }
+
+        .icon-wrapper {
+          width: 40px;
+          height: 40px;
+        }
+
+        .label {
+          width: calc(100% - 40px);
+          padding: 0 5px;
+        }
+      }
+    }
+  }
 }
