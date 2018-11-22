@@ -26,11 +26,11 @@ subtitle: "Frequently Asked Question"
 
 06. <span>How does the GRG Token distribution work?</span>
     >
-    A total of 10,000,000 GRG Tokens will be created at the genesis block. 1,500,000 will be distributed to the public during a public sale for a duration of 30 days. New GRGs are created to reward the wizards.
+    A total of 10,000,000 GRG Tokens have been created at the genesis block. 3,000,000 will be distributed to the public during a public sale for a duration of 30 days. New GRG tokens are distributed according to the Proof of Performance algorithm.
 
 07. <span>Why was this token distribution method chosen?</span>
     >
-    The project presents itself to the market with a fully functional Minimum Viable Product, an utility token with built-in incentives for contributors to the network, and strong corporate partnerships. The model chosen guarantees that, over time, ownership of the network will belong to who contributes the most to its success: token holders and wizards.
+    The RigoBlock protocol is live on the Ethereum mainnet and already integrated in third-party platforms: the RigoBlock frontend portal and Ethfinex Trustless. The protocol has built-in incentives for the contributors of the network. The model aims at distributing the ownership of the network to its most successful contributors: token holders and pools operators.
 
 08. <span>Was there any GRG Token pre-sale or ways to obtain GRG Tokens prior to the commencement of the GRG Token distribution?</span>
     >
@@ -112,5 +112,5 @@ subtitle: "Frequently Asked Question"
 
 21. <span>Why are proceeds from the GRG Token distribution not being donated to a foundation or other non-profit organization?</span>
     >
-    Platforms that adopt the RIGOBLOCK.COM Software do not require a foundation or a non-profit organization to help grow or maintain the network because such platform will be self-funding. Based on the RIGOBLOCK.COM Software, it is intended that any platform that adopts the RIGOBLOCK.COM Software will contribute to an increase the RigoBlock network value and will generate an inflation of GRGs at a rate of 1 to 2 percent per year to be distributed to the platform's pool wizards in connection to the size of the pool and its value relative to its value at the previous timestamp.RIGOBLOCK.COM will receive 5% of such inflation, guaranteeing the long-term sustainability of the project. In this case, such a platform will not be reliant on any one foundation, organization, or individual for its growth, development or maintenance.
+    Platforms that adopt the RIGOBLOCK.COM Software do not require a foundation or a non-profit organization to help grow or maintain the network because such platform will be self-funding. Based on the RIGOBLOCK.COM Software, it is intended that any platform that adopts the RIGOBLOCK.COM Software will contribute to an increase the RigoBlock network value and will generate an inflation of GRGs at a rate of 1 to 2 percent per year to be distributed to the platform's pool operators in connection to the size of the pool and its value relative to its value at the previous timestamp.RIGOBLOCK.COM will receive 5% of such inflation, guaranteeing the long-term sustainability of the project. In this case, such a platform will not be reliant on any one foundation, organization, or individual for its growth, development or maintenance.
 {:.faq-list}
