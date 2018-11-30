@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {%- include head.html -%}
+{%- include head.html -%}
 
-  <body class="{{ page.layout }}">
-    <div class="main-wrapper">
+<body class="{{ page.layout }}">
+  <div class="main-wrapper">
 
-      {%- include header.html -%}
-      <main class="page-content" aria-label="Content">
-        <div class="wrapper {{ page.layout }}">
-          {{ content }}
-        </div>
-      </main>
+    {%- include header.html -%}
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper {{ page.layout }}">
+        {{ content }}
+      </div>
+    </main>
 
-      {%- include footer.html -%}
-    </div>
+    {%- include footer.html -%}
+  </div>
 
-    {% if site.token_sale_popup %}
-      {%- include popup.html -%}
-    {% endif %}
+  {% if site.token_sale_popup %}
+  {%- include popup.html -%}
+  {% endif %}
 
-    <!-- test whitepaper multilingual -->
-    {% if site.wp_lang_popup %}
-      {%- include popup-wp.html -%}
-    {% endif %}
+  {% if site.papers_popup %}
+  {%- include popup-papers.html -%}
+  {% endif %}
 
-    {% asset main.js %}
+  <!-- test whitepaper multilingual -->
+  {% if site.wp_lang_popup %}
+  {%- include popup-wp.html -%}
+  {% endif %}
 
-    <!-- <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+  {% asset main.js %}
+
+  <!-- <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
     <script type='text/javascript'>
       (function ($) {
         window.fnames = new Array();
@@ -41,6 +45,6 @@
       }(jQuery));
       var $mcj = jQuery.noConflict(true);
     </script> -->
-  </body>
+</body>
 
 </html>

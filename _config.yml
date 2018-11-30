@@ -29,31 +29,58 @@ telegram_link: https://t.me/rigoblockprotocol
 beta_portal_link: https://beta.rigoblock.com
 
 token_sale_popup: true
+papers_popup: true
 wp_lang_popup: true
 
 mailchimp_list: //landing.mailerlite.com/webforms/landing/w2r6k9
 
+keywords:
+  [
+    asset management,
+    decentralized asset management,
+    decentralized hedge fund,
+    investment management,
+    blockchain investment management,
+    blockchain asset management,
+    decentralized fund infrastructure,
+    token pool,
+    token pools,
+    ethereum mining,
+    proof of stake mining,
+    proof of stake,
+    decentralized exchange,
+    proof of performance,
+    mutual funds,
+    online share trading,
+    managed funds,
+    alternative investments,
+    day trading strategies,
+    top hedge funds,
+    asset manager,
+    ethereum asset manager,
+    blockchain fund,
+    hedge fund company,
+    hedge fund manager,
+  ]
 
-keywords: [asset management,decentralized asset management,decentralized hedge fund,investment management,blockchain investment management,blockchain asset management,decentralized fund infrastructure,token pool,token pools,ethereum mining,proof of stake mining,proof of stake,decentralized exchange,proof of performance,mutual funds,online share trading,managed funds,alternative investments,day trading strategies,top hedge funds,asset manager,ethereum asset manager,blockchain fund,hedge fund company,hedge fund manager]
-
-lang: 'en'
+lang: "en"
 
 languages:
-  - lang: 'en'
-    code: 'en-us'
-    name: 'English'
-  - lang: 'ko'
-    code: 'ko-kr'
-    name: '한국어'
-#  - lang: 'es'
-#    code: 'es-es'
-#    name: 'Español'
-#  - lang: 'zh'
-#    code: 'zh-cn'
-#    name: '中文'
-  - lang: 'ja'
-    code: 'ja'
-    name: '日本語'
+  - lang: "en"
+    code: "en-us"
+    name: "English"
+  - lang: "ko"
+    code: "ko-kr"
+    name: "한국어"
+  #  - lang: 'es'
+  #    code: 'es-es'
+  #    name: 'Español'
+  #  - lang: 'zh'
+  #    code: 'zh-cn'
+  #    name: '中文'
+  - lang: "ja"
+    code: "ja"
+    name: "日本語"
 #  - lang: 'hi'
 #    code: 'hi'
 #    name: 'हिन्दी, हिंदी'
@@ -117,7 +144,6 @@ svg:
 autoprefixer:
   browsers:
     - last 15 versions
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
