@@ -72,7 +72,7 @@ subtitle: "Frequently Asked Question"
 
 11. <span>Is there a minimum purchase for GRG Tokens?</span>
     >
-    The minimum contribution accepted during the public sale is 0.1 ETH. Smaller contribution amounts will be rejected.
+    The minimum contribution accepted during the public sale is 0.2 ETH. Smaller contribution amounts will be rejected.
 
 12. <span>How can I see how much ETH has been contributed during the period of the GRG Token distribution?</span>
     >
