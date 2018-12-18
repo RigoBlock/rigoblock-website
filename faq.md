@@ -74,43 +74,39 @@ subtitle: "Frequently Asked Question"
     >
     The minimum contribution accepted during the public sale is 0.2 ETH. Smaller contribution amounts will be rejected.
 
-12. <span>How can I see how much ETH has been contributed during the period of the GRG Token distribution?</span>
+12. <span>Is it possible to limit the amount of ETH paid per GRG Token?</span>
     >
-    The amount of ETH received will be displayed on the rigoblock.com website.
+    Yes, the price of 1 GRG is fixed at 0.01856592362 ETH per token. Please review all the risks associated with purchasing GRG Tokens including the technical risks set forth in the Purchase Agreement.
 
-13. <span>Is it possible to limit the amount of ETH paid per GRG Token?</span>
-    >
-    No, it is not possible to know the price of a specific period until all ETH is received and final price computed and tokens allocated. Please review all the risks associated with purchasing GRG Tokens including the technical risks set forth in the Purchase Agreement.
-
-14. <span>Why can’t U.S. citizens, residents or entities purchase GRG Tokens?</span>
+13. <span>Why can’t U.S. citizens, residents or entities purchase GRG Tokens?</span>
     >
     It was decided that U.S. citizens, residents and entities should be excluded from purchasing GRG Tokens in the token distribution because of some of the logistical challenges associated with differing regulations in the many states of the United States of America. rigoblock.com does not believe that the distribution of GRG Tokens or the GRG Tokens themselves are securities, commodities, swaps on either securities or commodities, or similar financial instruments. The GRG Tokens are not designed for investment or speculative purposes and should not be considered as a type of investment. Nevertheless, U.S. citizens, residents and entities should not purchase or attempt to purchase GRG Tokens.
 
-15. <span>I have contributed to the GRG Token distribution. When do I receive GRG Tokens?</span>
+14. <span>I have contributed to the GRG Token distribution. When do I receive GRG Tokens?</span>
     >
-    At the end of the public contribution period, you may claim any GRG Tokens allocated as an ERC-20 compatible token on the Ethereum blockchain. For more details on how to claim your GRG Tokens, please see rigoblock.com.
+    Tokens will be distributed 30 days after the end of the public contribution period, on the 18th of February. Whitelisted wallets receive 1 GRG immediately, as part of our airdrop program and to enable access to the portal https://beta.rigoblock.com.
 
-16. <span>Are GRG Tokens transferable?</span>
+15. <span>Are GRG Tokens transferable?</span>
     >
     While rigoblock.com will not be involved in any way in the transferability of the GRG Tokens, it is possible that GRG Tokens could be transferred on a peer-to-peer basis or on platforms operated by 3rd parties during the GRG Token distribution period.
 
-17. <span>Are there network fees when transferring GRG Tokens?</span>
+16. <span>Are there network fees when transferring GRG Tokens?</span>
     >
     Yes, the GRG Token is an ERC-20 compatible token; therefore, transfers will be subject to ETH gas fees like all other transactions on the Ethereum network.
 
-18. <span>What happens if I can’t contribute ETH or don’t receive my GRG Tokens?</span>
+17. <span>What happens if I can’t contribute ETH or don’t receive my GRG Tokens?</span>
     >
     The GRG Token distribution contract, GRG Token smart contract and the GRG Tokens are being provided on an “as is” and “as available” basis without representations, warranties, promises or guarantees whatsoever of any kind made by block.one. Prior to purchasing GRG Tokens, you should ensure that you carry out your own examination and investigation and carefully review in their entirety the risks associated with purchasing GRG Tokens as set forth in the Purchase Agreement. Purchases of GRG Tokens are non-refundable and purchases cannot be cancelled. Under no circumstances will you be entitled to receive money or compensation for any GRG Tokens purchased or your inability to purchase GRG Tokens.
 
-19. <span>Where do the proceeds from the GRG Token distribution go?</span>
+18. <span>Where do the proceeds from the GRG Token distribution go?</span>
     >
     Proceeds from the GRG Token distribution will be used for the further development and scaling of the RigoBlock platform to ensure the long-term success of the project.
 
-20. <span>What does rigoblock.com plan to use proceeds from the GRG Token distribution for?</span>
+19. <span>What does rigoblock.com plan to use proceeds from the GRG Token distribution for?</span>
     >
     As a private company, proceeds of the GRG Token distribution will be utilized by rigoblock.com in its sole discretion. rigoblock.com intends to use certain of the proceeds for general administration and operating expenses, as well as to grow and evolve the RigoBlock protocol and ecosystem of applications and corporates building applications for asset management using the RIGOBLOCK.COM Software.
 
-21. <span>Why are proceeds from the GRG Token distribution not being donated to a foundation or other non-profit organization?</span>
+20. <span>Why are proceeds from the GRG Token distribution not being donated to a foundation or other non-profit organization?</span>
     >
-    Platforms that adopt the RIGOBLOCK.COM Software do not require a foundation or a non-profit organization to help grow or maintain the network because such platform will be self-funding. Based on the RIGOBLOCK.COM Software, it is intended that any platform that adopts the RIGOBLOCK.COM Software will contribute to an increase the RigoBlock network value and will generate an inflation of GRGs at a rate of 1 to 2 percent per year to be distributed to the platform's pool operators in connection to the size of the pool and its value relative to its value at the previous timestamp.RIGOBLOCK.COM will receive 5% of such inflation, guaranteeing the long-term sustainability of the project. In this case, such a platform will not be reliant on any one foundation, organization, or individual for its growth, development or maintenance.
+    Platforms that adopt the RIGOBLOCK.COM Software do not require a foundation or a non-profit organization to help grow or maintain the network because such platform will be self-funding. Based on the RIGOBLOCK.COM Software, it is intended that any platform that adopts the RIGOBLOCK.COM Software will contribute to an increase the RigoBlock network value and will generate an inflation of GRGs at a rate of 1 to 2 percent per year to be distributed to the platform's pool operators in connection to the size of the pool and its value relative to its value at the previous timestamp. RIGOBLOCK.COM will receive 5% of such inflation, guaranteeing the long-term sustainability of the project. In this case, such a platform will not be reliant on any one foundation, organization, or individual for its growth, development or maintenance.
 {:.faq-list}
