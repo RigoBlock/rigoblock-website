@@ -30,7 +30,7 @@ layout: default
       <!-- {% include lang_switcher.html %} -->
     </div>
   </div>
-  <div id="whitelist-button" class="fade-in">
+  <!--div id="whitelist-button" class="fade-in">
     <div class="shake">
       <div class="ico-button-container">
         <a href="https://tokenmarket.net/crowdsale/rigoblock/embed/" class="icon-ico-sale button shadow" target="_blank">
@@ -43,7 +43,7 @@ layout: default
         </a>
       </div>
     </div>
-  </div>
+  </div-->
   <div class="intro-content-wrapper">
     <div class="content" data-show-on-scroll>
       {{ content }}
@@ -53,29 +53,35 @@ layout: default
       </div>
     </div>
     <div class="buttons" data-show-on-scroll>
-      <a href="token-sale" class="icon-token-sale button" data-token-popup>
+      <!--a href="token-sale" class="icon-token-sale button" data-token-popup>
         <div class="icon-wrapper">
           {% svg "_icons/busta.svg" class="icon-newsletter icon" %}
         </div>
         <div class="label">Join the Newsletter</div>
+      </a-->
+      <a href=https://tokenmarket.net/crowdsale/rigoblock/terms_of_service class="icon-token-sale button" target="_blank">
+        <div class="icon-wrapper">
+          {% svg "_icons/token-sale.svg" class="icon-token-sale icon" %}
+        </div>
+        <div class="label">Join TOKEN SALE</div>
       </a>
-      <a href="{{site.url}}/assets/downloads/white-paper.pdf" class="icon-download button" target="_blank">
+      <a href=https://www.ethfinex.com/token-sales/5c18bcc6af5c05cd089adb9d/RigoBlock class="icon-token-sale button" target="_blank">
+        <div class="icon-wrapper">
+          {% svg "_icons/token-sale.svg" class="icon-token-sale icon" %}
+        </div>
+        <div class="label">Ethfinex TOKEN SALE</div>
+      </a>
+      <!--a href="{{site.url}}/assets/downloads/white-paper.pdf" class="icon-download button" target="_blank">
         <div class="icon-wrapper">
           {% svg "_icons/download.svg" class="icon-download icon" %}
         </div>
         <div class="label">Read the Whitepaper</div>
-      </a>
-      <!-- a href="{{site.url}}/assets/downloads/white-paper.pdf" class="icon-download button" target="_blank">
-        <div class="icon-wrapper">
-          {% svg "_icons/download.svg" class="icon-download icon" %}
-        </div>
-        <div class="label">Read the Whitepaper</div>
-      </a -->
+      </a-->
       <a href="{{site.beta_portal_link}}" class="icon-telegram button" target="_blank">
         <div class="icon-wrapper">
           {% svg "_icons/beta.svg" class="icon-beta icon" %}
         </div>
-        <div class="label">Try the beta portal</div>
+        <div class="label">Rigoblock Portal</div>
       </a>
     </div>
   </div>
