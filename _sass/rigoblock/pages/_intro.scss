@@ -176,6 +176,8 @@
     }
 
     .button {
+      background: #FFC957;
+      z-index: -1;
       width: 100%;
       min-width: 230px;
       @include rmargin-bottom(35);
