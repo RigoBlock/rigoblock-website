@@ -26,7 +26,7 @@ These terms of use refer to the following additional terms, which also apply to 
 
 ### Information About Us
 
-RigoBlock.com is a site operated by Rigo Investment Sagl ("We"). We are registered in Switzerland under company number CH-501.4.017.571-4 and have our registered office at Via D. Fontana 8, 6900, Lugano, Switzerland.
+RigoBlock.com is a site operated by Rigo Investment Sagl ("We"). We are registered in Switzerland under company number CH-501.4.017.571-4 and have our registered office at Contrada Vecchia 6, 6962, Viganello, Switzerland.
 
 ### Changes To These Terms
 
