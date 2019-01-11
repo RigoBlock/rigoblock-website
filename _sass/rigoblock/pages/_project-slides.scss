@@ -161,14 +161,14 @@
         }
       }
     }
-    &.c-project-01-what {
+    &.c-project-01-concept {
       .animation {
         [data-animation] {
           width: 80%;
         }
       }
     }
-    &.c-project-06-principles, &.c-project-05-roadmap, &.c-project-07-partners {
+    &.c-project-05-principles, &.c-project-04-roadmap, &.c-project-06-ecosystem {
       .slide-wrapper {
         .content {
           width: 100%;
@@ -181,7 +181,7 @@
         }
       }
     }
-    &.c-project-05-roadmap {
+    &.c-project-04-roadmap {
       .slide-wrapper {
         display: flex;
         flex-direction: column;
@@ -195,7 +195,7 @@
         }
       }
     }
-    &.c-project-07-partners {
+    &.c-project-06-ecosystem {
       .title {
         @include rmargin-bottom(120);
       }

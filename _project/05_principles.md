@@ -1,7 +1,7 @@
 ---
-title:  "Our community's<br />core values"
-subtitle: "06. Principles"
-slug: "project-06-principles"
+title:  "Community's<br />Core Values"
+subtitle: "05. Principles"
+slug: "project-05-principles"
 ---
 
 - **Reliability**

@@ -11,9 +11,9 @@ $(function() {
     var currentUrl = window.location.href.split("#")[0];
     if (linkTarget[0] === currentUrl) {
       e.preventDefault();
-      if (linkTarget[1] === "project-01-what") {
+      if (linkTarget[1] === "project-01-concept") {
         var $subnav = $target.next("ul");
-        var scrollTop = $("#project-01-what").offset().top;
+        var scrollTop = $("#project-01-concept").offset().top;
         $root.animate(
           {
             scrollTop: scrollTop
@@ -22,9 +22,9 @@ $(function() {
         );
         // $subnav.slideToggle(500);
       }
-      if (linkTarget[1] === "grgtoken-01-scope") {
+      if (linkTarget[1] === "grgtoken-07-grgtoken") {
         var $subnav = $target.next("ul");
-        var scrollTop = $("#grgtoken-01-scope").offset().top;
+        var scrollTop = $("#grgtoken-07-grgtoken").offset().top;
         $root.animate(
           {
             scrollTop: scrollTop

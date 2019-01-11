@@ -2,7 +2,7 @@
 layout: home
 ---
 
-# Decentralized asset <br/>management network
+# Organizing the <br/>World's Value
 
-Helping the token economy<br />
-scale to the next level.
+RigoBlock is an open protocol that makes<br />
+token management universally accessible.
