@@ -1,12 +1,12 @@
 ---
-title:  "Community's<br />Core Values"
+title:  "Community's Core Values"
 subtitle: "05. Principles"
 slug: "project-05-principles"
 ---
 
 - **Reliability**
 
-  We have created a bullet-proof pooled tokens management system.
+  We deliver a robust token management system.
 
 - **Accessibility**
 
@@ -14,16 +14,16 @@ slug: "project-05-principles"
 
 - **Transparency**
 
-  We provide a completely decentralized framework.
+  We provide a transparent and decentralized framework.
 
 - **Passion**
 
-  We encourage passion and talent in trading.
+  We encourage passion and talent.
 
 - **Meritocracy**
 
-  We offer an effective reward mechanism instead of traditional fees.
+  We offer effective reward mechanisms.
 
 - **Integrity**
 
-  We stick to our commitments and always act coherently.
+  We stick to our commitments and act coherently.

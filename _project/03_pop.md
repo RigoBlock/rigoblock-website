@@ -5,7 +5,6 @@ slug: "project-03-pop"
 animation: true
 ---
 
-Traditional asset management is based on fees – management fees and performance fees.
-Rigoblock rewrites the rules, putting the stakeholders in charge.
+Proof-of-Performance is an algorithm that rewards the token pools operators based on the value and the performance of their pools. The operators are rewarded in GRG, an Ethereum ERC-20 compliant token.
 
-Proof-of-Performance is an algorithm that rewards pools operators based on the value and the performance of the token pools. The operators are rewarded in GRG tokens, an Ethereum ERC-20 compliant token.
+The Rigoblock incentive system allows the token pools to be operated without direct fee charges, and to align the interests of the different stakeholders.

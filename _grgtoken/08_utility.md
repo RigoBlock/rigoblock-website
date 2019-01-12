@@ -1,6 +1,6 @@
 ---
-title: "GRG Utility"
-subtitle: "08. Utility Components"
+title: "GRG Utility Components"
+subtitle: "08. Utility"
 slug: "grgtoken-08-utility"
 external_link: /assets/downloads/blue-paper.pdf
 animation: true
