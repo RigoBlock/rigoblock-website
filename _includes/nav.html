@@ -8,6 +8,13 @@
         {{ el.title }}
       </a>
     </li>
+    {% elsif el.title == "Developers" %}
+    <li {%if el.data %}data-{{ el.data }}{% endif %}>
+      <!--a href="https://blog.rigoblock.com/" target="_blank" title="{{ el.title }}"-->
+      <a href="https://docs.rigoblock.com/quick_start" target="_blank" title="{{ el.title }}">
+        {{ el.title }}
+      </a>
+    </li>
     {% elsif el.title == "GRG Token" %}
     <!-- <a name="#grgtoken-07-grgtoken" id="grgtoken-switch">{% asset 'baseline_arrow_drop_down_black_18dp2.png' %}</a> -->
     <a name="#grgtoken-07-grgtoken" id="grgtoken-switch"></a>
