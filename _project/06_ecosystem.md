@@ -1,7 +1,7 @@
 ---
-title:  "A growing ecosystem"
-subtitle: "07. Partners"
-slug: "project-07-partners"
+title:  "Ecosystem"
+subtitle: "06. Ecosystem"
+slug: "project-06-ecosystem"
 ---
 
 <div class="building">

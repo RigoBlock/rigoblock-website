@@ -11,7 +11,7 @@ $(function() {
     + videoId + '?autoplay=1&rel=0&showinfo=0&modestbranding=1&controls=0" frameborder="0" allowfullscreen></iframe><div data-close-video class="close"></div></div></div></div>';
     $div.html(iframeMarkup);
     $body.append($div);
-    var scrollTop = $('#project-01-what').offset().top;
+    var scrollTop = $('#project-01-concept').offset().top;
     $root.animate({
       scrollTop: scrollTop
     }, 500);

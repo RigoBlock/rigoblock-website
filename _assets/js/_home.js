@@ -51,8 +51,8 @@ $(function() {
     }
 
     if (
-      isScrolledIntoView($("#project-01-what")) &&
-      !isScrolledIntoView($("#grgtoken-01-scope"))
+      isScrolledIntoView($("#project-01-concept")) &&
+      !isScrolledIntoView($("#grgtoken-07-grgtoken"))
     ) {
       // alert("visible");
       $subnav.eq(1).slideUp();
@@ -60,18 +60,18 @@ $(function() {
     }
 
     if (
-      isScrolledIntoView($("#grgtoken-01-scope")) &&
-      !isScrolledIntoView($("#grgtoken-07-bluepaper"))
+      isScrolledIntoView($("#grgtoken-07-grgtoken")) &&
+      !isScrolledIntoView($("#grgtoken-08-utility"))
     ) {
       // alert("visible");
       $subnav.eq(0).slideUp();
       $subnav.eq(1).slideDown();
     }
 
-    if (isScrolledIntoView($("#grgtoken-07-bluepaper"))) {
+    if (isScrolledIntoView($("#grgtoken-08-utility"))) {
       let bottomPosition =
-        $("#grgtoken-07-bluepaper").offset().top +
-        $("#grgtoken-07-bluepaper").outerHeight();
+        $("#grgtoken-08-utility").offset().top +
+        $("#grgtoken-08-utility").outerHeight();
       var docViewTop = $(window).scrollTop();
       if (bottomPosition > docViewTop) {
         $subnav.eq(1).slideUp();
@@ -81,7 +81,7 @@ $(function() {
 
   var discoverMore = function(e) {
     e.preventDefault();
-    var scrollTop = $("#project-01-what").offset().top;
+    var scrollTop = $("#project-01-concept").offset().top;
     $root.animate(
       {
         scrollTop: scrollTop

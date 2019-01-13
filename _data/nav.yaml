@@ -6,6 +6,8 @@
   subnav: true
 - link: "team"
   title: "Team"
+- link: "developers"
+  title: "Developers"
 - link: "faq"
   title: "FAQ"
 - link: "press"

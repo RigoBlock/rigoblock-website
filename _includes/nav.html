@@ -8,11 +8,18 @@
         {{ el.title }}
       </a>
     </li>
+    {% elsif el.title == "Developers" %}
+    <li {%if el.data %}data-{{ el.data }}{% endif %}>
+      <!--a href="https://blog.rigoblock.com/" target="_blank" title="{{ el.title }}"-->
+      <a href="https://docs.rigoblock.com/quick_start" target="_blank" title="{{ el.title }}">
+        {{ el.title }}
+      </a>
+    </li>
     {% elsif el.title == "GRG Token" %}
-    <!-- <a name="#grgtoken-01-scope" id="grgtoken-switch">{% asset 'baseline_arrow_drop_down_black_18dp2.png' %}</a> -->
-    <a name="#grgtoken-01-scope" id="grgtoken-switch"></a>
+    <!-- <a name="#grgtoken-07-grgtoken" id="grgtoken-switch">{% asset 'baseline_arrow_drop_down_black_18dp2.png' %}</a> -->
+    <a name="#grgtoken-07-grgtoken" id="grgtoken-switch"></a>
     <li id="grg-token-menu" {%if el.subnav %} class="parent" {% endif %} {%if el.data %}data-{{ el.data }}{% endif %}>
-      <a href="{{ site.url }}/{{ el.link }}{%if el.subnav %}#grgtoken-01-scope{% endif %}" title="{{ el.title }}">
+      <a href="{{ site.url }}/{{ el.link }}{%if el.subnav %}#grgtoken-07-grgtoken{% endif %}" title="{{ el.title }}">
         {{ el.title }}
       </a>
       {% if el.subnav %}
@@ -29,7 +36,7 @@
     </li>
     {% else %}
     <li id="project-menu" {%if el.subnav %} class="parent" {% endif %} {%if el.data %}data-{{ el.data }}{% endif %}>
-      <a href="{{ site.url }}/{{ el.link }}{%if el.subnav %}#project-01-what{% endif %}" title="{{ el.title }}">
+      <a href="{{ site.url }}/{{ el.link }}{%if el.subnav %}#project-01-concept{% endif %}" title="{{ el.title }}">
         {{ el.title }}
       </a>
       {% if el.subnav %}
