@@ -6,7 +6,7 @@ external_link: /faq
 animation: true
 ---
 
-Rigoblock is a blockchain protocol that makes it possible for anyone to set up and run a digital token pool.
+RigoBlock is a blockchain protocol that makes it possible for anyone to set up and run a digital token pool.
 It is an open protocol which developers can use for building their own applications for token management.
 
-The Rigoblock protocol is live on the Ethereum mainnet.
+The RigoBlock protocol is live on the Ethereum mainnet.

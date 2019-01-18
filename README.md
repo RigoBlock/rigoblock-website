@@ -1,4 +1,4 @@
-# Rigoblock website readme
+# RigoBlock website readme
 
 ## Install, Development and Production Building
 
@@ -88,7 +88,7 @@ that configures the slide according to layout.
 ```
   ---
 
-  title: "What is Rigoblock?"
+  title: "What is RigoBlock?"
   subtitle: "01. What"
   video_link: https://www.youtube.com/watch?v=ZW6Mus9XBU8
   slug: "project-01-what"
