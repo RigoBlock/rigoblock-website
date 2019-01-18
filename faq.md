@@ -12,9 +12,9 @@ subtitle: "Frequently Asked Question"
     >
     Rigo Investment Sagl, a Swiss company, is building the RigoBlock Protocol. With employees and advisors based around the world, the company focuses on business-grade technology solutions, including blockchain software development.
 
-03. <span>Will the RIGOBLOCK.COM Software be released under open source software license?</span>
+03. <span>Is the RIGOBLOCK.COM Software open source?</span>
     >
-    Yes, at the end of its development stage, Rigo Investment Sagl will be releasing the RIGOBLOCK.COM Software it has developed under an open source software license.
+    Yes, RigoBlock is an open source project. The code is released under the Apache 2.0 License and available at https://github.com/RigoBlock.
 
 04. <span>What are GRG tokens?</span>
     >
