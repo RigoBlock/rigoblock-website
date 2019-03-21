@@ -27,10 +27,6 @@ members:
     title: "Full-stack Developer"
     #bio: "React Developer."
     image: "federico.png"
-  - name: "Nathalie Cadlini"
-    title: "Social Media Manager"
-    #bio: "React Developer."
-    image: "nathy.png"
 advisors:
   - name: "Mikael Olofsson"
     title: "Investor and Business Advisor"
