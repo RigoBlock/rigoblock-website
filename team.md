@@ -1,5 +1,5 @@
 ---
 layout: team
-title: Team
-subtitle: "A horizontal organization"
+title: A decentralized network
+subtitle: "Leadership"
 ---

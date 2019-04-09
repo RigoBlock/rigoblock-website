@@ -4,10 +4,10 @@
 - link: ""
   title: "GRG Token"
   subnav: true
-- link: "team"
-  title: "Team"
 - link: "developers"
   title: "Developers"
+- link: "team"
+  title: "Team"
 - link: "faq"
   title: "FAQ"
 - link: "press"
