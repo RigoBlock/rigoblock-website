@@ -18,11 +18,11 @@ subtitle: "Frequently Asked Question"
 
 04. <span>What are GRG tokens?</span>
     >
-    GRG tokens are ERC-20 compatible tokens distributed on the Ethereum blockchain pursuant to a related ERC-20 smart contract (the “GRG Tokens”). GRG Tokens are needed by the Wizards to participate to the incentives mechanism and by the platform users to unlock access to premium services.
+    GRG tokens are ERC-20 compatible tokens distributed on the Ethereum blockchain pursuant to a related ERC-20 smart contract (the “GRG Tokens”). GRG Tokens are needed by the Wizards to participate in the incentives mechanism and by the platform users to unlock access to premium services.
 
 05. <span>What features, uses or attributes do GRG Tokens have?</span>
     >
-    New tokens are generated according to the Proof-of-Performance algorithm and distributed to managers of the token pools as a rewards mechanism. Wizards looking to collect GRG tokens as the Proof-of-Performance rewards must hold a minimum amoung to GRGs set by the token holders. Users must hold a minimum amount of GRGs in order to access premium features like performances, analytics. Any platform built on top of the RigoBlock protocol can use GRGs to reward their users.
+    New tokens are generated according to the Proof-of-Performance algorithm and distributed to managers of the token pools as a rewards mechanism. Wizards looking to collect GRG tokens as the Proof-of-Performance rewards must hold a minimum amount of GRGs set by the token holders. Users must hold a minimum amount of GRGs in order to access premium features like performances, analytics. Any platform built on top of the RigoBlock protocol can use GRGs to reward their users.
 
 06. <span>How does the GRG Token distribution work?</span>
     >
@@ -48,7 +48,7 @@ subtitle: "Frequently Asked Question"
     We recommend using either:
     >
     &nbsp;  
-    MetaMask (Chrome browser addon)  
+    MetaMask (Chrome browser add-on)  
     Parity  
     Trust  
     Cipher  
@@ -80,7 +80,7 @@ subtitle: "Frequently Asked Question"
 
 13. <span>Why can’t U.S. citizens, residents or entities purchase GRG Tokens?</span>
     >
-    It was decided that U.S. citizens, residents and entities should be excluded from purchasing GRG Tokens in the token distribution because of some of the logistical challenges associated with differing regulations in the many states of the United States of America. rigoblock.com does not believe that the distribution of GRG Tokens or the GRG Tokens themselves are securities, commodities, swaps on either securities or commodities, or similar financial instruments. The GRG Tokens are not designed for investment or speculative purposes and should not be considered as a type of investment. Nevertheless, U.S. citizens, residents and entities should not purchase or attempt to purchase GRG Tokens.
+    It was decided that U.S. citizens, residents and entities should be excluded from purchasing GRG Tokens in the token distribution because of some logistical challenges associated with differing regulations in the many states of the United States of America. rigoblock.com does not believe that the distribution of GRG Tokens or the GRG Tokens themselves are securities, commodities, swaps on either securities or commodities, or similar financial instruments. The GRG Tokens are not designed for investment or speculative purposes and should not be considered as a type of investment. Nevertheless, U.S. citizens, residents and entities should not purchase or attempt to purchase GRG Tokens.
 
 14. <span>I have contributed to the GRG Token distribution. When do I receive GRG Tokens?</span>
     >
