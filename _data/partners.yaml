@@ -7,6 +7,3 @@
 - image: 'db.png'
   link: 'https://www.db.com/company/index.htm'
   name: 'Deutsche Bank'
-- image: 'tokenmarket.png'
-  link: 'https://tokenmarket.net/'
-  name: 'TokenMarket'
