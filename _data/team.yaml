@@ -18,16 +18,16 @@ members:
     bio: "CEO & Co-founder PayRue Ltd."
     image: "mikael.png"
     linkedin: 'https://www.linkedin.com/in/mikael-olofsson-9a865135/'
+  - name: "Primoz Kordez"
+    title: "DeFi Advisor"
+    bio: "Founder of Block Analitica. Certified FRM, GARP."
+    image: "primoz.png"
+    linkedin: 'https://www.linkedin.com/in/primoz-kordez-frm-9878b463/'
   - name: "Alberto Robbiani"
     title: "Advisor Corporate Clients"
     bio: "Senior Client Advisor at Crossinvest. Previously Executive Director at UBS."
     image: "alberto.png"
     linkedin: 'https://www.linkedin.com/in/alberto-robbiani-86a55ab5/'
-  - name: "Primoz Kordez"
-    title: "Blockchain Economics Advisor"
-    bio: "Fintech Advisor at Cofound.It & Iconomi. Certified FRM, GARP."
-    image: "primoz.png"
-    linkedin: 'https://www.linkedin.com/in/primoz-kordez-frm-9878b463/'
   - name: "Riccardo Pittis"
     title: "Business Advisor"
     bio: "Business and Performance Coach. Former Professional Basketball Champion."
