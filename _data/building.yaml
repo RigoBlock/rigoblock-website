@@ -40,3 +40,6 @@
 - image: 'defipulse.png'
   link: 'https://defipulse.com/'
   name: 'DefiPulse'
+- image: 'cmc.png'
+  link: 'https://coinmarketcap.com/currencies/rigoblock/'
+  name: 'CoinMarketCap'
