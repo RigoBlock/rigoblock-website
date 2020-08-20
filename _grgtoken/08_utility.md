@@ -6,7 +6,7 @@ external_link: /assets/downloads/blue-paper.pdf
 animation: true
 ---
 
-Users looking to access the <a href="https://beta.rigoblock.com" target="_blank">portal</a> must hold GRG.
+Unlocking premium features requires holding GRG.
 
 Pools operators that hold a minimum amount of GRG are rewarded according to Proof-of-Performance.
 
