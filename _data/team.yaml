@@ -33,11 +33,6 @@ members:
     bio: "Business and Performance Coach. Former Professional Basketball Champion."
     image: "ricky.png"
     linkedin: 'https://www.linkedin.com/in/riccardopittis/'
-  - name: "Santosh Pandey"
-    title: "Legal Advisor"
-    bio: "Managing Partner at P&Y Law Offices. Managing Director at Western Legal Corporation Limited."
-    image: "santosh.png"
-    linkedin: 'https://www.linkedin.com/in/thesantoshpandey/'
 #  - name: "Matteo Petrani"
 #    title: "Experience Designer"
     # bio: "UX Engineer."
@@ -68,11 +63,6 @@ members:
 #    bio: "Fintech Advisor at Cofound.It & Iconomi. Certified FRM, GARP."
 #    image: "primoz.png"
 #    linkedin: 'https://www.linkedin.com/in/primoz-kordez-frm-9878b463/'
-#  - name: "Santosh Pandey"
-#    title: "Legal Advisor"
-#    bio: "Managing Partner at P&Y Law Offices. Managing Director at Western Legal Corporation Limited."
-#    image: "santosh.png"
-#    linkedin: 'https://www.linkedin.com/in/thesantoshpandey/'
 #  - name: "Riccardo Pittis"
 #    title: "Business Advisor"
 #    bio: "Business and Performance Coach. Former Professional Basketball Champion."
