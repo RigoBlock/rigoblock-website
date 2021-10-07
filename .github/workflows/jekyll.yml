@@ -25,7 +25,7 @@ jobs:
     
     steps:
     - name: Jekyll Actions
-      uses: helaili/jekyll-action@56f7087
+      uses: helaili/jekyll-action@2.0.5
       with:
         token: ${{ secrets.DEPLOY_GITHUB_TOKEN }}
         gem_src: '.'
