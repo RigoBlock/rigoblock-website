@@ -28,3 +28,4 @@ jobs:
       uses: helaili/jekyll-action@2.2.0
       with:
         token: ${{ secrets.DEPLOY_GITHUB_TOKEN }}
+        gem_src: '.'
