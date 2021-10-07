@@ -38,7 +38,11 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
-
+      
+      run: |
+          sudo apt-get update -qq
+          sudo apt-get install -yqq nodejs
+      
       # Use GitHub Deploy Action to build and deploy to Github
       - uses: jeffreytse/jekyll-deploy-action@v0.3.0
         with:
