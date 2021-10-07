@@ -16,7 +16,7 @@ jobs:
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
-  
+
   jekyll:
     runs-on: ubuntu-latest
     steps:
@@ -32,7 +32,7 @@ jobs:
         uses: limjh16/jekyll-action-ts@v2
         with:
           enable_cache: true
-      
+
       - name: 🚀 deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
