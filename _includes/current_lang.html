@@ -1,8 +1,0 @@
-{% assign current_lang = site.languages | where: "lang", site.lang %}
-{% assign current_lang = current_lang[0] %}
-<div class="current-lang">
-  <a lang="{{ current_lang.code }}" hreflang="{{ current_lang.code }}" href="/{{ current_lang.lang }}">
-    {{ current_lang.name }}
-    {% svg "_icons/down.svg" class="arrow-down" %}
-  </a>
-</div>
