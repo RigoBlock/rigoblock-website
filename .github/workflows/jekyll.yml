@@ -26,7 +26,8 @@ jobs:
     steps:
     - name: Jekyll Actions
       uses: helaili/jekyll-action@2.0.5 # 2.1.0 or v2
-      with:
-        # token: ${{ secrets.DEPLOY_GITHUB_TOKEN }}
+      env:
         JEKYLL_PAT: ${{ secrets.DEPLOY_GITHUB_TOKEN }} # used when downgrading
+      # with:
+        # token: ${{ secrets.DEPLOY_GITHUB_TOKEN }}
         # gem_src: '.'
