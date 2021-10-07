@@ -39,7 +39,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
       
-      run: |
+      - run: |
           sudo apt-get update -qq
           sudo apt-get install -yqq nodejs
       
