@@ -13,11 +13,11 @@ members:
     linkedin: 'https://www.linkedin.com/in/hanna-keskin-992263bb/'
     github: 'https://github.com'
     twitter: 'https://twitter.com'
-  - name: "Mikael Olofsson"
-    title: "Investor and Business Advisor"
-    bio: "CEO & Co-founder PayRue Ltd."
-    image: "mikael.png"
-    linkedin: 'https://www.linkedin.com/in/mikael-olofsson-9a865135/'
+#  - name: "Mikael Olofsson"
+#    title: "Investor and Business Advisor"
+#    bio: "CEO & Co-founder PayRue Ltd."
+#    image: "mikael.png"
+#    linkedin: 'https://www.linkedin.com/in/mikael-olofsson-9a865135/'
   - name: "Primoz Kordez"
     title: "DeFi Advisor"
     bio: "Founder of Block Analitica. Certified FRM, GARP."
