@@ -34,6 +34,8 @@
       </ul>
       {% endif %}
     </li>
+    {% elsif el.title == "Team" %}
+    <a></a>
     {% else %}
     <li id="project-menu" {%if el.subnav %} class="parent" {% endif %} {%if el.data %}data-{{ el.data }}{% endif %}>
       <a href="{{ site.url }}/{{ el.link }}{%if el.subnav %}#project-01-concept{% endif %}" title="{{ el.title }}">
