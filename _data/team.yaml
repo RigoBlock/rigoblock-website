@@ -35,17 +35,17 @@ members:
     linkedin: 'https://www.linkedin.com/in/riccardopittis/'
 #  - name: "Matteo Petrani"
 #    title: "Experience Designer"
-    # bio: "UX Engineer."
+#    bio: "UX Engineer."
 #    image: "matteo.png"
-    # linkedin: 'https://www.linkedin.com/in/matteopetrani/'
+#    linkedin: 'https://www.linkedin.com/in/matteopetrani/'
 #  - name: "Luca del Bianco"
 #    title: "Full-stack Wizard"
-    #bio: "Senior React Developer."
+#    bio: "Senior React Developer."
 #    image: "lucadb.png"
-    # linkedin: 'https://www.linkedin.com/in/lucadelbianco/'
+#    linkedin: 'https://www.linkedin.com/in/lucadelbianco/'
 #  - name: "Federico Obialero"
 #    title: "Full-stack Developer"
-    #bio: "React Developer."
+#    bio: "React Developer."
 #    image: "federico.png"
 #advisors:
 #  - name: "Mikael Olofsson"
