@@ -41,7 +41,7 @@ This file manages the element of the section `Partners - Partners`
 It is a YAML list. This is an example object:
 
 ```
-  - image: 'ethfinex.png'
+  - image: 'rigonetwork.png'
     link: 'http://www.google.com'
 ```
 
@@ -74,9 +74,9 @@ This is an example object for `members` list (image, linkedin, github and twitte
 This is an example object for `advisors` list:
 
 ```
-  - name: "Mikael Olofsson"
-    title: "Investor and Advisor"
-    bio: "Co-founder iXledger Technologies. Managing Partner Polymbios Capital."
+  - name: "Advisor Name"
+    title: "Advisor"
+    bio: "Advisor description."
 ```
 
 ## `_project` folder
@@ -109,7 +109,7 @@ automatically):
 
 ```
   ---
-  title: Fintastico
+  title: Yahoo Finance
   pubdate: 2017/11/18
   link: http://www.google.com
   ---
