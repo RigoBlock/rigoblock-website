@@ -16,8 +16,7 @@ subtitle: "The GRG utility token"
 
 03. <span>Access utility</span>
     >
-    Users looking to access the portal <a href="https://beta.rigoblock.com">beta.rigoblock.com</a> are required to hold 1 GRG token.
-    This limits the access of malicious actors to the portal and is a safeguard measure for the users.
+    Users/pools looking to unlock premium protocol features (i.e. GRG staking) are required to hold GRG.
 
 04. <span>Incentives utility</span>
     >
