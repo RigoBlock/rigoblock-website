@@ -19,8 +19,8 @@
           </div>
           <div class="label">Watch the Video</div>
         </a>
-        {% else %}
-        {% if slide.external_link == "/assets/downloads/blue-paper.pdf" %}
+        {% endif %}
+        {% elsif slide.external_link == "/assets/downloads/blue-paper.pdf" %}
         <a href="{{site.url}}{{slide.external_link}}" class="icon-download button" target="_blank">
           <div class="icon-wrapper">
             {% svg "_icons/download.svg" class="icon-download icon" %}
@@ -28,6 +28,13 @@
           <div class="label">Read the Bluepaper</div>
         </a>
         {% endif %}
+        {% elsif slide.external_link" %}
+        <a href="{{slide.external_link}}" class="icon-download button" target="_blank">
+          <div class="icon-wrapper">
+            {% svg "_icons/beta.svg" class="icon-beta icon" %}
+          </div>
+          <div class="label">Read the docs</div>
+        </a>
         {% endif %}
       </div>
     </div>
