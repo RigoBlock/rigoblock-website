@@ -1,13 +1,11 @@
 ---
-title: "GRG Utility Components"
+title: "GRG Utility"
 subtitle: "08. Utility"
 slug: "grgtoken-08-utility"
-external_link: /assets/downloads/blue-paper.pdf
+external_link: https://docs.rigoblock.com/introduction-to-rigoblock
 animation: true
 ---
 
-Unlocking premium features requires holding GRG.
+GRG is algorithmically distributed to smart pool operators and their stakers.
 
-Pools operators that hold a minimum amount of GRG are rewarded according to Proof-of-Performance.
-
-The governance of the RigoBlock protocol sets the parameters of Proof-of-Performance.
+Actively staked GRG represents voting power in the RigoBlock decentralized governance.
