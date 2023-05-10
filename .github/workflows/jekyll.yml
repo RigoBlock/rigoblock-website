@@ -1,5 +1,7 @@
 name: Jekyll site CI
 
+# TODO: launch deploy on merge to master, set url as env variable
+
 on:
   push:
     branches: [ deployment ]
@@ -25,6 +27,7 @@ jobs:
           jekyll/builder:4.2.0 /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
 
   jekyll:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: 📂 setup
