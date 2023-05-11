@@ -107,7 +107,7 @@ GEM
     svg_optimizer (0.1.0)
       nokogiri
     thread_safe (0.3.6)
-    tzinfo (1.2.7)
+    tzinfo (1.2.11)
       thread_safe (~> 0.1)
 
 PLATFORMS
