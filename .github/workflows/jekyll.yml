@@ -1,7 +1,5 @@
 name: Jekyll site CI
 
-# TODO: launch deploy on merge to master, set url as env variable
-
 on:
   push:
     branches: [ deployment ]
