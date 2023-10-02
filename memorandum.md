@@ -20,10 +20,6 @@ RigoBlock.com is a site operated by Rigo Investment Sagl ("We"). We are register
 
 RigoBlock is a blockchain protocol for decentralized asset management. It is an abstracted and generalized standard, built and deployed on the Ethereum public blockchain and portable to multiple blockchains, which streamlines the creation and management of complex applications for asset management.
 
-### GRGs Overview
-
-RigoBlock.com is a site operated by Rigo Investment Sagl ("We"). We are registered in Switzerland under company number CH-501.4.017.571-4 and have our registered office at Via D. Fontana 8, 6900, Lugano, Switzerland.
-
 ### Risk Factors
 
 The following risks entail circumstances under which, our business, financial condition, results of operations and prospects could suffer. The list of risk factors below is not exhaustive and the Company does not express any view as to the likelihood of any of the contingencies detailed below occurring. You may wish to seek professional advice in relation to the possible risks that may arise as a result of your participation in the GRG Sale.
