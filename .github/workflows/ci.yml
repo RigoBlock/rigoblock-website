@@ -1,10 +1,10 @@
-name: Jekyll site CI
+name: test build CI
 
 on:
   push:
-    branches: [ deployment ]
+    branches-ignore: [ deployemnt ]
   pull_request:
-    branches: [ deployment ]
+    branches-ignore: [ deployemnt ]
 
 jobs:
   build:
@@ -24,7 +24,7 @@ jobs:
           -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
           jekyll/builder:4.2.0 /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
 
-  jekyll:
+  build-jekyll:
     needs: build
     runs-on: ubuntu-latest
     steps:
@@ -40,10 +40,3 @@ jobs:
         uses: limjh16/jekyll-action-ts@v2
         with:
           enable_cache: true
-
-      - name: 🚀 deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          cname: rigoblock.com
