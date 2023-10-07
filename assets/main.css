@@ -1229,8 +1229,8 @@ footer {
         border: 1px solid #fff;
         background: transparent;
         padding: 10px;
-        height: 52px;
-        text-transform: uppercase;
+        height: 42px;
+        text-transform: lowercase;
         float: left;
         color: #fff;
         -webkit-border-radius: 0;
