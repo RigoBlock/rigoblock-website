@@ -6,6 +6,6 @@ external_link: https://docs.rigoblock.com/introduction-to-rigoblock
 animation: true
 ---
 
-GRG is algorithmically distributed to smart pool operators and their stakers.
+GRG is algorithmically distributed to smart pool operators and stakers.
 
 Actively staked GRG represents voting power in the RigoBlock decentralized governance.

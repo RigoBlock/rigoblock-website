@@ -39,23 +39,23 @@ layout: default
       </div>
     </div>
     <div class="buttons" data-show-on-scroll>
+      <a href="{{site.beta_portal_link}}" class="icon-telegram button" target="_blank">
+        <div class="icon-wrapper">
+          {% svg "_icons/beta.svg" class="icon-beta icon" %}
+        </div>
+        <div class="label">Launch App</div>
+      </a>
       <a href="" class="icon-token-sale button" data-token-popup>
         <div class="icon-wrapper">
           {% svg "_icons/busta.svg" class="icon-newsletter icon" %}
         </div>
         <div class="label">Join the Newsletter</div>
       </a>
-      <a href="{{site.url}}/assets/downloads/white-paper.pdf" class="icon-download button" target="_blank">
+      <a href="https://docs.rigoblock.com/introduction-to-rigoblock" class="icon-link button" target="_blank">
         <div class="icon-wrapper">
-          {% svg "_icons/download.svg" class="icon-download icon" %}
+          {% svg "_icons/link.svg" class="icon-link icon" %}
         </div>
-        <div class="label">Read the Whitepaper</div>
-      </a>
-      <a href="{{site.beta_portal_link}}" class="icon-telegram button" target="_blank">
-        <div class="icon-wrapper">
-          {% svg "_icons/beta.svg" class="icon-beta icon" %}
-        </div>
-        <div class="label">RigoBlock Portal</div>
+        <div class="label">Developers</div>
       </a>
     </div>
   </div>
@@ -70,6 +70,6 @@ layout: default
   {% include grgtoken_slide.html %}
   {% endfor %}
 </div>
-<div class="token-sale-block">
+<!--div class="token-sale-block">
   <a href="" data-token-popup>Join the Newsletter</a>
-</div>
+</div-->
