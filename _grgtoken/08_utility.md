@@ -2,7 +2,7 @@
 title: "GRG Utility"
 subtitle: "08. Utility"
 slug: "grgtoken-08-utility"
-external_link: https://docs.rigoblock.com/introduction-to-rigoblock
+external_link: https://app.rigoblock.com/#/stake
 animation: true
 ---
 
