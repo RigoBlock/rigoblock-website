@@ -1,70 +1,9 @@
-members:
-  - name: "Gabriele Rigo"
-    title: "Co-Founder & CEO"
-    bio: "Previously Treasurer @1BN+ USD global macro hedge fund and Head of Investment @25BN+ USD asset management company. Msc Finance from Bocconi & HSG."
-    image: "rigo.png"
-    linkedin: 'https://www.linkedin.com/in/gabrielerigo/'
-    github: 'https://github.com'
-    twitter: 'https://twitter.com'
-  - name: "Hanna Keskin"
-    title: "Co-Founder & COO"
-    bio: "Business Administration at University of Applied Sciences Lugano. Previously Apprentice at Palo Alto SA, Auction Bidder at Spink Switzerland."
-    image: "keskin.png"
-    linkedin: 'https://www.linkedin.com/in/hanna-keskin-992263bb/'
-    github: 'https://github.com'
-    twitter: 'https://twitter.com'
-#  - name: "Mikael Olofsson"
-#    title: "Investor and Business Advisor"
-#    bio: "CEO & Co-founder PayRue Ltd."
-#    image: "mikael.png"
-#    linkedin: 'https://www.linkedin.com/in/mikael-olofsson-9a865135/'
-  - name: "Primoz Kordez"
-    title: "DeFi Advisor"
-    bio: "Founder of Block Analitica. Certified FRM, GARP."
-    image: "primoz.png"
-    linkedin: 'https://www.linkedin.com/in/primoz-kordez-frm-9878b463/'
-  - name: "Alberto Robbiani"
-    title: "Advisor Corporate Clients"
-    bio: "Senior Client Advisor at Crossinvest. Previously Executive Director at UBS."
-    image: "alberto.png"
-    linkedin: 'https://www.linkedin.com/in/alberto-robbiani-86a55ab5/'
-  - name: "Riccardo Pittis"
-    title: "Business Advisor"
-    bio: "Business and Performance Coach. Former Professional Basketball Champion."
-    image: "ricky.png"
-    linkedin: 'https://www.linkedin.com/in/riccardopittis/'
-#  - name: "Matteo Petrani"
-#    title: "Experience Designer"
-#    bio: "UX Engineer."
-#    image: "matteo.png"
-#    linkedin: 'https://www.linkedin.com/in/matteopetrani/'
-#  - name: "Luca del Bianco"
-#    title: "Full-stack Wizard"
-#    bio: "Senior React Developer."
-#    image: "lucadb.png"
-#    linkedin: 'https://www.linkedin.com/in/lucadelbianco/'
-#  - name: "Federico Obialero"
-#    title: "Full-stack Developer"
-#    bio: "React Developer."
-#    image: "federico.png"
+#members:
+#  - name: "Gabriele Rigo"
+#    title: "Co-Founder & CEO"
+#    bio: "Previously Treasurer @1BN+ USD global macro hedge fund and Head of Investment @25BN+ USD asset management company. Msc Finance from Bocconi & HSG."
+#    image: "rigo.png"
+#    linkedin: 'https://www.linkedin.com/in/gabrielerigo/'
+#    github: 'https://github.com'
+#    twitter: 'https://twitter.com'
 #advisors:
-#  - name: "Mikael Olofsson"
-#    title: "Investor and Business Advisor"
-#    bio: "Co-founder iXledger Technologies. Managing partner Polymbios Capital."
-#    image: "mikael.png"
-#    linkedin: 'https://www.linkedin.com/in/mikael-olofsson-9a865135/'
-#  - name: "Alberto Robbiani"
-#    title: "Advisor Corporate Clients"
-#    bio: "Senior Client Advisor at Crossinvest. Previously Executive Director at UBS."
-#    image: "alberto.png"
-#    linkedin: 'https://www.linkedin.com/in/alberto-robbiani-86a55ab5/'
-#  - name: "Primoz Kordez"
-#    title: "Blockchain Economics Advisor"
-#    bio: "Fintech Advisor at Cofound.It & Iconomi. Certified FRM, GARP."
-#    image: "primoz.png"
-#    linkedin: 'https://www.linkedin.com/in/primoz-kordez-frm-9878b463/'
-#  - name: "Riccardo Pittis"
-#    title: "Business Advisor"
-#    bio: "Business and Performance Coach. Former Professional Basketball Champion."
-#    image: "ricky.png"
-#    linkedin: 'https://www.linkedin.com/in/riccardopittis/'
