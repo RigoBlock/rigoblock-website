@@ -6,7 +6,7 @@ slug: "project-05-principles"
 
 - **Safety First**
 
-  Every transaction is simulated and validated before execution. NAV Shield blocks any action that would drain a vault beyond its threshold.
+  Every transaction is simulated and validated before execution. NAV Shield blocks any action that would drain a vault.
 
 - **Open by Default**
 
@@ -22,7 +22,7 @@ slug: "project-05-principles"
 
 - **Agent-Native**
 
-  Purpose-built for autonomous operation: scoped delegation, X402 API, Manual and Delegated execution modes, and protocol-enforced safety rails.
+  Scoped delegation, X402 API, Manual and Automated execution modes, and additional safety rails.
 
 - **Ship in the Open**
 
