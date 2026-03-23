@@ -1,112 +1,58 @@
 ---
 layout: page
 title: FAQ
-subtitle: "Frequently Asked Question"
+subtitle: "Frequently Asked Questions"
 ---
 
-01. <span>What is RIGOBLOCK.COM software?</span>
+01. <span>What is RigoBlock?</span>
     >
-    RIGOBLOCK.COM is software that introduces a blockchain architecture designed to enable vertical and horizontal scaling of decentralized applications for asset management (the “RIGOBLOCK.COM Software”). This is achieved through an operating system-like construct upon which applications can be built. The software consists of a protocol of smart contracts which makes it easy for developers to create their own asset management application, leveraging a ready-made infrastructure and an innovative rewards mechanism which eliminates management fees and performance fees.
+    RigoBlock is secure smart vault infrastructure for DeFi and autonomous agents. It combines on-chain vault contracts, a safe off-chain execution engine, and multiple operator interfaces — from a web dashboard to an AI-powered trading chat to an X402 API for external agents. Live since 2018, the protocol is deployed on 7 EVM chains.
 
-02. <span>Who is building the RIGOBLOCK.COM Software?</span>
+02. <span>What is a smart vault?</span>
     >
-    Rigo Investment Sagl, a Swiss company, is building the RigoBlock Protocol. With employees and advisors based around the world, the company focuses on business-grade technology solutions, including blockchain software development.
+    A smart vault is a non-custodial smart contract that holds and manages digital tokens on behalf of its operator and depositors. Anyone can deploy one permissionlessly. Vaults support swaps, liquidity provision (Uniswap V2/V3/V4), perpetuals (GMX V2), aggregated routing (0x), and bridging (Across) — all through whitelisted adapters governed by the RigoBlock DAO.
 
-03. <span>Is the RIGOBLOCK.COM Software open source?</span>
+03. <span>What makes RigoBlock different?</span>
     >
-    Yes, RigoBlock is an open source project. The code is released under the Apache 2.0 License and available at https://github.com/RigoBlock.
+    RigoBlock is purpose-built for autonomous execution. Its unique combination of NAV Shield (protocol-enforced circuit breaker), off-chain transaction simulation, granular delegation, and X402 micropayment API creates a safe execution layer — where AI agents can operate vaults without being able to drain funds. No other protocol offers this level of agent-native safety guarantees.
 
-04. <span>What are GRG tokens?</span>
+04. <span>What is NAV Shield?</span>
     >
-    GRG tokens are ERC-20 compatible tokens distributed on the Ethereum blockchain pursuant to a related ERC-20 smart contract (the “GRG Tokens”). GRG Tokens are needed by the Wizards to participate in the incentives mechanism and by the platform users to unlock access to premium services.
+    NAV Shield is a protocol-enforced protection mechanism. Before every trade, the swap's impact on the vault's Net Asset Value is simulated off-chain. If NAV would drop more than 10% versus the pre-swap level or 24-hour baseline, the transaction is blocked. NAV Shield runs outside the agent's control surface — no agent or API caller can disable or circumvent it.
 
-05. <span>What features, uses or attributes do GRG Tokens have?</span>
+05. <span>What is the X402 API?</span>
     >
-    New tokens are generated according to the Proof-of-Performance algorithm and distributed to managers of the token pools as a rewards mechanism. Wizards looking to collect GRG tokens as the Proof-of-Performance rewards must hold a minimum amount of GRGs set by the token holders. Users must hold a minimum amount of GRGs in order to access premium features like performances, analytics. Any platform built on top of the RigoBlock protocol can use GRGs to reward their users.
+    The X402 API at <a href="https://trader.rigoblock.com" target="_blank">trader.rigoblock.com</a> enables external AI agents to access DeFi trading via the HTTP 402 / X402 micropayment standard. Agents pay per call in USDC on Base — no subscriptions, no API keys, no custody. The service is registered in Coinbase's x402 Bazaar for automatic agent discovery.
 
-06. <span>How does the GRG Token distribution work?</span>
+06. <span>How do execution modes work?</span>
     >
-    A total of 10,000,000 GRG Tokens have been created at the genesis block. 3,000,000 will be distributed to the public during a public sale for a duration of 30 days. New GRG tokens are distributed according to the Proof of Performance algorithm.
+    RigoBlock supports two execution modes. In <strong>Manual</strong> mode, the agent prepares the transaction and the operator signs it with their own wallet. In <strong>Delegated</strong> mode, the vault grants temporary encrypted keys to the agent for fully autonomous, revocable execution. Both modes go through NAV Shield and the full 7-point validation pipeline before any transaction is broadcast.
 
-07. <span>Why was this token distribution method chosen?</span>
+07. <span>Can AI agents operate vaults autonomously?</span>
     >
-    The RigoBlock protocol is live on the Ethereum mainnet and already integrated in third-party platforms: the RigoBlock frontend portal and Ethfinex Trustless. The protocol has built-in incentives for the contributors of the network. The model aims at distributing the ownership of the network to its most successful contributors: token holders and pools operators.
+    Yes, with protocol-level safeguards. Vault operators delegate scoped, per-chain, per-function permissions to an agent wallet. The agent can execute pre-approved actions but cannot withdraw funds, transfer ownership, change delegation settings, or bypass NAV Shield. Delegation is revocable at any time.
 
-08. <span>Was there any GRG Token pre-sale or ways to obtain GRG Tokens prior to the commencement of the GRG Token distribution?</span>
+08. <span>Which chains does RigoBlock support?</span>
     >
-    Yes. The pre-sale was necessary to bring the project to the market at a more mature stage. Early contributors are partners who wanted to accelerate the development of the RigoBlock protocol.
+    The protocol is deployed on Ethereum, Arbitrum, Base, Optimism, BSC, Unichain, and Polygon. The X402 trading API supports execution across all deployed chains.
 
-09. <span>How can I participate in the GRG Token distribution?</span>
+09. <span>What DeFi integrations are available?</span>
     >
-    To participate in the GRG Token distribution, you will need an Ethereum compatible wallet or an application where you and only you hold the private keys. Private keys are needed to correctly interact with smart contract functions, like transferring cryptographic tokens. Do not send ether (“ETH”) directly from cryptocurrency exchanges, only an ETH compatible wallet.
-    >  
-    &nbsp;  
-    For detailed information and suggestions on how to purchase GRG Tokens, click here.
+    Uniswap V2, V3, and V4 (swaps and liquidity), 0x Aggregator (best-execution routing), GMX V2 (perpetuals), Across (cross-chain bridging), and BackGeoOracle (on-chain price feeds with over 70,000 price updates).
 
-10. <span>What ETH compatible wallets are recommended?</span>
+10. <span>What are GRG tokens?</span>
     >
-    We recommend using either:
-    >
-    &nbsp;  
-    MetaMask (Chrome browser add-on)  
-    Parity  
-    Trust  
-    Cipher  
-    Mist  
-    MyEtherWallet  
-    imToken  
-    >
-    &nbsp;  
-    The following wallets are known to be incompatible wallets; this is not a complete list. Do not use any of the following wallets to participate in the GRG Token distribution:
-    >
-    &nbsp;  
-    Coinbase  
-    Binance  
-    Kraken  
-    Poloniex  
-    Bittrex  
-    Jaxx  
-    Coinomi
-    Cex.io   
-    Any other cryptocurrency exchange
+    GRG is the ERC-20 governance and incentive token of the RigoBlock network. It powers the Proof-of-Performance reward system — vault operators earn GRG for generating real returns — and represents voting power in fully on-chain governance when staked.
 
-11. <span>Is there a minimum purchase for GRG Tokens?</span>
+11. <span>How does Proof-of-Performance work?</span>
     >
-    The minimum contribution accepted during the public sale is 0.2 ETH. Smaller contribution amounts will be rejected.
+    Proof-of-Performance is an on-chain algorithm that replaces management and performance fees. Vault operators earn GRG rewards proportional to their vault's value and returns. To qualify, operators must stake a minimum amount of GRG — aligning operator success directly with depositor outcomes.
 
-12. <span>Is it possible to limit the amount of ETH paid per GRG Token?</span>
+12. <span>Who is building RigoBlock?</span>
     >
-    Yes, the price of 1 GRG is fixed at 0.01856592362 ETH per token. Please review all the risks associated with purchasing GRG Tokens including the technical risks set forth in the Purchase Agreement.
+    Rigo Investment Sagl, a Swiss company, builds and maintains the protocol. RigoBlock is validated by the Uniswap Foundation (UFSF Cohort 2 and Retro Grant recipient) and is an H-Farm Blockchain Business Solution alumnus. The codebase is open source under the Apache 2.0 License at <a href="https://github.com/RigoBlock" target="_blank">github.com/RigoBlock</a>.
 
-13. <span>Why can’t U.S. citizens, residents or entities purchase GRG Tokens?</span>
+13. <span>How do I get started?</span>
     >
-    It was decided that U.S. citizens, residents and entities should be excluded from purchasing GRG Tokens in the token distribution because of some logistical challenges associated with differing regulations in the many states of the United States of America. rigoblock.com does not believe that the distribution of GRG Tokens or the GRG Tokens themselves are securities, commodities, swaps on either securities or commodities, or similar financial instruments. The GRG Tokens are not designed for investment or speculative purposes and should not be considered as a type of investment. Nevertheless, U.S. citizens, residents and entities should not purchase or attempt to purchase GRG Tokens.
-
-14. <span>I have contributed to the GRG Token distribution. When do I receive GRG Tokens?</span>
-    >
-    Tokens will be distributed 30 days after the end of the public contribution period, on the 18th of February. Whitelisted wallets receive 1 GRG immediately, as part of our airdrop program and to enable access to the portal https://beta.rigoblock.com.
-
-15. <span>Are GRG Tokens transferable?</span>
-    >
-    While rigoblock.com will not be involved in any way in the transferability of the GRG Tokens, it is possible that GRG Tokens could be transferred on a peer-to-peer basis or on platforms operated by 3rd parties during the GRG Token distribution period.
-
-16. <span>Are there network fees when transferring GRG Tokens?</span>
-    >
-    Yes, the GRG Token is an ERC-20 compatible token; therefore, transfers will be subject to ETH gas fees like all other transactions on the Ethereum network.
-
-17. <span>What happens if I can’t contribute ETH or don’t receive my GRG Tokens?</span>
-    >
-    The GRG Token distribution contract, GRG Token smart contract and the GRG Tokens are being provided on an “as is” and “as available” basis without representations, warranties, promises or guarantees whatsoever of any kind made by block.one. Prior to purchasing GRG Tokens, you should ensure that you carry out your own examination and investigation and carefully review in their entirety the risks associated with purchasing GRG Tokens as set forth in the Purchase Agreement. Purchases of GRG Tokens are non-refundable and purchases cannot be cancelled. Under no circumstances will you be entitled to receive money or compensation for any GRG Tokens purchased or your inability to purchase GRG Tokens.
-
-18. <span>Where do the proceeds from the GRG Token distribution go?</span>
-    >
-    Proceeds from the GRG Token distribution will be used for the further development and scaling of the RigoBlock platform to ensure the long-term success of the project.
-
-19. <span>What does rigoblock.com plan to use proceeds from the GRG Token distribution for?</span>
-    >
-    As a private company, proceeds of the GRG Token distribution will be utilized by rigoblock.com in its sole discretion. rigoblock.com intends to use certain of the proceeds for general administration and operating expenses, as well as to grow and evolve the RigoBlock protocol and ecosystem of applications and corporates building applications for asset management using the RIGOBLOCK.COM Software.
-
-20. <span>Why are proceeds from the GRG Token distribution not being donated to a foundation or other non-profit organization?</span>
-    >
-    Platforms that adopt the RIGOBLOCK.COM Software do not require a foundation or a non-profit organization to help grow or maintain the network because such platform will be self-funding. Based on the RIGOBLOCK.COM Software, it is intended that any platform that adopts the RIGOBLOCK.COM Software will contribute to an increase the RigoBlock network value and will generate an inflation of GRGs at a rate of 1 to 2 percent per year to be distributed to the platform's pool operators in connection to the size of the pool and its value relative to its value at the previous timestamp. RIGOBLOCK.COM will receive 5% of such inflation, guaranteeing the long-term sustainability of the project. In this case, such a platform will not be reliant on any one foundation, organization, or individual for its growth, development or maintenance.
+    Deploy a vault at <a href="https://app.rigoblock.com" target="_blank">app.rigoblock.com</a>, try AI-powered trading at <a href="https://trader.rigoblock.com" target="_blank">trader.rigoblock.com</a>, or explore the developer documentation at <a href="https://docs.rigoblock.com" target="_blank">docs.rigoblock.com</a>.
 {:.faq-list}

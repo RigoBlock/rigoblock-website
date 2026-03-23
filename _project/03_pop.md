@@ -1,10 +1,10 @@
 ---
 title:  "Proof of Performance"
-subtitle: "03. PoP"
+subtitle: "03. Incentives"
 slug: "project-03-pop"
 animation: true
 ---
 
-Proof-of-Performance is an algorithm that rewards the token pools operators based on the value and the performance of their pools. The operators are rewarded in GRG, an Ethereum ERC-20 compliant token.
+Proof-of-Performance replaces management and performance fees with an on-chain reward algorithm. Vault operators earn GRG tokens in proportion to the value and returns they generate — not for the assets they hold or the fees they charge.
 
-The RigoBlock incentive system allows the token pools to be operated without direct fee charges, and aligns the interests of the different stakeholders.
+The result: operators succeed only when depositors succeed. A transparent, verifiable incentive structure enforced entirely on-chain.

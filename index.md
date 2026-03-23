@@ -2,7 +2,7 @@
 layout: home
 ---
 
-# Organizing the <br/>World's Value
+# Secure Smart Vaults for <br/>DeFi & Autonomous Agents
 
-RigoBlock is an open protocol that makes<br />
-token management universally accessible.
+Open infrastructure for on-chain token management<br />
+with protocol-level safety rails — purpose-built for the agent economy.

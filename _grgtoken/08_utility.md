@@ -6,6 +6,6 @@ external_link: https://app.rigoblock.com/#/stake
 animation: true
 ---
 
-GRG is algorithmically distributed to smart pool operators and stakers.
+GRG is distributed algorithmically to vault operators and stakers through Proof-of-Performance — rewarding real returns, not AUM.
 
-Actively staked GRG represents voting power in the RigoBlock decentralized governance.
+Actively staked GRG represents voting power in RigoBlock's on-chain governance, giving token holders direct control over protocol parameters, adapter whitelisting, and implementation upgrades.
