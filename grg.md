@@ -1,44 +1,32 @@
 ---
 layout: page
-title: The world's first utility token for asset management
-subtitle: "The GRG utility token"
+title: The governance and incentive token for DeFi infrastructure
+subtitle: "The GRG Token"
 ---
 
-01. <span>The very reason we exist</span>
+01. <span>Why GRG exists</span>
     >
-    Blockchains are being recognized as a more secure and efficient way of transferring value.
-    With the emergence of a token based economy, it is critical to build standards for organizing value in the form of tokens.
-    We have seen networks, marketplaces and standards for exchanging value. Yet no viable protocol for organizing value exists.
+    RigoBlock replaces management and performance fees with an algorithmic reward system. GRG is the ERC-20 token that makes this possible — powering the Proof-of-Performance incentive mechanism and giving operators a direct stake in the protocol they help secure.
 
-02. <span>The GRG utility token</span>
+02. <span>The GRG token</span>
     >
-    The GRG token is the world's first utility token for asset management, compliant with Swiss regulatory requirements as a result of the KYC/AML controls for the public sale participants and the intrinsic utility it holds. GRG is an inflation token, like Ether. 10'000'000 GRGs are preminted.
+    GRG is the governance and incentive token of the RigoBlock network. 10,000,000 GRG were minted at genesis. New GRG is distributed algorithmically to vault operators based on vault value and performance — the Proof-of-Performance mechanism.
 
-03. <span>Access utility</span>
+03. <span>Staking</span>
     >
-    Users/pools looking to unlock premium protocol features (i.e. GRG staking) are required to hold GRG.
+    GRG holders stake their tokens to earn protocol rewards and qualify for Proof-of-Performance distributions. Stake directly at <a href="https://app.rigoblock.com/#/stake" target="_blank">app.rigoblock.com</a>.
 
-04. <span>Incentives utility</span>
+04. <span>Governance</span>
     >
-    The Proof-of-Performance algorithm automatically rewards the pools operators.
-    In order to qualify for the reward, each pool operator must hold a dynamic minimum amount of GRG tokens.
+    Actively staked GRG represents voting power in RigoBlock's fully on-chain governance. Token holders vote on protocol parameters, Proof-of-Performance reward rates, adapter whitelisting, and implementation upgrades. No single entity can override token holder decisions.
 
-05. <span>Governance utility</span>
+05. <span>Incentives</span>
     >
-    The parameters of the Proof-of-Performance algorithm, which determine the resulting overall inflation, are set by the token holders.
-    The rationale is based on game theory: token holders have an incentive to set the parameters to 0, in order to create 0 inflation and maximize the token's unitary value.
-    However, since the RigoBlock protocol has a continuous funding model, which is designed to attract external develop and grow the ecosystem, the GRG token holders have an incentive to set the minimum parameters which allow for optimal network functioning.
+    Proof-of-Performance algorithmically rewards vault operators in GRG. Operators must hold a minimum GRG amount (set by governance) to qualify — creating a natural feedback loop where success earns more stake, which earns more rewards.
 
-06. <span>The GRG token sale</span>
+06. <span>Learn more</span>
     >
-    1'500'000 GRGs are being offered to the public through a token sale.
-    All allocated tokens will be distributed to the public.
-    Tokens are distributed at a maximum price of 8 USD per token and a minimum price of 3 USD per token.
-    This model ensures that there are practically no unsold tokens and the final price of the token is a result of the matching between demand and offer, with a cap and a floor (a maximum and a minimum price) to avoid market abuse.
-
-07. <span>Bluepaper</span>
-    >
-    <a href="/assets/downloads/BluePaper.pdf">
-    find out more in the bluepaper
-    </a>
+    <a href="https://docs.rigoblock.com" target="_blank">Developer documentation</a> — full technical specification of GRG staking, governance, and Proof-of-Performance.
+    <br /><br />
+    <a href="/assets/downloads/BluePaper.pdf">Bluepaper</a> — the original protocol design.
 {:.faq-list}

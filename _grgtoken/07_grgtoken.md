@@ -1,11 +1,11 @@
 ---
-title:  "The Asset Management Token"
-subtitle: "07. GRG token"
+title:  "The Governance & Incentive Token"
+subtitle: "07. GRG Token"
 slug: "grgtoken-07-grgtoken"
 animation: true
 ---
 
-GRG is the utility token which aligns the interests of the different operators of the RigoBlock network. <br />
+GRG powers the RigoBlock network — governing the protocol and rewarding vault operators through Proof-of-Performance. Staked GRG represents voting power over protocol parameters and upgrades. <br />
 
 Token address: <a href="https://etherscan.io/token/0x4fbb350052bca5417566f188eb2ebce5b19bc964" target="_blank">0x4fbb350052bca5417566f188eb2ebce5b19bc964</a><br />
 

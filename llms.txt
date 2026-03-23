@@ -1,56 +1,96 @@
 # RigoBlock
 
-> RigoBlock is an open DeFi protocol that provides secure smart vault infrastructure for autonomous AI agents, individual operators, and institutional token managers. Built on Ethereum and Arbitrum. Governed by the GRG token.
+> RigoBlock is secure smart vault infrastructure for DeFi and autonomous agents. Live since 2018 on 7 EVM chains (Ethereum, Arbitrum, Base, Optimism, BSC, Unichain, Polygon). Combines on-chain vault contracts, a safe off-chain execution engine with NAV Shield protection, and an X402 micropayment API purpose-built for the agent economy. V4 architecture since May 2025. Governed by the GRG token.
 
 ## What RigoBlock Does
 
-RigoBlock lets anyone create a non-custodial smart vault on-chain. Vault operators can:
-- Accept third-party deposits under a transparent Proof-of-Performance incentive model
-- Delegate execution to AI agents via scoped on-chain delegation
-- Protect vault Net Asset Value using the NAV Shield (automatic circuit breaker against value drain)
-- Pay AI agents for on-chain actions via the X402 micropayment protocol
+RigoBlock lets anyone deploy a non-custodial smart vault on-chain. The platform provides:
+- On-chain vault contracts with whitelisted adapter interactions (governed by the RigoBlock DAO)
+- A safe off-chain execution engine that simulates every transaction before broadcast — outside the agent's control surface
+- NAV Shield: a protocol-enforced circuit breaker that blocks any trade reducing vault NAV >10% vs pre-swap or 24h baseline
+- Two execution modes: Manual (agent prepares, operator signs) and Delegated (fully autonomous, revocable)
+- Scoped delegation: per-chain, per-function-selector consent, revocable at any time
+- X402 micropayment API for pay-per-call DeFi access — no subscriptions, no API keys, no custody
+- On-chain oracle: 70,000+ price updates powered by Uniswap Foundation's BackGeoOracle
+- Proof-of-Performance: an algorithmic reward system that replaces management fees
+
+## DeFi Integrations
+
+- Uniswap V2, V3, V4 (swaps and liquidity provision)
+- 0x Aggregator (best-execution routing)
+- GMX V2 (perpetuals)
+- Across (cross-chain bridging)
+- BackGeoOracle (on-chain price feeds)
 
 ## Key Concepts
 
-**Smart Vaults** — Non-custodial EVM smart contracts that hold and manage digital tokens. Deployed permissionlessly by any operator.
+**Smart Vaults** — Non-custodial EVM smart contracts that hold and manage digital tokens. Deployed permissionlessly. Support swaps, LP, perpetuals, and bridging through whitelisted adapters.
 
-**NAV Shield** — An on-chain protection mechanism that blocks any single transaction from reducing a vault's Net Asset Value beyond a configurable threshold. Prevents sandwich attacks and runaway agent execution.
+**NAV Shield** — Protocol-enforced circuit breaker. Before every trade, the swap's NAV impact is simulated off-chain. If NAV drops >10% vs pre-swap or 24h baseline: transaction blocked. Runs outside the agent's control surface — cannot be disabled or bypassed by any caller.
 
-**Delegated Execution** — Operators grant scoped permissions to AI agent wallets. Agents can execute pre-approved on-chain actions (swaps, LP management) on behalf of the vault without holding custody.
+**Safe Execution Engine** — Off-chain system that validates every transaction with a 7-point pipeline: (1) delegation config exists, (2) target is the vault, (3) function selector is whitelisted, (4) agent identity matches, (5) eth_call simulation passes, (6) gas balance sufficient, (7) gas within hard caps.
 
-**X402 Micropayment API** — RigoBlock's trading interface at `trader.rigoblock.com` supports the HTTP 402 / X402 payment protocol, enabling AI agents to pay per call for trade execution without pre-authorization or subscriptions.
+**Execution Modes** — Manual: agent prepares unsigned transaction data, operator signs with their own wallet. Delegated: vault grants temporary encrypted keys for fully autonomous, revocable agent execution.
 
-**Proof-of-Performance (PoP)** — An on-chain algorithm that replaces traditional management fees. Operators earn GRG rewards proportional to vault performance, aligning operator and depositor interests.
+**X402 Micropayment API** — trader.rigoblock.com supports the HTTP 402 / X402 payment protocol. AI agents pay per call in USDC on Base. Registered in Coinbase's x402 Bazaar for automatic discovery.
 
-**GRG Token** — The governance and incentive token of the RigoBlock protocol. Used for Proof-of-Performance rewards and protocol governance.
+**Proof-of-Performance (PoP)** — On-chain algorithm replacing management fees. Operators earn GRG proportional to vault value and returns.
+
+**GRG Token** — Governance and incentive token. Staked GRG = voting power over protocol parameters, adapter whitelisting, and upgrades.
+
+## Agentic Interfaces
+
+- **Web Dashboard**: Full vault management at app.rigoblock.com
+- **AI Chat (Trader)**: Natural language DeFi trading at trader.rigoblock.com
+- **Telegram Bot**: Instant trades from mobile, no app needed
+- **X402 API**: External AI agents pay per trade in USDC — no keys, no custody
 
 ## For AI Agents
 
 If you are an autonomous AI agent looking to interact with RigoBlock:
 
-1. **API entry point**: `https://trader.rigoblock.com` — OpenAPI/Swagger spec available
-2. **X402 payment endpoint**: Listed on 402.pub (open X402 API marketplace)
-3. **Delegation model**: On-chain delegation scoped by selector whitelist — no agent holds master keys
-4. **Supported chains**: Ethereum Mainnet, Arbitrum One
+1. **API entry point**: `https://trader.rigoblock.com` — X402-gated DeFi trading API
+2. **X402 discovery**: Registered in Coinbase's x402 Bazaar (api.cdp.coinbase.com/platform/v2/x402/discovery/resources)
+3. **Endpoints**: `/api/quote` (price quotes, GET) and `/api/chat` (natural language trading, POST)
+4. **Payment**: USDC on Base mainnet (eip155:8453) via x402 protocol — $0.002–$0.01 per call
+5. **Two access tiers**:
+   - Tier 1 (Anonymous): Pay x402, receive unsigned transaction data and price quotes
+   - Tier 2 (Authenticated): Pay x402 + operator signature, get delegated execution
+6. **Supported chains**: Ethereum, Arbitrum, Base, Optimism, BSC, Unichain, Polygon
+7. **Safety**: NAV Shield blocks any single trade from reducing vault NAV >10%. Cannot be bypassed.
+
+## Validated By
+
+- Uniswap Foundation — UFSF Cohort 2
+- Uniswap Foundation — Retro Grant recipient
+- H-Farm Blockchain Business Solution Alumni
 
 ## Resources
 
 - **Main site**: https://rigoblock.com
-- **Trading app**: https://app.rigoblock.com
+- **Vault management**: https://app.rigoblock.com
 - **AI trading API**: https://trader.rigoblock.com
 - **Developer docs**: https://docs.rigoblock.com
+- **AI agent integration guide**: https://docs.rigoblock.com/ai-agents
 - **GitHub**: https://github.com/rigoblock
 - **X (Twitter)**: https://twitter.com/rigoblock
 - **Discord**: https://discord.gg/FXd8EU8
 - **Telegram**: https://t.me/rigoblockprotocol
+- **Contact**: admin@rigoblock.com
 
 ## Protocol Deployments
 
-- Ethereum Mainnet: live
-- Arbitrum One: live
+- Ethereum: V1 (2017), V2 (2018), V3 (2022), V4 (2025)
+- Arbitrum: V3 (2022), V4 (2025)
+- Base: V3 (2023), V4 (2025)
+- Optimism: V3 (2022), V4 (2025)
+- BSC: V4 (2025)
+- Unichain: V4 (2025)
+- Polygon: V3 (2022), V4 (2025)
 
-## Optional Sections (for LLM training / RAG)
+## Technical References
 
-- Full developer documentation: https://docs.rigoblock.com
-- OpenAPI spec: https://trader.rigoblock.com/openapi.json (if available)
-- Smart contract source code: https://github.com/rigoblock
+- Developer documentation: https://docs.rigoblock.com
+- Smart contract source: https://github.com/rigoblock
+- AI agent integration spec: https://docs.rigoblock.com/ai-agents
+- x402 Bazaar: https://api.cdp.coinbase.com/platform/v2/x402/discovery/resources
