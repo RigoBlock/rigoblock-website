@@ -31,4 +31,61 @@
 	{% include analytics.html %}
   {% include mailerlite.html %}
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://rigoblock.com/#organization",
+        "name": "RigoBlock",
+        "url": "https://rigoblock.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://rigoblock.com/assets/images/logo.png"
+        },
+        "sameAs": [
+          "https://twitter.com/rigoblock",
+          "https://github.com/rigoblock",
+          "https://linkedin.com/company/rigoblock",
+          "https://docs.rigoblock.com"
+        ],
+        "description": "RigoBlock is an open DeFi protocol for secure smart vault infrastructure, enabling autonomous AI agents to manage digital tokens on-chain via delegated execution with X402 micropayment API and NAV Shield protection."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://rigoblock.com/#website",
+        "url": "https://rigoblock.com",
+        "name": "RigoBlock",
+        "publisher": { "@id": "https://rigoblock.com/#organization" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://rigoblock.com/#protocol",
+        "name": "RigoBlock Protocol",
+        "applicationCategory": "FinanceApplication",
+        "applicationSubCategory": "DeFi Protocol",
+        "operatingSystem": "Ethereum, Arbitrum",
+        "url": "https://rigoblock.com",
+        "description": "Secure smart vaults for AI agents with X402 micropayment API, NAV Shield protection, delegated execution, and Proof-of-Performance incentives.",
+        "featureList": [
+          "X402 Micropayment API for autonomous AI agents",
+          "NAV Shield protection against value drain",
+          "Delegated execution for AI agent trading",
+          "Cross-chain smart vaults (Ethereum, Arbitrum)",
+          "Proof-of-Performance algorithm",
+          "GRG governance token"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "isAccessibleForFree": true,
+        "publisher": { "@id": "https://rigoblock.com/#organization" }
+      }
+    ]
+  }
+  </script>
+
 </head>
