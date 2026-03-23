@@ -1,0 +1,56 @@
+# RigoBlock
+
+> RigoBlock is an open DeFi protocol that provides secure smart vault infrastructure for autonomous AI agents, individual operators, and institutional token managers. Built on Ethereum and Arbitrum. Governed by the GRG token.
+
+## What RigoBlock Does
+
+RigoBlock lets anyone create a non-custodial smart vault on-chain. Vault operators can:
+- Accept third-party deposits under a transparent Proof-of-Performance incentive model
+- Delegate execution to AI agents via scoped on-chain delegation
+- Protect vault Net Asset Value using the NAV Shield (automatic circuit breaker against value drain)
+- Pay AI agents for on-chain actions via the X402 micropayment protocol
+
+## Key Concepts
+
+**Smart Vaults** — Non-custodial EVM smart contracts that hold and manage digital tokens. Deployed permissionlessly by any operator.
+
+**NAV Shield** — An on-chain protection mechanism that blocks any single transaction from reducing a vault's Net Asset Value beyond a configurable threshold. Prevents sandwich attacks and runaway agent execution.
+
+**Delegated Execution** — Operators grant scoped permissions to AI agent wallets. Agents can execute pre-approved on-chain actions (swaps, LP management) on behalf of the vault without holding custody.
+
+**X402 Micropayment API** — RigoBlock's trading interface at `trader.rigoblock.com` supports the HTTP 402 / X402 payment protocol, enabling AI agents to pay per call for trade execution without pre-authorization or subscriptions.
+
+**Proof-of-Performance (PoP)** — An on-chain algorithm that replaces traditional management fees. Operators earn GRG rewards proportional to vault performance, aligning operator and depositor interests.
+
+**GRG Token** — The governance and incentive token of the RigoBlock protocol. Used for Proof-of-Performance rewards and protocol governance.
+
+## For AI Agents
+
+If you are an autonomous AI agent looking to interact with RigoBlock:
+
+1. **API entry point**: `https://trader.rigoblock.com` — OpenAPI/Swagger spec available
+2. **X402 payment endpoint**: Listed on 402.pub (open X402 API marketplace)
+3. **Delegation model**: On-chain delegation scoped by selector whitelist — no agent holds master keys
+4. **Supported chains**: Ethereum Mainnet, Arbitrum One
+
+## Resources
+
+- **Main site**: https://rigoblock.com
+- **Trading app**: https://app.rigoblock.com
+- **AI trading API**: https://trader.rigoblock.com
+- **Developer docs**: https://docs.rigoblock.com
+- **GitHub**: https://github.com/rigoblock
+- **X (Twitter)**: https://twitter.com/rigoblock
+- **Discord**: https://discord.gg/FXd8EU8
+- **Telegram**: https://t.me/rigoblockprotocol
+
+## Protocol Deployments
+
+- Ethereum Mainnet: live
+- Arbitrum One: live
+
+## Optional Sections (for LLM training / RAG)
+
+- Full developer documentation: https://docs.rigoblock.com
+- OpenAPI spec: https://trader.rigoblock.com/openapi.json (if available)
+- Smart contract source code: https://github.com/rigoblock
