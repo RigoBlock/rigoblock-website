@@ -1,29 +1,29 @@
 ---
-title:  "Community's Core Values"
+title:  "Core Values"
 subtitle: "05. Principles"
 slug: "project-05-principles"
 ---
 
-- **Reliability**
+- **Safety First**
 
-  We deliver a robust token management system.
+  Every transaction is simulated and validated before execution. NAV Shield blocks any action that would drain a vault beyond its threshold.
 
-- **Accessibility**
+- **Open by Default**
 
-  We lower the barriers to entry into asset management.
+  Anyone can deploy a vault, delegate to an agent, or build on the protocol. No gatekeepers, no approvals.
 
-- **Transparency**
+- **Full Transparency**
 
-  We provide a transparent and decentralized framework.
+  All vault operations, governance decisions, and incentive distributions happen on-chain and are publicly verifiable.
 
-- **Passion**
+- **Aligned Incentives**
 
-  We encourage passion and talent.
+  Proof-of-Performance rewards operators for results — not for AUM or fees.
 
-- **Meritocracy**
+- **Agent-Native**
 
-  We offer effective reward mechanisms.
+  Purpose-built for autonomous operation: scoped delegation, X402 API, Manual and Delegated execution modes, and protocol-enforced safety rails.
 
-- **Integrity**
+- **Ship in the Open**
 
-  We stick to our commitments and act coherently.
+  Apache 2.0 licensed. We build publicly and deliver what we commit to.

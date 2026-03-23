@@ -1,14 +1,13 @@
 ---
-title:  "Organizing Digital Tokens"
+title:  "Secure Smart Vaults"
 subtitle: "01. Concept"
-video_link: https://youtu.be/i7wFk9JnPEg
 slug: "project-01-concept"
 animation: true
 ---
 
-With the emergence of token economies, <br />
-it is critical to build standards for organizing <br />
-the new forms of value.
+As autonomous agents begin to manage real capital, <br />
+DeFi needs infrastructure with safety guarantees <br />
+that hold up without human supervision.
 &nbsp;  
 &nbsp;  
-We have seen networks, marketplaces and standards for exchanging value. Yet no viable protocol for organizing digital tokens exists.
+RigoBlock provides non-custodial smart vaults with built-in protection: scoped delegation, NAV Shield circuit breakers, and off-chain transaction simulation — so operators and AI agents can execute strategies within hard safety bounds. Live on 7 EVM chains since 2018.
