@@ -5,6 +5,7 @@ slug: "project-03-pop"
 animation: true
 ---
 
-Proof-of-Performance replaces management and performance fees with an on-chain reward algorithm. Vault operators earn GRG tokens in proportion to the value and returns they generate — not for the assets they hold or the fees they charge.
+Proof-of-Performance replaces management and performance fees with an on-chain reward algorithm. Vault operators earn GRG tokens in proportion to how much stake their vaults
+own, and GRG holders can help them maximize their yield and receive a portion of the earnings.
 
-The result: operators succeed only when depositors succeed. A transparent, verifiable incentive structure enforced entirely on-chain.
+The result: a network effect based on a transparent, verifiable incentive structure enforced entirely on-chain.

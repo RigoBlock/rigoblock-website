@@ -18,12 +18,12 @@ slug: "project-05-principles"
 
 - **Aligned Incentives**
 
-  Proof-of-Performance rewards operators — human or AI — for results, not for AUM or fees.
+  Proof-of-Performance rewards operators — human or AI.
 
 - **Agent-Native by Design**
 
-  Scoped Delegation, X402 API, Manual and Delegated operation modes, and protocol-enforced safety rails — built for AI agents and autonomous strategies, not bolted on after the fact.
+  Scoped Delegation, X402 API, Manual and Delegated operation modes, and protocol-enforced safety rails — built for AI agents and autonomous strategies.
 
 - **Ship in the Open**
 
-  Apache 2.0 licensed. We build publicly and deliver what we commit to.
+  Open Source. We build publicly and deliver what we commit to.
