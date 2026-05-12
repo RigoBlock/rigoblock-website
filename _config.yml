@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: RigoBlock
 email: gab@rigoblock.com
-description: Rigoblock is the onchain vault infrastructure for AI agents and autonomous strategies. Build and manage agent-compatible vaults secured by NAV Shield and Scoped Delegation across 7 EVM chains. Agents connect via the X402 micropayment API — no API keys, no custody. Proof-of-Performance incentives. Live since 2018.
+description: RigoBlock is the onchain vault infrastructure for AI agents and autonomous strategies. Build and manage agent-compatible vaults secured by NAV Shield and Scoped Delegation across 7 EVM chains. Agents connect via the X402 micropayment API — no API keys, no custody. Proof-of-Performance incentives. Live since 2018.
 short_description: Onchain Vault Infrastructure for AI Agents
 baseurl: "" # the subpath of your site, e.g. /blog
 # url: "https://rigoblock.com" # the base hostname & protocol for your site, e.g. http://example.com
