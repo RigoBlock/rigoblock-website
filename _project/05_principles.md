@@ -22,8 +22,8 @@ slug: "project-05-principles"
 
 - **Agent-Native by Design**
 
-  Scoped Delegation, X402 API, Human-in-the-Loop or Fully Autonomous modes — built for AI agents and autonomous strategies.
+  Scoped Delegation, X402 API, Human-in-the-Loop or Fully Autonomous modes.
 
 - **Onchain bindings**
 
-  Our vaults are smart. They know when to remove unnecessary approvals. They block rogue transactions by design.
+  Our vaults remove unnecessary token approvals. They block rogue transactions by design.
