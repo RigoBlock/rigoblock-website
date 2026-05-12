@@ -1,0 +1,42 @@
+---
+layout: null
+permalink: /.well-known/api-catalog
+---
+{
+  "linkset": [
+    {
+      "anchor": "https://trader.rigoblock.com",
+      "service-desc": [
+        {
+          "href": "https://docs.rigoblock.com/openapi.json",
+          "type": "application/openapi+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://docs.rigoblock.com/ai-agents",
+          "type": "text/html"
+        }
+      ]
+    },
+    {
+      "anchor": "https://rigoblock.com",
+      "service-doc": [
+        {
+          "href": "https://docs.rigoblock.com",
+          "type": "text/html"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://rigoblock.com/llms.txt",
+          "type": "text/plain"
+        },
+        {
+          "href": "https://rigoblock.com/llms-full.txt",
+          "type": "text/plain"
+        }
+      ]
+    }
+  ]
+}

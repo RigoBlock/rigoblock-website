@@ -67,6 +67,12 @@ _sass/                → SCSS styles (do not modify without CSS context)
 llms.txt              → LLM index (llmstxt.org)
 llms-full.txt         → full content export for LLMs
 AGENTS.md             → this file
+.well-known/
+  api-catalog         → RFC 9727 API catalog (application/linkset+json)
+  agent-skills/
+    index.json        → Agent Skills Discovery index (agentskills.io v0.2.0)
+    x402-trading/
+      SKILL.md        → Skill file: how to use the X402 trading API
 ```
 
 ---
