@@ -83,6 +83,8 @@ plugins:
   - jekyll-inline-svg
   - jekyll-sitemap
   - jekyll-autoprefixer
+include:
+  - ".well-known"
 collections:
   - grgtoken
   - project
