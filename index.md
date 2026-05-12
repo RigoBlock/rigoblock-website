@@ -4,5 +4,6 @@ layout: home
 
 # Smart Vault Infrastructure<br/>for the Agentic Era
 
-Deploy and manage your institutional-grade <br />onchain strategies —
-with a harness for you AI agents<br /> and full auditability.
+Deploy and manage your institutional-grade onchain<br />
+strategies — with full auditability and a built-in<br />
+agent harness for secure trading.

@@ -1,5 +1,7 @@
 # RigoBlock
 
+> Full content export (all pages in markdown): https://rigoblock.com/llms-full.txt
+
 > RigoBlock is the onchain vault infrastructure for AI agents and autonomous strategies. An agent-native protocol for building **onchain vault agents** — autonomous AI entities that manage non-custodial DeFi vaults. Live since 2018 on 7 EVM chains (Ethereum, Arbitrum, Base, Optimism, BSC, Unichain, Polygon). Combines on-chain agent-compatible vault contracts, a safe off-chain validation engine with NAV Shield protection, Scoped Delegation, and an X402 micropayment API purpose-built for the autonomous agent economy. V4 architecture since May 2025. Governed by the GRG token.
 
 ## Quick Answer
