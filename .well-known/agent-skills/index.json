@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "x402-trading",
+      "type": "skill-md",
+      "description": "Teaches AI agents how to use the RigoBlock X402 micropayment API for DeFi trading across 7 EVM chains — pay-per-call, USDC on Base, no API keys.",
+      "url": "https://rigoblock.com/.well-known/agent-skills/x402-trading/SKILL.md",
+      "digest": "sha256:090e68a8c2e55168d3df496cfd818a01e0ce99657594210a40b1cdf72f9c9e47"
+    }
+  ]
+}

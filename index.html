@@ -17,7 +17,44 @@
 <!-- End Jekyll SEO tag -->
 
   <title>RigoBlock | Non-Custodial Smart Vaults for Institutions and AI Agents</title>
-  <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://rigoblock.com/feed.xml" title="RigoBlock" />
+  <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://rigoblock.com/feed.xml" title="RigoBlock" /><!-- RFC 8288 agent/LLM discovery links (fallback for static hosting without Link headers) -->
+  <link rel="describedby" href="/llms.txt" type="text/plain" title="LLM index" />
+  <link rel="describedby" href="/llms-full.txt" type="text/plain" title="Full site content for LLMs" />
+  <link rel="api-catalog" href="/.well-known/api-catalog" type="application/linkset+json" />
+  <link rel="service-doc" href="https://docs.rigoblock.com" type="text/html" />
+
+  <!-- WebMCP: expose site tools to AI agents via the browser (webmachinelearning.github.io/webmcp) -->
+  <script>
+    if ('modelContext' in navigator) {
+      const ac = new AbortController();
+      navigator.modelContext.registerTool({
+        name: 'get_rigoblock_info',
+        description: 'Returns a summary of the RigoBlock protocol: what it does, supported chains, key features (Swap Shield, NAV Shield, Scoped Delegation, X402 API, Proof-of-Performance), and entry points.',
+        inputSchema: { type: 'object', properties: {}, required: [] },
+        execute: async () => ({
+          name: 'RigoBlock',
+          description: 'Non-custodial smart vault infrastructure for institutional operators and autonomous AI agents.',
+          chains: ['Ethereum', 'Arbitrum', 'Base', 'Optimism', 'BSC', 'Unichain', 'Polygon'],
+          features: ['Swap Shield (oracle TWAP price protection)', 'NAV Shield (portfolio circuit breaker)', 'Scoped Delegation (per-selector agent permissions)', 'X402 micropayment API (USDC on Base, no API keys)', 'Proof-of-Performance (on-chain GRG rewards)'],
+          links: { app: 'https://app.rigoblock.com', api: 'https://trader.rigoblock.com', docs: 'https://docs.rigoblock.com', llms: 'https://rigoblock.com/llms-full.txt' }
+        }),
+        signal: ac.signal
+      });
+      navigator.modelContext.registerTool({
+        name: 'navigate_rigoblock',
+        description: 'Navigate the user to a RigoBlock product page. Use destination "app" for vault management, "api" for the X402 trading API, "docs" for developer docs, "faq" for the FAQ.',
+        inputSchema: { type: 'object', properties: { destination: { type: 'string', enum: ['app', 'api', 'docs', 'faq'] } }, required: ['destination'] },
+        execute: async ({ destination }) => {
+          const urls = { app: 'https://app.rigoblock.com', api: 'https://trader.rigoblock.com', docs: 'https://docs.rigoblock.com', faq: '/faq' };
+          window.open(urls[destination] || '/', '_blank');
+          return { navigated: destination, url: urls[destination] };
+        },
+        signal: ac.signal
+      });
+    }
+  </script>
+
+  
     <meta name="keywords" content="rigoblock, onchain vault agent, agent-compatible vaults, AI agent DeFi, non-custodial agent infrastructure, autonomous DeFi strategies, AI-ready DeFi vaults, agent-managed vaults, scoped delegation for AI, x402 micropayment API, x402, swap shield, oracle price protection, NAV shield, autonomous agents, DeFi protocol, proof of performance, GRG token, cross-chain vaults, Ethereum, Arbitrum, Base, Optimism, BSC, Unichain, Polygon, Uniswap V4, GMX, onchain oracle, BackGeoOracle, agentic operator, safe execution layer for AI agents, vault agent infrastructure" />
   
 
