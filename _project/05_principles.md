@@ -22,7 +22,7 @@ slug: "project-05-principles"
 
 - **Agent-Native by Design**
 
-  Scoped Delegation, X402 API, Manual and Delegated autonomous operation modes, and protocol-enforced safety rails — built specifically for onchain vault agents and the autonomous economy.
+  Scoped Delegation, X402 API, Manual and Delegated operation modes, and protocol-enforced safety rails — built for AI agents and autonomous strategies, not bolted on after the fact.
 
 - **Ship in the Open**
 

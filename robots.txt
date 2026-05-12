@@ -5,6 +5,9 @@ Allow: /
 User-agent: GPTBot
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
 User-agent: ChatGPT-User
 Allow: /
 
@@ -23,13 +26,10 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-User-agent: Googlebot-Extended
-Allow: /
-
-User-agent: Gemini
-Allow: /
-
 User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot-Extended
 Allow: /
 
 User-agent: Grok
@@ -39,6 +39,24 @@ User-agent: xai-bot
 Allow: /
 
 User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: MoonshotBot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Diffbot
 Allow: /
 
 User-agent: CCBot
