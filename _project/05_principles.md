@@ -6,11 +6,11 @@ slug: "project-05-principles"
 
 - **Safety First**
 
-  Every transaction is simulated and validated before settlement. NAV Shield blocks any action that would drain a vault — even for fully autonomous agents.
+  Continuous code reviews. 2 full-scope audits. Rules that prevent vault draining — even for fully autonomous agents.
 
 - **Open by Default**
 
-  Anyone can deploy an agent-compatible vault, delegate to an AI agent, or build on the protocol. No gatekeepers, no approvals.
+  Permissionless vault deployment and management. 100% Open Source.
 
 - **Full Transparency**
 
@@ -18,12 +18,12 @@ slug: "project-05-principles"
 
 - **Aligned Incentives**
 
-  Proof-of-Performance rewards operators — human or AI.
+  Proof-of-Performance rewards operators and GRG stakers.
 
 - **Agent-Native by Design**
 
-  Scoped Delegation, X402 API, Manual and Delegated operation modes, and protocol-enforced safety rails — built for AI agents and autonomous strategies.
+  Scoped Delegation, X402 API, Human-in-the-Loop or Fully Autonomous modes — built for AI agents and autonomous strategies.
 
-- **Ship in the Open**
+- **Onchain bindings**
 
-  Open Source. We build publicly and deliver what we commit to.
+  Our vaults are smart. They know when to remove unnecessary approvals. They block rogue transactions by design.
