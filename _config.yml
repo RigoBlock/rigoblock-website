@@ -15,8 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: RigoBlock
 email: gab@rigoblock.com
-description: RigoBlock is secure smart vault infrastructure for DeFi and autonomous agents. Live since 2018 on 7 EVM chains, the protocol combines on-chain vaults, a safe off-chain execution engine with NAV Shield protection, and an X402 micropayment API purpose-built for the agent economy. Powered by Proof-of-Performance and the GRG governance token.
-short_description: Secure Smart Vaults for DeFi & Autonomous Agents
+description: RigoBlock is the onchain vault infrastructure for AI agents and autonomous strategies. Build and manage agent-compatible vaults secured by NAV Shield and Scoped Delegation across 7 EVM chains. Agents connect via the X402 micropayment API — no API keys, no custody. Proof-of-Performance incentives. Live since 2018.
+short_description: Onchain Vault Infrastructure for AI Agents
 baseurl: "" # the subpath of your site, e.g. /blog
 # url: "https://rigoblock.com" # the base hostname & protocol for your site, e.g. http://example.com
 url: "http://localhost:4000"
@@ -36,7 +36,7 @@ mailchimp_list: //dashboard.mailerlite.com/forms/631983/101296659817825574/share
 
 
 
-keywords: [rigoblock, smart vaults, AI agent DeFi, x402 micropayment API, x402, NAV shield, delegated execution, AI agent trading, autonomous agents, DeFi protocol, proof of performance, GRG token, cross-chain vaults, Ethereum, Arbitrum, Base, Optimism, BSC, Unichain, Polygon, Uniswap V4, GMX, onchain oracle, BackGeoOracle, agentic operator, secure execution layer]
+keywords: [rigoblock, onchain vault agent, agent-compatible vaults, AI agent DeFi, non-custodial agent infrastructure, autonomous DeFi strategies, AI-ready DeFi vaults, agent-managed vaults, scoped delegation for AI, x402 micropayment API, x402, swap shield, oracle price protection, NAV shield, autonomous agents, DeFi protocol, proof of performance, GRG token, cross-chain vaults, Ethereum, Arbitrum, Base, Optimism, BSC, Unichain, Polygon, Uniswap V4, GMX, onchain oracle, BackGeoOracle, agentic operator, safe execution layer for AI agents, vault agent infrastructure]
 
 lang: 'en'
 

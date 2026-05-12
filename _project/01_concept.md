@@ -1,13 +1,13 @@
 ---
-title:  "Secure Smart Vaults"
+title:  "Non-Custodial Smart Vaults"
 subtitle: "01. Concept"
 slug: "project-01-concept"
 animation: true
 ---
 
-As autonomous agents begin to manage real capital, <br />
-DeFi needs infrastructure with safety guarantees <br />
+As capital flows into autonomous strategies, <br />
+DeFi needs vault infrastructure with safety guarantees <br />
 that hold up without human supervision.
 &nbsp;  
 &nbsp;  
-RigoBlock provides non-custodial smart vaults with built-in protection: scoped delegation, NAV Shield circuit breakers, and off-chain transaction simulation — so operators and AI agents can execute strategies within hard safety bounds. Live on 7 EVM chains.
+Rigoblock provides non-custodial smart vaults with built-in protection: Swap Shield oracle-price validation, NAV Shield circuit breakers, and Scoped Delegation — so human operators and AI agents alike can run strategies within hard protocol-enforced bounds. Live on 7 EVM chains since 2018.
