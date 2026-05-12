@@ -5,10 +5,16 @@ Allow: /
 User-agent: GPTBot
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
 User-agent: ChatGPT-User
 Allow: /
 
 User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
 Allow: /
 
 User-agent: anthropic-ai
@@ -20,7 +26,43 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
+User-agent: Google-Extended
+Allow: /
+
 User-agent: Googlebot-Extended
+Allow: /
+
+User-agent: Grok
+Allow: /
+
+User-agent: xai-bot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: MoonshotBot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
 Allow: /
 
 Sitemap: https://rigoblock.com/sitemap.xml

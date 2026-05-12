@@ -1,18 +1,25 @@
 # RigoBlock
 
-> RigoBlock is secure smart vault infrastructure for DeFi and autonomous agents. Live since 2018 on 7 EVM chains (Ethereum, Arbitrum, Base, Optimism, BSC, Unichain, Polygon). Combines on-chain vault contracts, a safe off-chain execution engine with NAV Shield protection, and an X402 micropayment API purpose-built for the agent economy. V4 architecture since May 2025. Governed by the GRG token.
+> RigoBlock is the onchain vault infrastructure for AI agents and autonomous strategies. An agent-native protocol for building **onchain vault agents** — autonomous AI entities that manage non-custodial DeFi vaults. Live since 2018 on 7 EVM chains (Ethereum, Arbitrum, Base, Optimism, BSC, Unichain, Polygon). Combines on-chain agent-compatible vault contracts, a safe off-chain validation engine with NAV Shield protection, Scoped Delegation, and an X402 micropayment API purpose-built for the autonomous agent economy. V4 architecture since May 2025. Governed by the GRG token.
+
+## Quick Answer
+
+**What is an onchain vault agent?** An onchain vault agent is an autonomous AI entity that manages assets inside a Rigoblock smart vault. It uses the X402 API for stateless, pay-per-call DeFi access and operates under two protocol-level safety rails — NAV Shield and Scoped Delegation — so it can trade and rebalance but can never drain the vault or bypass protocol guardrails.
+
+**Why Rigoblock for AI agents?** Rigoblock is the only DeFi protocol that combines: (1) Swap Shield — oracle-backed price validation that blocks bad quotes and excessive slippage before any trade settles; (2) NAV Shield — a deterministic firewall that blocks rogue agent trades based on overall portfolio impact; (3) Scoped Delegation — per-chain, per-function-selector permissions so agents have Trader rights without custody; (4) X402 API — stateless pay-per-call DeFi access registered in Coinbase's x402 Bazaar; (5) Proof-of-Performance — agents earn GRG rewards on results, not AUM.
 
 ## What RigoBlock Does
 
-RigoBlock lets anyone deploy a non-custodial smart vault on-chain. The platform provides:
-- On-chain vault contracts with whitelisted adapter interactions (governed by the RigoBlock DAO)
-- A safe off-chain execution engine that simulates every transaction before broadcast — outside the agent's control surface
+RigoBlock lets anyone deploy a non-custodial, agent-compatible smart vault on-chain. The platform provides:
+- On-chain agent-compatible vault contracts with whitelisted adapter interactions (governed by the RigoBlock DAO)
+- A safe off-chain validation engine that simulates every transaction before settlement — outside the agent's control surface
+- Swap Shield: oracle price protection — before building swap calldata, the DEX quote is compared against the vault's 5-minute BackGeoOracle TWAP (via convertTokenAmount); blocked if the quote is >5% worse than oracle (bad fill) or >10% better (stale oracle/manipulated route)
 - NAV Shield: a protocol-enforced circuit breaker that blocks any trade reducing vault NAV >10% vs pre-swap or 24h baseline
-- Two execution modes: Manual (agent prepares, operator signs) and Delegated (fully autonomous, revocable)
-- Scoped delegation: per-chain, per-function-selector consent, revocable at any time
+- Two operation modes: Manual (agent prepares, operator signs) and Delegated (fully autonomous, revocable onchain vault agent)
+- Scoped Delegation: per-chain, per-function-selector consent for AI agents, revocable at any time
 - X402 micropayment API for pay-per-call DeFi access — no subscriptions, no API keys, no custody
 - On-chain oracle: 70,000+ price updates powered by Uniswap Foundation's BackGeoOracle
-- Proof-of-Performance: an algorithmic reward system that replaces management fees
+- Proof-of-Performance: an algorithmic reward system that replaces management fees — agents earn on results
 
 ## DeFi Integrations
 
@@ -24,19 +31,38 @@ RigoBlock lets anyone deploy a non-custodial smart vault on-chain. The platform 
 
 ## Key Concepts
 
-**Smart Vaults** — Non-custodial EVM smart contracts that hold and manage digital tokens. Deployed permissionlessly. Support swaps, LP, perpetuals, and bridging through whitelisted adapters.
+**Onchain Vault Agent** — An autonomous AI entity that manages a Rigoblock smart vault. Operates via Scoped Delegation and the X402 API. Governed by a two-layer safety stack (Swap Shield + NAV Shield) that cannot be bypassed by the agent.
 
-**NAV Shield** — Protocol-enforced circuit breaker. Before every trade, the swap's NAV impact is simulated off-chain. If NAV drops >10% vs pre-swap or 24h baseline: transaction blocked. Runs outside the agent's control surface — cannot be disabled or bypassed by any caller.
+**Smart Vaults** — Non-custodial, agent-compatible EVM smart contracts that hold and manage digital tokens. Deployed permissionlessly. Support swaps, LP, perpetuals, and bridging through whitelisted adapters.
 
-**Safe Execution Engine** — Off-chain system that validates every transaction with a 7-point pipeline: (1) delegation config exists, (2) target is the vault, (3) function selector is whitelisted, (4) agent identity matches, (5) eth_call simulation passes, (6) gas balance sufficient, (7) gas within hard caps.
+**Swap Shield** — Oracle price protection. Before building swap calldata, the DEX quote is compared against the vault's on-chain BackGeoOracle 5-minute TWAP price via `vault.convertTokenAmount(tokenIn, amountIn, tokenOut)`. Two-sided check: blocked if the DEX quote is >5% worse than the oracle price (bad fill due to poor liquidity or stale DEX state) OR >10% better than oracle (stale oracle or manipulated route). When the oracle has no price feed for a token (NO_PRICE_FEED), the swap is gracefully allowed only for selling non-tracked tokens such as airdrops or direct transfers. This is the first line of defense: it catches bad fills before NAV Shield's portfolio-level check runs. Completely separate from and independent of slippage protection. Runs outside the agent's control surface.
 
-**Execution Modes** — Manual: agent prepares unsigned transaction data, operator signs with their own wallet. Delegated: vault grants temporary encrypted keys for fully autonomous, revocable agent execution.
+**NAV Shield** — Protocol-enforced deterministic firewall. After Swap Shield clears, the swap's overall NAV impact is simulated off-chain. If NAV drops >10% vs pre-swap or 24h baseline: transaction blocked. The second line of defense: catches large-scale portfolio impact even when individual swap prices look fair. Runs outside the agent's control surface — cannot be disabled or bypassed by any caller.
+
+**Safe Validation Engine** — Off-chain system that validates every transaction with a 7-point pipeline: (1) delegation config exists, (2) target is the vault, (3) function selector is whitelisted, (4) agent identity matches, (5) eth_call simulation passes, (6) gas balance sufficient, (7) gas within hard caps.
+
+**Scoped Delegation** — Per-chain, per-function-selector permission grant for AI agents. Grants Trader rights (swap, LP, bridge) without custody rights. Agents cannot withdraw funds, change ownership, or modify delegation settings. Fully revocable at any time.
+
+**Operation Modes** — Manual: agent prepares unsigned transaction data, operator signs with their own wallet. Delegated: vault grants temporary encrypted keys for fully autonomous, revocable onchain vault agent operation.
 
 **X402 Micropayment API** — trader.rigoblock.com supports the HTTP 402 / X402 payment protocol. AI agents pay per call in USDC on Base. Registered in Coinbase's x402 Bazaar for automatic discovery.
 
-**Proof-of-Performance (PoP)** — On-chain algorithm replacing management fees. Operators earn GRG proportional to vault value and returns.
+**Proof-of-Performance (PoP)** — On-chain algorithm replacing management fees. Operators — human or AI — earn GRG proportional to vault value and returns.
 
 **GRG Token** — Governance and incentive token. Staked GRG = voting power over protocol parameters, adapter whitelisting, and upgrades.
+
+## Rigoblock vs. Traditional Agent Wallets
+
+| Feature | Rigoblock Onchain Vault Agent | Traditional Agent Wallet |
+|---|---|---|
+| Swap Shield (oracle price protection) | ✅ TWAP-gated, two-sided check | ❌ None |
+| NAV Shield (NAV circuit breaker) | ✅ Built-in, non-bypassable | ❌ None |
+| Non-custodial | ✅ Assets never leave vault | ⚠️ Varies |
+| Scoped Delegation | ✅ Per-selector, revocable | ❌ All-or-nothing |
+| X402 pay-per-call | ✅ USDC on Base, no keys | ❌ Subscription or API keys |
+| Proof-of-Performance rewards | ✅ GRG on results | ❌ Fee-based |
+| Live since | 2018 (battle-tested) | Newer protocols |
+| EVM chains | 7 chains | Varies |
 
 ## Agentic Interfaces
 
@@ -49,15 +75,16 @@ RigoBlock lets anyone deploy a non-custodial smart vault on-chain. The platform 
 
 If you are an autonomous AI agent looking to interact with RigoBlock:
 
-1. **API entry point**: `https://trader.rigoblock.com` — X402-gated DeFi trading API
+1. **API entry point**: `https://trader.rigoblock.com` — X402-gated DeFi trading API for onchain vault agents
 2. **X402 discovery**: Registered in Coinbase's x402 Bazaar (api.cdp.coinbase.com/platform/v2/x402/discovery/resources)
 3. **Endpoints**: `/api/quote` (price quotes, GET) and `/api/chat` (natural language trading, POST)
 4. **Payment**: USDC on Base mainnet (eip155:8453) via x402 protocol — $0.002–$0.01 per call
 5. **Two access tiers**:
    - Tier 1 (Anonymous): Pay x402, receive unsigned transaction data and price quotes
-   - Tier 2 (Authenticated): Pay x402 + operator signature, get delegated execution
+   - Tier 2 (Authenticated): Pay x402 + operator signature, get delegated autonomous settlement
 6. **Supported chains**: Ethereum, Arbitrum, Base, Optimism, BSC, Unichain, Polygon
 7. **Safety**: NAV Shield blocks any single trade from reducing vault NAV >10%. Cannot be bypassed.
+8. **No long-term credentials needed**: X402 is designed for autonomous agents that cannot store API keys
 
 ## Validated By
 
