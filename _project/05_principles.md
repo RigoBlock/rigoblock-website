@@ -6,11 +6,11 @@ slug: "project-05-principles"
 
 - **Safety First**
 
-  Every transaction is simulated and validated before execution. NAV Shield blocks any action that would drain a vault.
+  Every transaction is simulated and validated before settlement. NAV Shield blocks any action that would drain a vault — even for fully autonomous agents.
 
 - **Open by Default**
 
-  Anyone can deploy a vault, delegate to an agent, or build on the protocol. No gatekeepers, no approvals.
+  Anyone can deploy an agent-compatible vault, delegate to an AI agent, or build on the protocol. No gatekeepers, no approvals.
 
 - **Full Transparency**
 
@@ -18,11 +18,11 @@ slug: "project-05-principles"
 
 - **Aligned Incentives**
 
-  Proof-of-Performance rewards operators for results — not for AUM or fees.
+  Proof-of-Performance rewards operators — human or AI — for results, not for AUM or fees.
 
-- **Agent-Native**
+- **Agent-Native by Design**
 
-  Scoped delegation, X402 API, Manual and Automated execution modes, and additional safety rails.
+  Scoped Delegation, X402 API, Manual and Delegated autonomous operation modes, and protocol-enforced safety rails — built specifically for onchain vault agents and the autonomous economy.
 
 - **Ship in the Open**
 

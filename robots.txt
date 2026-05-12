@@ -11,6 +11,9 @@ Allow: /
 User-agent: Claude-Web
 Allow: /
 
+User-agent: ClaudeBot
+Allow: /
+
 User-agent: anthropic-ai
 Allow: /
 
@@ -21,6 +24,27 @@ User-agent: cohere-ai
 Allow: /
 
 User-agent: Googlebot-Extended
+Allow: /
+
+User-agent: Gemini
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Grok
+Allow: /
+
+User-agent: xai-bot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
 Allow: /
 
 Sitemap: https://rigoblock.com/sitemap.xml
