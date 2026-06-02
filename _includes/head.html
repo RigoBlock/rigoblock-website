@@ -29,9 +29,9 @@
         inputSchema: { type: 'object', properties: {}, required: [] },
         execute: async () => ({
           name: 'RigoBlock',
-          description: 'Non-custodial smart vault infrastructure for institutional operators and autonomous AI agents.',
+          description: 'Non-custodial asset management infrastructure for humans and agents.',
           chains: ['Ethereum', 'Arbitrum', 'Base', 'Optimism', 'BSC', 'Unichain', 'Polygon'],
-          features: ['Swap Shield (oracle TWAP price protection)', 'NAV Shield (portfolio circuit breaker)', 'Scoped Delegation (per-selector agent permissions)', 'X402 micropayment API (USDC on Base, no API keys)', 'Proof-of-Performance (on-chain GRG rewards)'],
+          features: ['Swap Shield (oracle-protected swaps)', 'NAV Shield (portfolio drawdown protection)', 'Scoped Delegation (granular agent permissions)', 'X402 micropayment API (USDC on Base, no API keys)', 'Proof-of-Performance (on-chain GRG rewards)'],
           links: { app: 'https://app.rigoblock.com', api: 'https://trader.rigoblock.com', docs: 'https://docs.rigoblock.com', llms: 'https://rigoblock.com/llms-full.txt' }
         }),
         signal: ac.signal
@@ -108,7 +108,7 @@
         "description": "RigoBlock is the onchain vault infrastructure for AI agents and autonomous strategies. Deploy agent-compatible vaults secured by NAV Shield and Scoped Delegation. Agents pay per trade via the X402 API with no API keys. Proof-of-Performance incentives. Live since 2018 on 7 EVM chains.",
         "featureList": [
           "Onchain Vault Agent infrastructure for AI-driven DeFi",
-          "Swap Shield — BackGeoOracle TWAP price protection, two-sided oracle check",
+          "Swap Shield — BackGeoOracle price protection, 5% symmetrical oracle check",
           "X402 Micropayment API for autonomous AI agents — no API keys",
           "NAV Shield — deterministic protocol-level circuit breaker",
           "Scoped Delegation — zero-trust agent permissions",
@@ -143,7 +143,7 @@
         "name": "What is the Swap Shield on Rigoblock?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Swap Shield is oracle price protection — the first layer in Rigoblock's two-layer agent safety stack. Before building swap calldata, the DEX quote is compared against the vault's BackGeoOracle 5-minute TWAP via vault.convertTokenAmount(). Blocked if the DEX quote is >5% worse than oracle (bad fill due to poor liquidity or stale DEX state) or >10% better than oracle (stale oracle or manipulated route). When no oracle price feed exists for a token, the swap is gracefully allowed only for non-tracked tokens such as airdrops or direct transfers. Completely separate from slippage protection."
+          "text": "Swap Shield enforces oracle-protected swaps — the first layer in Rigoblock's two-layer agent safety stack. Before building swap calldata, the DEX quote is compared against the BackGeoOracle price. Blocked if the DEX quote diverges >5% from the oracle in either direction (bad fill, stale oracle, or manipulated route). When no oracle price feed exists for a token, the swap is gracefully allowed only for non-tracked tokens such as airdrops or direct transfers. Completely separate from slippage protection."
         }
       },
       {
@@ -167,7 +167,7 @@
         "name": "How does Rigoblock prevent rogue agent behavior?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Rigoblock uses three protocol-level layers that operate outside the agent's control surface. First, Swap Shield compares every DEX quote against the vault's BackGeoOracle 5-minute TWAP and blocks trades >5% worse than oracle (bad fill) or >10% better (stale/manipulated route). Second, NAV Shield simulates overall portfolio impact and blocks any trade causing NAV to drop more than 10%. Third, Scoped Delegation restricts which functions an agent may call at all."
+          "text": "Rigoblock uses three protocol-level layers that operate outside the agent's control surface. First, Swap Shield compares every DEX quote against the BackGeoOracle price and blocks trades that diverge >5% from the oracle in either direction (bad fill or stale/manipulated route). Second, NAV Shield simulates overall portfolio impact and blocks any trade causing NAV to drop more than 10%. Third, Scoped Delegation restricts which functions an agent may call at all."
         }
       },
       {

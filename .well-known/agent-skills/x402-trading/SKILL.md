@@ -28,6 +28,12 @@ https://api.cdp.coinbase.com/platform/v2/x402/discovery/resources
 Get a price quote for a token swap.
 Query parameters: tokenIn, tokenOut, amountIn, chainId
 
+### POST /api/quote/uniswap
+Uniswap Trading API quote enriched with on-chain BackGeoOracle price metadata. Returns `deltaBps` (deviation from oracle in basis points), `oracleAmount`, and `priceFeedExists` so the caller can decide whether to execute. Usable for any wallet or swapper.
+
+### GET /api/quote/0x
+0x API quote enriched with on-chain BackGeoOracle price metadata. Returns the same oracle fields (`deltaBps`, `oracleAmount`, `priceFeedExists`) so the caller can decide whether to execute. Usable for any wallet or swapper.
+
 ### POST /api/chat
 Natural language DeFi trading interface.
 Body: `{ "message": "<natural language instruction>", "vaultAddress": "<0x...>" }`
@@ -48,7 +54,7 @@ Body: `{ "message": "<natural language instruction>", "vaultAddress": "<0x...>" 
 
 All trades are protected by two protocol-level layers that cannot be bypassed:
 
-- **Swap Shield**: compares DEX quote against vault's 5-minute BackGeoOracle TWAP via `vault.convertTokenAmount(tokenIn, amountIn, tokenOut)`. Blocks if quote is >5% worse than oracle (bad fill) or >10% better (stale/manipulated).
+- **Swap Shield**: compares DEX quote against the BackGeoOracle price. Blocks if quote diverges >5% from the oracle in either direction (bad fill or stale/manipulated).
 - **NAV Shield**: simulates portfolio NAV impact before every trade. Blocks if vault NAV would drop >10% vs pre-swap or 24h baseline.
 
 ## DeFi Integrations Available
