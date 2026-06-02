@@ -92,10 +92,10 @@ RigoBlock is a non-custodial smart vault protocol for institutional operators an
 
 Key concepts an agent should know when answering questions about this codebase:
 
-- **Swap Shield** — oracle price protection. Two-sided TWAP check via `vault.convertTokenAmount`. Blocks if DEX quote >5% worse than oracle (bad fill) or >10% better (stale/manipulated). NOT slippage protection.
+- **Swap Shield** — oracle price protection. Two-sided check against the BackGeoOracle price. Blocks if DEX quote diverges >5% from oracle in either direction (bad fill or stale/manipulated). NOT slippage protection.
 - **NAV Shield** — portfolio circuit breaker. Blocks any trade reducing vault NAV >10% vs pre-swap or 24h baseline. Cannot be bypassed.
 - **Scoped Delegation** — per-chain, per-selector agent permissions. Trader rights only — no custody.
 - **X402 API** — pay-per-call DeFi API at trader.rigoblock.com. USDC on Base. No keys.
 - **Proof-of-Performance (PoP)** — on-chain GRG reward algorithm based on vault returns, not AUM.
-- **BackGeoOracle** — PoS-resistant Uniswap V4 hook oracle used by Swap Shield.
+- **BackGeoOracle** — PoS-resistant Uniswap V4 hook oracle used by Swap Shield. Provides prices for oracle-protected swaps.
 - **GRG token** — governance + incentive. Contract: `0x4fbb350052bca5417566f188eb2ebce5b19bc964` (Ethereum).

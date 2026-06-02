@@ -22,7 +22,7 @@ subtitle: "Frequently Asked Questions"
 
 05. <span>What is the Swap Shield?</span>
     >
-    Swap Shield is oracle price protection — the first line of defense in Rigoblock's two-layer agent safety stack. Before building any swap calldata, the system compares the DEX quote against the vault’s on-chain BackGeoOracle 5-minute TWAP price (via <code>vault.convertTokenAmount</code>). A trade is blocked if the DEX quote is more than 5% worse than the oracle price (bad fill from poor liquidity or stale DEX state), or more than 10% better (stale oracle or manipulated route). When no oracle price feed exists for a token, Swap Shield gracefully allows the swap only for selling non-tracked tokens such as airdrops or direct transfers — no false blocks for legitimate edge cases. Swap Shield is completely separate from slippage protection; it operates at the oracle-price level before the NAV Shield’s portfolio-impact check runs.
+    Swap Shield enforces oracle-protected swaps — the first line of defense in Rigoblock's two-layer agent safety stack. Before building any swap calldata, the system compares the DEX quote against the on-chain BackGeoOracle price. A trade is blocked if the DEX quote diverges more than 5% from the oracle price in either direction (bad fill from poor liquidity, stale DEX state, stale oracle, or manipulated route). When no oracle price feed exists for a token, Swap Shield gracefully allows the swap only for selling non-tracked tokens such as airdrops or direct transfers — no false blocks for legitimate edge cases. Swap Shield is completely separate from slippage protection; it operates at the oracle-price level before the NAV Shield’s portfolio-impact check runs.
 
 06. <span>What is NAV Shield?</span>
     >
@@ -42,7 +42,7 @@ subtitle: "Frequently Asked Questions"
 
 10. <span>How does Rigoblock prevent rogue agent behavior?</span>
     >
-    Through three protocol-level layers that operate entirely outside the agent's control surface. First, <strong>Swap Shield</strong> compares every DEX quote against the vault’s 5-minute BackGeoOracle TWAP and blocks trades that are more than 5% worse than oracle (bad fill) or more than 10% better (stale/manipulated) — catching bad quotes before they reach the portfolio-impact check. Second, <strong>NAV Shield</strong> simulates the overall portfolio impact and blocks any trade that would reduce vault NAV by more than 10%. Third, <strong>Scoped Delegation</strong> restricts which functions an agent may call at all. Even a compromised agent key or a jailbroken AI model cannot bypass any of these layers.
+    Through three protocol-level layers that operate entirely outside the agent's control surface. First, <strong>Swap Shield</strong> compares every DEX quote against the BackGeoOracle price and blocks trades that diverge more than 5% from the oracle in either direction (bad fill or stale/manipulated) — catching bad quotes before they reach the portfolio-impact check. Second, <strong>NAV Shield</strong> simulates the overall portfolio impact and blocks any trade that would reduce vault NAV by more than 10%. Third, <strong>Scoped Delegation</strong> restricts which functions an agent may call at all. Even a compromised agent key or a jailbroken AI model cannot bypass any of these layers.
 
 11. <span>Can AI agents operate vaults autonomously?</span>
     >
