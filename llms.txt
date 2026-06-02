@@ -15,7 +15,7 @@
 RigoBlock lets anyone deploy a non-custodial, agent-compatible smart vault on-chain. The platform provides:
 - On-chain agent-compatible vault contracts with whitelisted adapter interactions (governed by the RigoBlock DAO)
 - A safe off-chain validation engine that simulates every transaction before settlement — outside the agent's control surface
-- Swap Shield: oracle price protection — before building swap calldata, the DEX quote is compared against the vault's 5-minute BackGeoOracle TWAP (via convertTokenAmount); blocked if the quote is >5% worse than oracle (bad fill) or >10% better (stale oracle/manipulated route)
+- Swap Shield: oracle price protection — before building swap calldata, the DEX quote is compared against the BackGeoOracle price; blocked if the quote diverges >5% from the oracle in either direction (bad fill or stale oracle/manipulated route)
 - NAV Shield: a protocol-enforced circuit breaker that blocks any trade reducing vault NAV >10% vs pre-swap or 24h baseline
 - Two operation modes: Manual (agent prepares, operator signs) and Delegated (fully autonomous, revocable onchain vault agent)
 - Scoped Delegation: per-chain, per-function-selector consent for AI agents, revocable at any time
@@ -37,7 +37,7 @@ RigoBlock lets anyone deploy a non-custodial, agent-compatible smart vault on-ch
 
 **Smart Vaults** — Non-custodial, agent-compatible EVM smart contracts that hold and manage digital tokens. Deployed permissionlessly. Support swaps, LP, perpetuals, and bridging through whitelisted adapters.
 
-**Swap Shield** — Oracle price protection. Before building swap calldata, the DEX quote is compared against the vault's on-chain BackGeoOracle 5-minute TWAP price via `vault.convertTokenAmount(tokenIn, amountIn, tokenOut)`. Two-sided check: blocked if the DEX quote is >5% worse than the oracle price (bad fill due to poor liquidity or stale DEX state) OR >10% better than oracle (stale oracle or manipulated route). When the oracle has no price feed for a token (NO_PRICE_FEED), the swap is gracefully allowed only for selling non-tracked tokens such as airdrops or direct transfers. This is the first line of defense: it catches bad fills before NAV Shield's portfolio-level check runs. Completely separate from and independent of slippage protection. Runs outside the agent's control surface.
+**Swap Shield** — Oracle price protection. Before building swap calldata, the DEX quote is compared against the on-chain BackGeoOracle price. Two-sided check: blocked if the DEX quote diverges >5% from the oracle price in either direction (bad fill due to poor liquidity, stale DEX state, stale oracle, or manipulated route). When the oracle has no price feed for a token (NO_PRICE_FEED), the swap is gracefully allowed only for selling non-tracked tokens such as airdrops or direct transfers. This is the first line of defense: it catches bad fills before NAV Shield's portfolio-level check runs. Completely separate from and independent of slippage protection. Runs outside the agent's control surface.
 
 **NAV Shield** — Protocol-enforced deterministic firewall. After Swap Shield clears, the swap's overall NAV impact is simulated off-chain. If NAV drops >10% vs pre-swap or 24h baseline: transaction blocked. The second line of defense: catches large-scale portfolio impact even when individual swap prices look fair. Runs outside the agent's control surface — cannot be disabled or bypassed by any caller.
 
@@ -57,7 +57,7 @@ RigoBlock lets anyone deploy a non-custodial, agent-compatible smart vault on-ch
 
 | Feature | Rigoblock Onchain Vault Agent | Traditional Agent Wallet |
 |---|---|---|
-| Swap Shield (oracle price protection) | ✅ TWAP-gated, two-sided check | ❌ None |
+| Swap Shield (oracle price protection) | ✅ Oracle-gated, 5% symmetrical check | ❌ None |
 | NAV Shield (NAV circuit breaker) | ✅ Built-in, non-bypassable | ❌ None |
 | Non-custodial | ✅ Assets never leave vault | ⚠️ Varies |
 | Scoped Delegation | ✅ Per-selector, revocable | ❌ All-or-nothing |
@@ -79,7 +79,7 @@ If you are an autonomous AI agent looking to interact with RigoBlock:
 
 1. **API entry point**: `https://trader.rigoblock.com` — X402-gated DeFi trading API for onchain vault agents
 2. **X402 discovery**: Registered in Coinbase's x402 Bazaar (api.cdp.coinbase.com/platform/v2/x402/discovery/resources)
-3. **Endpoints**: `/api/quote` (price quotes, GET) and `/api/chat` (natural language trading, POST)
+3. **Endpoints**: `/api/quote` (price quotes, GET), `/api/quote/uniswap` (Uniswap quote with oracle enrichment, POST), `/api/quote/0x` (0x quote with oracle enrichment, GET), and `/api/chat` (natural language trading, POST). Oracle-enriched quotes return `deltaBps` (deviation from oracle in basis points), `oracleAmount`, and `priceFeedExists` so any caller can evaluate execution for any wallet.
 4. **Payment**: USDC on Base mainnet (eip155:8453) via x402 protocol — $0.002–$0.01 per call
 5. **Two access tiers**:
    - Tier 1 (Anonymous): Pay x402, receive unsigned transaction data and price quotes

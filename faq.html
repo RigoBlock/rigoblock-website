@@ -7,13 +7,13 @@
 <meta name="generator" content="Jekyll v3.8.4" />
 <meta property="og:title" content="FAQ" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="RigoBlock provides non-custodial smart vault infrastructure for institutional operators and autonomous AI agents. Protocol-enforced safety via Swap Shield oracle protection and NAV Shield circuit breakers, Scoped Delegation for agent permissions, X402 micropayment API — across 7 EVM chains. Proof-of-Performance incentives. Live since 2018." />
-<meta property="og:description" content="RigoBlock provides non-custodial smart vault infrastructure for institutional operators and autonomous AI agents. Protocol-enforced safety via Swap Shield oracle protection and NAV Shield circuit breakers, Scoped Delegation for agent permissions, X402 micropayment API — across 7 EVM chains. Proof-of-Performance incentives. Live since 2018." />
+<meta name="description" content="RigoBlock provides non-custodial asset management infrastructure for humans and agents. Protocol-enforced safety via Swap oracle-protected swaps and downside protection." />
+<meta property="og:description" content="RigoBlock provides non-custodial asset management infrastructure for humans and agents. Protocol-enforced safety via Swap oracle-protected swaps and downside protection." />
 <link rel="canonical" href="https://rigoblock.com/faq.html" />
 <meta property="og:url" content="https://rigoblock.com/faq.html" />
 <meta property="og:site_name" content="RigoBlock" />
 <script type="application/ld+json">
-{"description":"RigoBlock provides non-custodial smart vault infrastructure for institutional operators and autonomous AI agents. Protocol-enforced safety via Swap Shield oracle protection and NAV Shield circuit breakers, Scoped Delegation for agent permissions, X402 micropayment API — across 7 EVM chains. Proof-of-Performance incentives. Live since 2018.","headline":"FAQ","url":"https://rigoblock.com/faq.html","@type":"WebPage","@context":"http://schema.org"}</script>
+{"description":"RigoBlock provides non-custodial asset management infrastructure for humans and agents. Protocol-enforced safety via Swap oracle-protected swaps and downside protection.","headline":"FAQ","url":"https://rigoblock.com/faq.html","@type":"WebPage","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <title>FAQ | RigoBlock</title>
@@ -33,9 +33,9 @@
         inputSchema: { type: 'object', properties: {}, required: [] },
         execute: async () => ({
           name: 'RigoBlock',
-          description: 'Non-custodial smart vault infrastructure for institutional operators and autonomous AI agents.',
+          description: 'Non-custodial asset management infrastructure for humans and agents.',
           chains: ['Ethereum', 'Arbitrum', 'Base', 'Optimism', 'BSC', 'Unichain', 'Polygon'],
-          features: ['Swap Shield (oracle TWAP price protection)', 'NAV Shield (portfolio circuit breaker)', 'Scoped Delegation (per-selector agent permissions)', 'X402 micropayment API (USDC on Base, no API keys)', 'Proof-of-Performance (on-chain GRG rewards)'],
+          features: ['Swap Shield (oracle-protected swaps)', 'NAV Shield (portfolio drawdown protection)', 'Scoped Delegation (granular agent permissions)', 'X402 micropayment API (USDC on Base, no API keys)', 'Proof-of-Performance (on-chain GRG rewards)'],
           links: { app: 'https://app.rigoblock.com', api: 'https://trader.rigoblock.com', docs: 'https://docs.rigoblock.com', llms: 'https://rigoblock.com/llms-full.txt' }
         }),
         signal: ac.signal
@@ -138,7 +138,7 @@
         "description": "RigoBlock is the onchain vault infrastructure for AI agents and autonomous strategies. Deploy agent-compatible vaults secured by NAV Shield and Scoped Delegation. Agents pay per trade via the X402 API with no API keys. Proof-of-Performance incentives. Live since 2018 on 7 EVM chains.",
         "featureList": [
           "Onchain Vault Agent infrastructure for AI-driven DeFi",
-          "Swap Shield — BackGeoOracle TWAP price protection, two-sided oracle check",
+          "Swap Shield — BackGeoOracle price protection, 5% symmetrical oracle check",
           "X402 Micropayment API for autonomous AI agents — no API keys",
           "NAV Shield — deterministic protocol-level circuit breaker",
           "Scoped Delegation — zero-trust agent permissions",
@@ -173,7 +173,7 @@
         "name": "What is the Swap Shield on Rigoblock?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Swap Shield is oracle price protection — the first layer in Rigoblock's two-layer agent safety stack. Before building swap calldata, the DEX quote is compared against the vault's BackGeoOracle 5-minute TWAP via vault.convertTokenAmount(). Blocked if the DEX quote is >5% worse than oracle (bad fill due to poor liquidity or stale DEX state) or >10% better than oracle (stale oracle or manipulated route). When no oracle price feed exists for a token, the swap is gracefully allowed only for non-tracked tokens such as airdrops or direct transfers. Completely separate from slippage protection."
+          "text": "Swap Shield enforces oracle-protected swaps — the first layer in Rigoblock's two-layer agent safety stack. Before building swap calldata, the DEX quote is compared against the BackGeoOracle price. Blocked if the DEX quote diverges >5% from the oracle in either direction (bad fill, stale oracle, or manipulated route). When no oracle price feed exists for a token, the swap is gracefully allowed only for non-tracked tokens such as airdrops or direct transfers. Completely separate from slippage protection."
         }
       },
       {
@@ -197,7 +197,7 @@
         "name": "How does Rigoblock prevent rogue agent behavior?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Rigoblock uses three protocol-level layers that operate outside the agent's control surface. First, Swap Shield compares every DEX quote against the vault's BackGeoOracle 5-minute TWAP and blocks trades >5% worse than oracle (bad fill) or >10% better (stale/manipulated route). Second, NAV Shield simulates overall portfolio impact and blocks any trade causing NAV to drop more than 10%. Third, Scoped Delegation restricts which functions an agent may call at all."
+          "text": "Rigoblock uses three protocol-level layers that operate outside the agent's control surface. First, Swap Shield compares every DEX quote against the BackGeoOracle price and blocks trades that diverge >5% from the oracle in either direction (bad fill or stale/manipulated route). Second, NAV Shield simulates overall portfolio impact and blocks any trade causing NAV to drop more than 10%. Third, Scoped Delegation restricts which functions an agent may call at all."
         }
       },
       {
@@ -752,7 +752,7 @@
   <li><span>What is the Swap Shield?</span>
     <blockquote>
 
-      <p>Swap Shield is oracle price protection — the first line of defense in Rigoblock’s two-layer agent safety stack. Before building any swap calldata, the system compares the DEX quote against the vault’s on-chain BackGeoOracle 5-minute TWAP price (via <code>vault.convertTokenAmount</code>). A trade is blocked if the DEX quote is more than 5% worse than the oracle price (bad fill from poor liquidity or stale DEX state), or more than 10% better (stale oracle or manipulated route). When no oracle price feed exists for a token, Swap Shield gracefully allows the swap only for selling non-tracked tokens such as airdrops or direct transfers — no false blocks for legitimate edge cases. Swap Shield is completely separate from slippage protection; it operates at the oracle-price level before the NAV Shield’s portfolio-impact check runs.</p>
+      <p>Swap Shield enforces oracle-protected swaps — the first line of defense in Rigoblock’s two-layer agent safety stack. Before building any swap calldata, the system compares the DEX quote against the on-chain BackGeoOracle price. A trade is blocked if the DEX quote diverges more than 5% from the oracle price in either direction (bad fill from poor liquidity, stale DEX state, stale oracle, or manipulated route). When no oracle price feed exists for a token, Swap Shield gracefully allows the swap only for selling non-tracked tokens such as airdrops or direct transfers — no false blocks for legitimate edge cases. Swap Shield is completely separate from slippage protection; it operates at the oracle-price level before the NAV Shield’s portfolio-impact check runs.</p>
     </blockquote>
   </li>
   <li><span>What is NAV Shield?</span>
@@ -782,7 +782,7 @@
   <li><span>How does Rigoblock prevent rogue agent behavior?</span>
     <blockquote>
 
-      <p>Through three protocol-level layers that operate entirely outside the agent’s control surface. First, <strong>Swap Shield</strong> compares every DEX quote against the vault’s 5-minute BackGeoOracle TWAP and blocks trades that are more than 5% worse than oracle (bad fill) or more than 10% better (stale/manipulated) — catching bad quotes before they reach the portfolio-impact check. Second, <strong>NAV Shield</strong> simulates the overall portfolio impact and blocks any trade that would reduce vault NAV by more than 10%. Third, <strong>Scoped Delegation</strong> restricts which functions an agent may call at all. Even a compromised agent key or a jailbroken AI model cannot bypass any of these layers.</p>
+      <p>Through three protocol-level layers that operate entirely outside the agent’s control surface. First, <strong>Swap Shield</strong> compares every DEX quote against the BackGeoOracle price and blocks trades that diverge more than 5% from the oracle in either direction (bad fill or stale/manipulated) — catching bad quotes before they reach the portfolio-impact check. Second, <strong>NAV Shield</strong> simulates the overall portfolio impact and blocks any trade that would reduce vault NAV by more than 10%. Third, <strong>Scoped Delegation</strong> restricts which functions an agent may call at all. Even a compromised agent key or a jailbroken AI model cannot bypass any of these layers.</p>
     </blockquote>
   </li>
   <li><span>Can AI agents operate vaults autonomously?</span>
